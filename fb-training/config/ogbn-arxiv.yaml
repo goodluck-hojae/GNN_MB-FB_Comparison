@@ -1,0 +1,61 @@
+
+data:
+  name: ogbn-arxiv
+  dataset_path: data/dataset
+  partition_path: data/part_data
+  num_feats: 128
+  num_classes: 40
+  is_multilabel: false
+model:
+  num_layers: 2
+  hidden_dim: 1024
+  dropout_rate: 0.1
+  use_norm: False
+  aggregator_type: mean # default setting for graphsage
+runtime:
+  model_name: sage
+  learning_rate: 0.0005
+  weight_decay: 0
+  num_epoches: 2500
+  mode: AdaQP
+  assign_scheme: adaptive
+  exp_path: exp
+  logger_level: INFO
+  log_steps: 1
+assignment:
+  assign_cycle: 50
+  profile_data_length: 200
+  group_size: 1000
+  coe_lambda: 0.5
+  assign_bits: 8 # default uniform bits for quantization when no traced data is collected
+
+
+# data:
+#   name: ogbn-arxiv
+#   dataset_path: data/dataset
+#   partition_path: data/part_data
+#   num_feats: 128
+#   num_classes: 40
+#   is_multilabel: false
+# model:
+#   num_layers: 3 #3
+#   hidden_dim: 512 #512
+#   dropout_rate: 0.3
+#   use_norm: false #false
+#   aggregator_type: mean # default setting for graphsage
+# runtime:
+#   model_name: gcn
+#   learning_rate: 0.0001
+#   weight_decay: 0
+#   num_epoches: 1000
+#   mode: AdaQP
+#   assign_scheme: adaptive
+#   exp_path: exp
+#   logger_level: INFO
+#   log_steps: 1
+# assignment:
+#   assign_cycle: 100
+#   profile_data_length: 200 
+#   group_size: 5000
+#   coe_lambda: 0.5
+#   assign_bits: 8 # default uniform bits for quantization when no traced data is collected
