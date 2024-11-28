@@ -43,8 +43,6 @@ The results are recorded with the following metrics:
 - `batch_size`
 - `budget`
 - `num_partition`
-- `shuffle`
-- `use_ddp`
 - `gpu_model`
 - `n_gpu`
 - `n_layers`
