@@ -15,6 +15,6 @@ The paper provides a comprehensive empirical comparison between full-graph and m
 
 For any questions or further information, please contact:
 
-- **Hojae Son**: hojaeson@umass.edu  
 - **Saurabh Bajaj**: sbajaj@umass.edu  
+- **Hojae Son**: hojaeson@umass.edu  
 - **Juelin Liu**: juelinliu@umass.edu  
