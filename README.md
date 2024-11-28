@@ -1,5 +1,4 @@
 
-markdown
 # Graph Neural Network Training Systems: A Performance Comparison of Full-Graph and Mini-Batch
 
 Authors: Saurabh Bajaj, Hojae Son, Juelin Liu, Hui Guan, Marco Serafini
