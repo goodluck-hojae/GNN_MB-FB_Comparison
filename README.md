@@ -10,6 +10,13 @@ This repository is associated with the paper:
 
 The paper provides a comprehensive empirical comparison between full-graph and mini-batch training methods for Graph Neural Networks (GNNs).
 
+Directory Structure
+**1. /fb-training/** [fb-training/](fb-training/)
+AdaQP configs/partitioning scriptsfor AdaQP (FB) training. 
+**2. /mb-training/** [mb-training/](mb-training/)
+Mini-Batch Training Experiments for different samplers (Cluster GCN, Node Sampling, Saint Sampler)
+
+
 ## Contact
 
 For any questions or further information, please contact:
