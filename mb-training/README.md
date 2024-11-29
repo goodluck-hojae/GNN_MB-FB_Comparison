@@ -37,6 +37,7 @@ We iterate over combinations of:
 
 ## Outcomes (Plot)
 We directly parse the information from the log but we intend to update these process with proper settings from the codebase
+
 To parse and plot the logs, 
 
 python main.py
