@@ -36,6 +36,9 @@ We iterate over combinations of:
 - Various hyperparameters (details available [here](https://arxiv.org/abs/2406.00552))
 
 ## Outcomes
+We directly parse the information from the log but we intend to update these process with proper settings from the codebase
+![image](https://github.com/user-attachments/assets/2d3ac93a-56c0-4eda-a5fd-211a3b056979)
+
 
 The results are recorded with the following metrics:
 - `dataset`
