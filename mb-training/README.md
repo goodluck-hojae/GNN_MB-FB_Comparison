@@ -40,6 +40,7 @@ We directly parse the information from the log but we intend to update these pro
 To parse and plot the logs, 
 
 python main.py
+
 ![image](https://github.com/user-attachments/assets/2d3ac93a-56c0-4eda-a5fd-211a3b056979)
 
 
