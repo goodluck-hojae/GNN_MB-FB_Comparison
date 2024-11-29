@@ -14,7 +14,7 @@ The paper provides a comprehensive empirical comparison between full-graph and m
 ### Directory Structure
 
 1. [fb-training/](fb-training/)
-AdaQP configs/partitioning scriptsfor AdaQP (FB) training.
+AdaQP configs/partitioning scripts for AdaQP (FB) training.
 
 2. [mb-training/](mb-training/)
 Mini-Batch Training Experiments for different samplers (Cluster GCN, Node Sampling, Saint Sampler)
