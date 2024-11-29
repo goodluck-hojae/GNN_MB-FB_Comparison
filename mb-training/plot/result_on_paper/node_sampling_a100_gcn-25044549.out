@@ -1,0 +1,3005 @@
+Loading miniconda version 22.11.1-1
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+Loading data
+  NumNodes: 19717
+  NumEdges: 88651
+  NumFeats: 500
+  NumClasses: 3
+  NumTrainingSamples: 60
+  NumValidationSamples: 500
+  NumTestSamples: 1000
+Done loading data from cached files.
+train_mask shape = torch.Size([11885175])
+label shape = torch.Size([11885175])
+Graph(num_nodes=11885175, num_edges=329234707,
+      ndata_schemes={'year': Scheme(shape=(1,), dtype=torch.int64), '_ID': Scheme(shape=(), dtype=torch.int64), 'label': Scheme(shape=(), dtype=torch.int64), 'test_mask': Scheme(shape=(), dtype=torch.uint8), 'train_mask': Scheme(shape=(), dtype=torch.uint8), 'val_mask': Scheme(shape=(), dtype=torch.uint8), 'feat': Scheme(shape=(128,), dtype=torch.float32)}
+      edata_schemes={}) 172 hi
+214338
+0 th training in puregpu mode using 4 GPU(s)
+Running parameters :  pubmed 1024 1000 10 True True 0,1,2,3 6 64
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+graph cuda:0 node cuda:0 0
+Epoch 00000 | Loss 1.1044 | Val Accuracy 0.4160 | Test Accuracy 0.4070
+Run time for epoch# 0: 0.83s
+Epoch 00001 | Loss 1.0770 | Val Accuracy 0.4560 | Test Accuracy 0.4430
+Run time for epoch# 1: 0.05s
+Epoch 00002 | Loss 1.0704 | Val Accuracy 0.6180 | Test Accuracy 0.6350
+Run time for epoch# 2: 0.05s
+Epoch 00003 | Loss 1.0704 | Val Accuracy 0.6640 | Test Accuracy 0.6360
+Run time for epoch# 3: 0.05s
+Epoch 00004 | Loss 1.0664 | Val Accuracy 0.7060 | Test Accuracy 0.6600
+Run time for epoch# 4: 0.05s
+Epoch 00005 | Loss 1.0461 | Val Accuracy 0.7020 | Test Accuracy 0.6580
+Run time for epoch# 5: 0.05s
+Epoch 00006 | Loss 1.0182 | Val Accuracy 0.6980 | Test Accuracy 0.6630
+Run time for epoch# 6: 0.05s
+Epoch 00007 | Loss 0.9939 | Val Accuracy 0.6920 | Test Accuracy 0.6630
+Run time for epoch# 7: 0.05s
+Epoch 00008 | Loss 0.9631 | Val Accuracy 0.7120 | Test Accuracy 0.6810
+Run time for epoch# 8: 0.05s
+Epoch 00009 | Loss 0.9317 | Val Accuracy 0.7080 | Test Accuracy 0.6810
+Run time for epoch# 9: 0.05s
+Epoch 00010 | Loss 0.9149 | Val Accuracy 0.7120 | Test Accuracy 0.6710
+Run time for epoch# 10: 0.05s
+Epoch 00011 | Loss 0.8887 | Val Accuracy 0.7100 | Test Accuracy 0.6770
+Run time for epoch# 11: 0.05s
+Epoch 00012 | Loss 0.8274 | Val Accuracy 0.7160 | Test Accuracy 0.6830
+Run time for epoch# 12: 0.05s
+Epoch 00013 | Loss 0.7703 | Val Accuracy 0.7120 | Test Accuracy 0.6830
+Run time for epoch# 13: 0.05s
+Epoch 00014 | Loss 0.7098 | Val Accuracy 0.7100 | Test Accuracy 0.6880
+Run time for epoch# 14: 0.05s
+Epoch 00015 | Loss 0.7380 | Val Accuracy 0.7180 | Test Accuracy 0.6880
+Run time for epoch# 15: 0.05s
+Epoch 00016 | Loss 0.6712 | Val Accuracy 0.7140 | Test Accuracy 0.6700
+Run time for epoch# 16: 0.05s
+Epoch 00017 | Loss 0.6624 | Val Accuracy 0.7140 | Test Accuracy 0.6740
+Run time for epoch# 17: 0.05s
+Epoch 00018 | Loss 0.6510 | Val Accuracy 0.6980 | Test Accuracy 0.6850
+Run time for epoch# 18: 0.05s
+Epoch 00019 | Loss 0.5929 | Val Accuracy 0.6980 | Test Accuracy 0.6490
+Run time for epoch# 19: 0.05s
+Epoch 00020 | Loss 0.5240 | Val Accuracy 0.7160 | Test Accuracy 0.6740
+Run time for epoch# 20: 0.05s
+Epoch 00021 | Loss 0.5895 | Val Accuracy 0.7240 | Test Accuracy 0.6750
+Run time for epoch# 21: 0.05s
+Epoch 00022 | Loss 0.4976 | Val Accuracy 0.7220 | Test Accuracy 0.6850
+Run time for epoch# 22: 0.05s
+Epoch 00023 | Loss 0.4729 | Val Accuracy 0.7220 | Test Accuracy 0.6730
+Run time for epoch# 23: 0.05s
+Epoch 00024 | Loss 0.4554 | Val Accuracy 0.7020 | Test Accuracy 0.6570
+Run time for epoch# 24: 0.05s
+Epoch 00025 | Loss 0.4653 | Val Accuracy 0.6940 | Test Accuracy 0.6630
+Run time for epoch# 25: 0.05s
+Epoch 00026 | Loss 0.5530 | Val Accuracy 0.7060 | Test Accuracy 0.6880
+Run time for epoch# 26: 0.05s
+Epoch 00027 | Loss 0.4262 | Val Accuracy 0.6860 | Test Accuracy 0.6780
+Run time for epoch# 27: 0.05s
+Epoch 00028 | Loss 0.4637 | Val Accuracy 0.6840 | Test Accuracy 0.6770
+Run time for epoch# 28: 0.05s
+Epoch 00029 | Loss 0.4512 | Val Accuracy 0.6960 | Test Accuracy 0.6930
+Run time for epoch# 29: 0.05s
+Epoch 00030 | Loss 0.3464 | Val Accuracy 0.7060 | Test Accuracy 0.6820
+Run time for epoch# 30: 0.05s
+Epoch 00031 | Loss 0.3246 | Val Accuracy 0.7080 | Test Accuracy 0.6910
+Run time for epoch# 31: 0.05s
+Epoch 00032 | Loss 0.4361 | Val Accuracy 0.6940 | Test Accuracy 0.6800
+Run time for epoch# 32: 0.05s
+Epoch 00033 | Loss 0.4119 | Val Accuracy 0.7020 | Test Accuracy 0.6760
+Run time for epoch# 33: 0.05s
+Epoch 00034 | Loss 0.3343 | Val Accuracy 0.7020 | Test Accuracy 0.6910
+Run time for epoch# 34: 0.05s
+Epoch 00035 | Loss 0.6522 | Val Accuracy 0.7320 | Test Accuracy 0.7100
+Run time for epoch# 35: 0.05s
+Epoch 00036 | Loss 0.2710 | Val Accuracy 0.7400 | Test Accuracy 0.7160
+Run time for epoch# 36: 0.05s
+Epoch 00037 | Loss 0.3720 | Val Accuracy 0.7320 | Test Accuracy 0.7090
+Run time for epoch# 37: 0.05s
+Epoch 00038 | Loss 0.2348 | Val Accuracy 0.7220 | Test Accuracy 0.7070
+Run time for epoch# 38: 0.05s
+Epoch 00039 | Loss 0.4976 | Val Accuracy 0.7060 | Test Accuracy 0.6940
+Run time for epoch# 39: 0.05s
+Epoch 00040 | Loss 0.3829 | Val Accuracy 0.7240 | Test Accuracy 0.6810
+Run time for epoch# 40: 0.05s
+Epoch 00041 | Loss 0.3350 | Val Accuracy 0.7340 | Test Accuracy 0.6950
+Run time for epoch# 41: 0.05s
+Epoch 00042 | Loss 0.2823 | Val Accuracy 0.7500 | Test Accuracy 0.7070
+Run time for epoch# 42: 0.05s
+Epoch 00043 | Loss 0.1295 | Val Accuracy 0.7380 | Test Accuracy 0.7210
+Run time for epoch# 43: 0.05s
+Epoch 00044 | Loss 0.2316 | Val Accuracy 0.7260 | Test Accuracy 0.7160
+Run time for epoch# 44: 0.05s
+Epoch 00045 | Loss 0.3040 | Val Accuracy 0.7300 | Test Accuracy 0.7150
+Run time for epoch# 45: 0.05s
+Epoch 00046 | Loss 0.5148 | Val Accuracy 0.7440 | Test Accuracy 0.7230
+Run time for epoch# 46: 0.05s
+Epoch 00047 | Loss 0.2854 | Val Accuracy 0.7240 | Test Accuracy 0.6850
+Run time for epoch# 47: 0.05s
+Epoch 00048 | Loss 0.0975 | Val Accuracy 0.7340 | Test Accuracy 0.6780
+Run time for epoch# 48: 0.05s
+Epoch 00049 | Loss 0.1275 | Val Accuracy 0.7440 | Test Accuracy 0.7140
+Run time for epoch# 49: 0.05s
+Epoch 00050 | Loss 0.2154 | Val Accuracy 0.7480 | Test Accuracy 0.7280
+Run time for epoch# 50: 0.05s
+Epoch 00051 | Loss 0.2586 | Val Accuracy 0.7500 | Test Accuracy 0.7180
+Run time for epoch# 51: 0.05s
+Epoch 00052 | Loss 0.3490 | Val Accuracy 0.7460 | Test Accuracy 0.7190
+Run time for epoch# 52: 0.05s
+Epoch 00053 | Loss 0.3282 | Val Accuracy 0.7400 | Test Accuracy 0.6860
+Run time for epoch# 53: 0.05s
+Epoch 00054 | Loss 0.3578 | Val Accuracy 0.7280 | Test Accuracy 0.6930
+Run time for epoch# 54: 0.05s
+Epoch 00055 | Loss 0.2035 | Val Accuracy 0.7520 | Test Accuracy 0.7060
+Run time for epoch# 55: 0.05s
+Epoch 00056 | Loss 0.0930 | Val Accuracy 0.7340 | Test Accuracy 0.7080
+Run time for epoch# 56: 0.05s
+Epoch 00057 | Loss 0.2528 | Val Accuracy 0.7420 | Test Accuracy 0.7210
+Run time for epoch# 57: 0.05s
+Epoch 00058 | Loss 0.3320 | Val Accuracy 0.7520 | Test Accuracy 0.7210
+Run time for epoch# 58: 0.05s
+Epoch 00059 | Loss 0.3318 | Val Accuracy 0.7580 | Test Accuracy 0.7390
+Run time for epoch# 59: 0.05s
+Epoch 00060 | Loss 0.2975 | Val Accuracy 0.7540 | Test Accuracy 0.7130
+Run time for epoch# 60: 0.05s
+Epoch 00061 | Loss 0.1890 | Val Accuracy 0.7320 | Test Accuracy 0.6680
+Run time for epoch# 61: 0.05s
+Epoch 00062 | Loss 0.3205 | Val Accuracy 0.7140 | Test Accuracy 0.6600
+Run time for epoch# 62: 0.05s
+Epoch 00063 | Loss 0.1471 | Val Accuracy 0.7200 | Test Accuracy 0.6780
+Run time for epoch# 63: 0.05s
+Epoch 00064 | Loss 0.2361 | Val Accuracy 0.7380 | Test Accuracy 0.7010
+Run time for epoch# 64: 0.05s
+Epoch 00065 | Loss 0.2776 | Val Accuracy 0.7520 | Test Accuracy 0.7280
+Run time for epoch# 65: 0.05s
+Epoch 00066 | Loss 0.2822 | Val Accuracy 0.7680 | Test Accuracy 0.7400
+Run time for epoch# 66: 0.05s
+Epoch 00067 | Loss 0.1928 | Val Accuracy 0.7600 | Test Accuracy 0.7340
+Run time for epoch# 67: 0.05s
+Epoch 00068 | Loss 0.1510 | Val Accuracy 0.7260 | Test Accuracy 0.6920
+Run time for epoch# 68: 0.05s
+Epoch 00069 | Loss 0.2015 | Val Accuracy 0.7020 | Test Accuracy 0.6360
+Run time for epoch# 69: 0.05s
+Epoch 00070 | Loss 0.1575 | Val Accuracy 0.6600 | Test Accuracy 0.6210
+Run time for epoch# 70: 0.05s
+Epoch 00071 | Loss 0.2552 | Val Accuracy 0.6920 | Test Accuracy 0.6480
+Run time for epoch# 71: 0.05s
+Epoch 00072 | Loss 0.1668 | Val Accuracy 0.7480 | Test Accuracy 0.7040
+Run time for epoch# 72: 0.05s
+Epoch 00073 | Loss 0.2128 | Val Accuracy 0.7800 | Test Accuracy 0.7350
+Run time for epoch# 73: 0.05s
+Epoch 00074 | Loss 0.1383 | Val Accuracy 0.7720 | Test Accuracy 0.7390
+Run time for epoch# 74: 0.05s
+Epoch 00075 | Loss 0.1305 | Val Accuracy 0.7600 | Test Accuracy 0.7340
+Run time for epoch# 75: 0.05s
+Epoch 00076 | Loss 0.2694 | Val Accuracy 0.7520 | Test Accuracy 0.7090
+Run time for epoch# 76: 0.05s
+Epoch 00077 | Loss 0.1500 | Val Accuracy 0.7060 | Test Accuracy 0.6450
+Run time for epoch# 77: 0.05s
+Epoch 00078 | Loss 0.1516 | Val Accuracy 0.6920 | Test Accuracy 0.6280
+Run time for epoch# 78: 0.05s
+Epoch 00079 | Loss 0.1093 | Val Accuracy 0.6900 | Test Accuracy 0.6310
+Run time for epoch# 79: 0.05s
+Epoch 00080 | Loss 0.3947 | Val Accuracy 0.7240 | Test Accuracy 0.6870
+Run time for epoch# 80: 0.05s
+Epoch 00081 | Loss 0.1208 | Val Accuracy 0.7500 | Test Accuracy 0.7190
+Run time for epoch# 81: 0.05s
+Epoch 00082 | Loss 0.0780 | Val Accuracy 0.7560 | Test Accuracy 0.7370
+Run time for epoch# 82: 0.05s
+Epoch 00083 | Loss 0.0994 | Val Accuracy 0.7580 | Test Accuracy 0.7380
+Run time for epoch# 83: 0.05s
+Epoch 00084 | Loss 0.2097 | Val Accuracy 0.7480 | Test Accuracy 0.7260
+Run time for epoch# 84: 0.05s
+Epoch 00085 | Loss 0.2595 | Val Accuracy 0.7520 | Test Accuracy 0.7140
+Run time for epoch# 85: 0.05s
+Epoch 00086 | Loss 0.0375 | Val Accuracy 0.7280 | Test Accuracy 0.6780
+Run time for epoch# 86: 0.05s
+Epoch 00087 | Loss 0.0698 | Val Accuracy 0.6980 | Test Accuracy 0.6350
+Run time for epoch# 87: 0.05s
+Epoch 00088 | Loss 0.2100 | Val Accuracy 0.7120 | Test Accuracy 0.6840
+Run time for epoch# 88: 0.05s
+Epoch 00089 | Loss 0.2519 | Val Accuracy 0.7480 | Test Accuracy 0.6990
+Run time for epoch# 89: 0.05s
+Epoch 00090 | Loss 0.1005 | Val Accuracy 0.7520 | Test Accuracy 0.7190
+Run time for epoch# 90: 0.05s
+Epoch 00091 | Loss 0.1198 | Val Accuracy 0.7620 | Test Accuracy 0.7190
+Run time for epoch# 91: 0.05s
+Epoch 00092 | Loss 0.0535 | Val Accuracy 0.7320 | Test Accuracy 0.7070
+Run time for epoch# 92: 0.05s
+Epoch 00093 | Loss 0.2023 | Val Accuracy 0.7300 | Test Accuracy 0.7020
+Run time for epoch# 93: 0.05s
+Epoch 00094 | Loss 0.2113 | Val Accuracy 0.7560 | Test Accuracy 0.7090
+Run time for epoch# 94: 0.05s
+Epoch 00095 | Loss 0.0681 | Val Accuracy 0.7520 | Test Accuracy 0.6970
+Run time for epoch# 95: 0.05s
+Epoch 00096 | Loss 0.0285 | Val Accuracy 0.7280 | Test Accuracy 0.6790
+Run time for epoch# 96: 0.05s
+Epoch 00097 | Loss 0.0417 | Val Accuracy 0.7040 | Test Accuracy 0.6670
+Run time for epoch# 97: 0.05s
+Epoch 00098 | Loss 0.1636 | Val Accuracy 0.7260 | Test Accuracy 0.6850
+Run time for epoch# 98: 0.05s
+Epoch 00099 | Loss 0.1093 | Val Accuracy 0.7360 | Test Accuracy 0.6970
+Run time for epoch# 99: 0.05s
+Epoch 00100 | Loss 0.0554 | Val Accuracy 0.7480 | Test Accuracy 0.7160
+Run time for epoch# 100: 0.05s
+Epoch 00101 | Loss 0.1931 | Val Accuracy 0.7440 | Test Accuracy 0.7150
+Run time for epoch# 101: 0.05s
+Epoch 00102 | Loss 0.0494 | Val Accuracy 0.7480 | Test Accuracy 0.7120
+Run time for epoch# 102: 0.05s
+Epoch 00103 | Loss 0.0850 | Val Accuracy 0.7500 | Test Accuracy 0.7090
+Run time for epoch# 103: 0.05s
+Epoch 00104 | Loss 0.0442 | Val Accuracy 0.7520 | Test Accuracy 0.7120
+Run time for epoch# 104: 0.05s
+Epoch 00105 | Loss 0.1340 | Val Accuracy 0.7420 | Test Accuracy 0.7050
+Run time for epoch# 105: 0.05s
+Epoch 00106 | Loss 0.0720 | Val Accuracy 0.7420 | Test Accuracy 0.7060
+Run time for epoch# 106: 0.05s
+Epoch 00107 | Loss 0.0380 | Val Accuracy 0.7400 | Test Accuracy 0.7020
+Run time for epoch# 107: 0.05s
+Epoch 00108 | Loss 0.1243 | Val Accuracy 0.7320 | Test Accuracy 0.6790
+Run time for epoch# 108: 0.05s
+Epoch 00109 | Loss 0.1334 | Val Accuracy 0.7280 | Test Accuracy 0.6950
+Run time for epoch# 109: 0.05s
+Epoch 00110 | Loss 0.1137 | Val Accuracy 0.7520 | Test Accuracy 0.7010
+Run time for epoch# 110: 0.05s
+Epoch 00111 | Loss 0.0661 | Val Accuracy 0.7560 | Test Accuracy 0.7180
+Run time for epoch# 111: 0.05s
+Epoch 00112 | Loss 0.0729 | Val Accuracy 0.7480 | Test Accuracy 0.7070
+Run time for epoch# 112: 0.05s
+Epoch 00113 | Loss 0.0443 | Val Accuracy 0.7440 | Test Accuracy 0.7100
+Run time for epoch# 113: 0.05s
+Epoch 00114 | Loss 0.1061 | Val Accuracy 0.7460 | Test Accuracy 0.7150
+Run time for epoch# 114: 0.05s
+Epoch 00115 | Loss 0.0277 | Val Accuracy 0.7260 | Test Accuracy 0.7010
+Run time for epoch# 115: 0.05s
+Epoch 00116 | Loss 0.2342 | Val Accuracy 0.7300 | Test Accuracy 0.7000
+Run time for epoch# 116: 0.05s
+n_50_epoch, n_50_accuracy 117 0.7400000095367432
+Epoch 00117 | Loss 0.0611 | Val Accuracy 0.7380 | Test Accuracy 0.6890
+Run time for epoch# 117: 0.05s
+Epoch 00118 | Loss 0.0141 | Val Accuracy 0.7300 | Test Accuracy 0.6840
+Run time for epoch# 118: 0.05s
+Epoch 00119 | Loss 0.0305 | Val Accuracy 0.7300 | Test Accuracy 0.6890
+Run time for epoch# 119: 0.05s
+Epoch 00120 | Loss 0.1664 | Val Accuracy 0.7420 | Test Accuracy 0.7060
+Run time for epoch# 120: 0.05s
+Epoch 00121 | Loss 0.1481 | Val Accuracy 0.7500 | Test Accuracy 0.7260
+Run time for epoch# 121: 0.05s
+Epoch 00122 | Loss 0.0241 | Val Accuracy 0.7580 | Test Accuracy 0.7260
+Run time for epoch# 122: 0.05s
+Epoch 00123 | Loss 0.0284 | Val Accuracy 0.7460 | Test Accuracy 0.7140
+Run time for epoch# 123: 0.05s
+Epoch 00124 | Loss 0.0989 | Val Accuracy 0.7160 | Test Accuracy 0.6840
+Run time for epoch# 124: 0.05s
+Epoch 00125 | Loss 0.2716 | Val Accuracy 0.7220 | Test Accuracy 0.6690
+Run time for epoch# 125: 0.05s
+Epoch 00126 | Loss 0.1554 | Val Accuracy 0.7320 | Test Accuracy 0.6830
+Run time for epoch# 126: 0.05s
+Epoch 00127 | Loss 0.0206 | Val Accuracy 0.7420 | Test Accuracy 0.6880
+Run time for epoch# 127: 0.05s
+Epoch 00128 | Loss 0.0068 | Val Accuracy 0.7360 | Test Accuracy 0.6940
+Run time for epoch# 128: 0.05s
+Epoch 00129 | Loss 0.0101 | Val Accuracy 0.7320 | Test Accuracy 0.6870
+Run time for epoch# 129: 0.05s
+Epoch 00130 | Loss 0.2028 | Val Accuracy 0.7460 | Test Accuracy 0.6970
+Run time for epoch# 130: 0.05s
+Epoch 00131 | Loss 0.0644 | Val Accuracy 0.7380 | Test Accuracy 0.7100
+Run time for epoch# 131: 0.05s
+Epoch 00132 | Loss 0.0341 | Val Accuracy 0.7440 | Test Accuracy 0.7050
+Run time for epoch# 132: 0.05s
+Epoch 00133 | Loss 0.0341 | Val Accuracy 0.7360 | Test Accuracy 0.7160
+Run time for epoch# 133: 0.05s
+Epoch 00134 | Loss 0.0426 | Val Accuracy 0.7260 | Test Accuracy 0.6970
+Run time for epoch# 134: 0.05s
+Epoch 00135 | Loss 0.2439 | Val Accuracy 0.7500 | Test Accuracy 0.7230
+Run time for epoch# 135: 0.05s
+Epoch 00136 | Loss 0.2140 | Val Accuracy 0.7620 | Test Accuracy 0.7290
+Run time for epoch# 136: 0.05s
+Epoch 00137 | Loss 0.0472 | Val Accuracy 0.7660 | Test Accuracy 0.7260
+Run time for epoch# 137: 0.05s
+Epoch 00138 | Loss 0.0081 | Val Accuracy 0.7480 | Test Accuracy 0.7060
+Run time for epoch# 138: 0.05s
+Epoch 00139 | Loss 0.0218 | Val Accuracy 0.7340 | Test Accuracy 0.6840
+Run time for epoch# 139: 0.05s
+Epoch 00140 | Loss 0.0614 | Val Accuracy 0.6820 | Test Accuracy 0.6470
+Run time for epoch# 140: 0.05s
+Epoch 00141 | Loss 0.3434 | Val Accuracy 0.6960 | Test Accuracy 0.6730
+Run time for epoch# 141: 0.05s
+Epoch 00142 | Loss 0.1599 | Val Accuracy 0.7340 | Test Accuracy 0.6750
+Run time for epoch# 142: 0.05s
+Epoch 00143 | Loss 0.0097 | Val Accuracy 0.7460 | Test Accuracy 0.6850
+Run time for epoch# 143: 0.05s
+Epoch 00144 | Loss 0.0057 | Val Accuracy 0.7460 | Test Accuracy 0.7100
+Run time for epoch# 144: 0.05s
+Epoch 00145 | Loss 0.0050 | Val Accuracy 0.7540 | Test Accuracy 0.7070
+Run time for epoch# 145: 0.05s
+Epoch 00146 | Loss 0.0581 | Val Accuracy 0.7360 | Test Accuracy 0.7100
+Run time for epoch# 146: 0.05s
+Epoch 00147 | Loss 0.1722 | Val Accuracy 0.7460 | Test Accuracy 0.7070
+Run time for epoch# 147: 0.05s
+Epoch 00148 | Loss 0.0535 | Val Accuracy 0.7420 | Test Accuracy 0.7050
+Run time for epoch# 148: 0.05s
+Epoch 00149 | Loss 0.0064 | Val Accuracy 0.7460 | Test Accuracy 0.7100
+Run time for epoch# 149: 0.05s
+Epoch 00150 | Loss 0.0169 | Val Accuracy 0.7480 | Test Accuracy 0.7120
+Run time for epoch# 150: 0.05s
+Epoch 00151 | Loss 0.0278 | Val Accuracy 0.7400 | Test Accuracy 0.7130
+Run time for epoch# 151: 0.05s
+Epoch 00152 | Loss 0.0188 | Val Accuracy 0.7380 | Test Accuracy 0.7010
+Run time for epoch# 152: 0.05s
+Epoch 00153 | Loss 0.0306 | Val Accuracy 0.7400 | Test Accuracy 0.7100
+Run time for epoch# 153: 0.05s
+Epoch 00154 | Loss 0.0332 | Val Accuracy 0.7460 | Test Accuracy 0.7100
+Run time for epoch# 154: 0.05s
+Epoch 00155 | Loss 0.1206 | Val Accuracy 0.7420 | Test Accuracy 0.7100
+Run time for epoch# 155: 0.05s
+Epoch 00156 | Loss 0.1375 | Val Accuracy 0.7400 | Test Accuracy 0.7080
+Run time for epoch# 156: 0.05s
+Epoch 00157 | Loss 0.0667 | Val Accuracy 0.7480 | Test Accuracy 0.7130
+Run time for epoch# 157: 0.05s
+Epoch 00158 | Loss 0.0539 | Val Accuracy 0.7480 | Test Accuracy 0.7110
+Run time for epoch# 158: 0.05s
+Epoch 00159 | Loss 0.0079 | Val Accuracy 0.7540 | Test Accuracy 0.7100
+Run time for epoch# 159: 0.05s
+Epoch 00160 | Loss 0.0167 | Val Accuracy 0.7460 | Test Accuracy 0.7200
+Run time for epoch# 160: 0.05s
+Epoch 00161 | Loss 0.0154 | Val Accuracy 0.7460 | Test Accuracy 0.7220
+Run time for epoch# 161: 0.05s
+Epoch 00162 | Loss 0.1596 | Val Accuracy 0.7340 | Test Accuracy 0.7180
+Run time for epoch# 162: 0.05s
+Epoch 00163 | Loss 0.0488 | Val Accuracy 0.7520 | Test Accuracy 0.7090
+Run time for epoch# 163: 0.05s
+Epoch 00164 | Loss 0.0505 | Val Accuracy 0.7380 | Test Accuracy 0.7120
+Run time for epoch# 164: 0.05s
+Epoch 00165 | Loss 0.0170 | Val Accuracy 0.7320 | Test Accuracy 0.6990
+Run time for epoch# 165: 0.05s
+Epoch 00166 | Loss 0.0057 | Val Accuracy 0.7440 | Test Accuracy 0.6900
+Run time for epoch# 166: 0.05s
+n_200_epoch, n_200_accuracy 167 0.7400000095367432
+total time took : 3.7728583812713623
+('pubmed', 'NSGCN', 1024, 1000, 10, True, True, 'NVIDIA A100-SXM4-80GB', '0,1,2,3', 6, 64, 0.7400000095367432, 0.022591966354918336, 0.7400000095367432, 2.867584228515625, 117, 0.7400000095367432, 3.7728583812713623, 167)
+Process 0 before barrier
+Process 0 after barrier
+Process 0 cleanup
+Process 0 finished and cleaned up
+all run finished
+graph cuda:3 node cuda:3 3
+Process 3 before barrier
+Process 3 after barrier
+Process 3 cleanup
+Process 3 finished and cleaned up
+all run finished
+graph cuda:1 node cuda:1 1
+Process 1 before barrier
+Process 1 after barrier
+Process 1 cleanup
+Process 1 finished and cleaned up
+all run finished
+graph cuda:2 node cuda:2 2
+Process 2 before barrier
+Process 2 after barrier
+Process 2 cleanup
+Process 2 finished and cleaned up
+all run finished
+converting bidirectional
+1 th training in puregpu mode using 4 GPU(s)
+Running parameters :  ogbn-arxiv 1024 10000 15 True True 0,1,2,3 2 1024
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+graph cuda:3 node cuda:3 3
+Process 3 before barrier
+Process 3 after barrier
+Process 3 cleanup
+Process 3 finished and cleaned up
+all run finished
+graph cuda:0 node cuda:0 0
+Epoch 00000 | Loss 2.5340 | Val Accuracy 0.5786 | Test Accuracy 0.5819
+Run time for epoch# 0: 0.96s
+Epoch 00001 | Loss 1.7705 | Val Accuracy 0.6220 | Test Accuracy 0.6123
+Run time for epoch# 1: 0.31s
+Epoch 00002 | Loss 1.4741 | Val Accuracy 0.6480 | Test Accuracy 0.6482
+Run time for epoch# 2: 0.31s
+Epoch 00003 | Loss 1.3496 | Val Accuracy 0.6449 | Test Accuracy 0.6244
+Run time for epoch# 3: 0.31s
+Epoch 00004 | Loss 1.2681 | Val Accuracy 0.6603 | Test Accuracy 0.6507
+Run time for epoch# 4: 0.31s
+Epoch 00005 | Loss 1.2245 | Val Accuracy 0.6701 | Test Accuracy 0.6593
+Run time for epoch# 5: 0.31s
+Epoch 00006 | Loss 1.2012 | Val Accuracy 0.6718 | Test Accuracy 0.6537
+Run time for epoch# 6: 0.31s
+Epoch 00007 | Loss 1.1787 | Val Accuracy 0.6732 | Test Accuracy 0.6537
+Run time for epoch# 7: 0.31s
+Epoch 00008 | Loss 1.1546 | Val Accuracy 0.6764 | Test Accuracy 0.6614
+Run time for epoch# 8: 0.31s
+Epoch 00009 | Loss 1.1395 | Val Accuracy 0.6811 | Test Accuracy 0.6743
+Run time for epoch# 9: 0.31s
+Epoch 00010 | Loss 1.1397 | Val Accuracy 0.6746 | Test Accuracy 0.6525
+Run time for epoch# 10: 0.31s
+Epoch 00011 | Loss 1.1233 | Val Accuracy 0.6788 | Test Accuracy 0.6631
+Run time for epoch# 11: 0.31s
+Epoch 00012 | Loss 1.1238 | Val Accuracy 0.6836 | Test Accuracy 0.6640
+Run time for epoch# 12: 0.31s
+Epoch 00013 | Loss 1.1119 | Val Accuracy 0.6779 | Test Accuracy 0.6580
+Run time for epoch# 13: 0.31s
+Epoch 00014 | Loss 1.1026 | Val Accuracy 0.6831 | Test Accuracy 0.6688
+Run time for epoch# 14: 0.31s
+Epoch 00015 | Loss 1.1054 | Val Accuracy 0.6846 | Test Accuracy 0.6621
+Run time for epoch# 15: 0.31s
+Epoch 00016 | Loss 1.0970 | Val Accuracy 0.6848 | Test Accuracy 0.6730
+Run time for epoch# 16: 0.31s
+Epoch 00017 | Loss 1.0907 | Val Accuracy 0.6943 | Test Accuracy 0.6854
+Run time for epoch# 17: 0.31s
+Epoch 00018 | Loss 1.0864 | Val Accuracy 0.6898 | Test Accuracy 0.6833
+Run time for epoch# 18: 0.31s
+Epoch 00019 | Loss 1.0883 | Val Accuracy 0.6816 | Test Accuracy 0.6635
+Run time for epoch# 19: 0.31s
+Epoch 00020 | Loss 1.0776 | Val Accuracy 0.6807 | Test Accuracy 0.6543
+Run time for epoch# 20: 0.30s
+Epoch 00021 | Loss 1.0741 | Val Accuracy 0.6874 | Test Accuracy 0.6665
+Run time for epoch# 21: 0.31s
+Epoch 00022 | Loss 1.0730 | Val Accuracy 0.6931 | Test Accuracy 0.6805
+Run time for epoch# 22: 0.30s
+Epoch 00023 | Loss 1.0647 | Val Accuracy 0.6937 | Test Accuracy 0.6837
+Run time for epoch# 23: 0.30s
+Epoch 00024 | Loss 1.0642 | Val Accuracy 0.6917 | Test Accuracy 0.6789
+Run time for epoch# 24: 0.30s
+Epoch 00025 | Loss 1.0627 | Val Accuracy 0.6859 | Test Accuracy 0.6687
+Run time for epoch# 25: 0.31s
+Epoch 00026 | Loss 1.0629 | Val Accuracy 0.6987 | Test Accuracy 0.6888
+Run time for epoch# 26: 0.31s
+Epoch 00027 | Loss 1.0500 | Val Accuracy 0.6964 | Test Accuracy 0.6774
+Run time for epoch# 27: 0.31s
+Epoch 00028 | Loss 1.0476 | Val Accuracy 0.6933 | Test Accuracy 0.6801
+Run time for epoch# 28: 0.30s
+Epoch 00029 | Loss 1.0478 | Val Accuracy 0.6960 | Test Accuracy 0.6752
+Run time for epoch# 29: 0.30s
+Epoch 00030 | Loss 1.0412 | Val Accuracy 0.6913 | Test Accuracy 0.6693
+Run time for epoch# 30: 0.30s
+Epoch 00031 | Loss 1.0440 | Val Accuracy 0.7003 | Test Accuracy 0.6958
+Run time for epoch# 31: 0.30s
+Epoch 00032 | Loss 1.0450 | Val Accuracy 0.6876 | Test Accuracy 0.6663
+Run time for epoch# 32: 0.30s
+Epoch 00033 | Loss 1.0430 | Val Accuracy 0.6976 | Test Accuracy 0.6864
+Run time for epoch# 33: 0.30s
+Epoch 00034 | Loss 1.0440 | Val Accuracy 0.6973 | Test Accuracy 0.6889
+Run time for epoch# 34: 0.30s
+Epoch 00035 | Loss 1.0318 | Val Accuracy 0.6999 | Test Accuracy 0.6907
+Run time for epoch# 35: 0.30s
+Epoch 00036 | Loss 1.0399 | Val Accuracy 0.6981 | Test Accuracy 0.6800
+Run time for epoch# 36: 0.30s
+Epoch 00037 | Loss 1.0421 | Val Accuracy 0.6945 | Test Accuracy 0.6744
+Run time for epoch# 37: 0.30s
+Epoch 00038 | Loss 1.0368 | Val Accuracy 0.7027 | Test Accuracy 0.6878
+Run time for epoch# 38: 0.30s
+Epoch 00039 | Loss 1.0276 | Val Accuracy 0.6964 | Test Accuracy 0.6905
+Run time for epoch# 39: 0.30s
+Epoch 00040 | Loss 1.0348 | Val Accuracy 0.6971 | Test Accuracy 0.6859
+Run time for epoch# 40: 0.31s
+Epoch 00041 | Loss 1.0244 | Val Accuracy 0.7021 | Test Accuracy 0.6948
+Run time for epoch# 41: 0.31s
+Epoch 00042 | Loss 1.0222 | Val Accuracy 0.7010 | Test Accuracy 0.6877
+Run time for epoch# 42: 0.30s
+Epoch 00043 | Loss 1.0232 | Val Accuracy 0.7049 | Test Accuracy 0.6955
+Run time for epoch# 43: 0.30s
+Epoch 00044 | Loss 1.0174 | Val Accuracy 0.7004 | Test Accuracy 0.6864
+Run time for epoch# 44: 0.30s
+Epoch 00045 | Loss 1.0245 | Val Accuracy 0.6940 | Test Accuracy 0.6770
+Run time for epoch# 45: 0.30s
+Epoch 00046 | Loss 1.0243 | Val Accuracy 0.7014 | Test Accuracy 0.6863
+Run time for epoch# 46: 0.30s
+Epoch 00047 | Loss 1.0213 | Val Accuracy 0.6971 | Test Accuracy 0.6806
+Run time for epoch# 47: 0.30s
+Epoch 00048 | Loss 1.0137 | Val Accuracy 0.7010 | Test Accuracy 0.6941
+Run time for epoch# 48: 0.30s
+Epoch 00049 | Loss 1.0138 | Val Accuracy 0.6977 | Test Accuracy 0.6799
+Run time for epoch# 49: 0.30s
+Epoch 00050 | Loss 1.0181 | Val Accuracy 0.7036 | Test Accuracy 0.6916
+Run time for epoch# 50: 0.30s
+Epoch 00051 | Loss 1.0155 | Val Accuracy 0.6928 | Test Accuracy 0.6717
+Run time for epoch# 51: 0.30s
+Epoch 00052 | Loss 1.0138 | Val Accuracy 0.7039 | Test Accuracy 0.6917
+Run time for epoch# 52: 0.30s
+Epoch 00053 | Loss 1.0155 | Val Accuracy 0.6964 | Test Accuracy 0.6745
+Run time for epoch# 53: 0.30s
+Epoch 00054 | Loss 1.0075 | Val Accuracy 0.7031 | Test Accuracy 0.6897
+Run time for epoch# 54: 0.30s
+Epoch 00055 | Loss 1.0132 | Val Accuracy 0.6998 | Test Accuracy 0.6809
+Run time for epoch# 55: 0.30s
+Epoch 00056 | Loss 1.0066 | Val Accuracy 0.7027 | Test Accuracy 0.6904
+Run time for epoch# 56: 0.30s
+Epoch 00057 | Loss 0.9993 | Val Accuracy 0.7066 | Test Accuracy 0.6985
+Run time for epoch# 57: 0.30s
+Epoch 00058 | Loss 1.0023 | Val Accuracy 0.7046 | Test Accuracy 0.6957
+Run time for epoch# 58: 0.30s
+Epoch 00059 | Loss 1.0053 | Val Accuracy 0.7017 | Test Accuracy 0.6894
+Run time for epoch# 59: 0.30s
+Epoch 00060 | Loss 1.0046 | Val Accuracy 0.7048 | Test Accuracy 0.7030
+Run time for epoch# 60: 0.30s
+Epoch 00061 | Loss 0.9999 | Val Accuracy 0.7047 | Test Accuracy 0.6889
+Run time for epoch# 61: 0.30s
+Epoch 00062 | Loss 0.9972 | Val Accuracy 0.7069 | Test Accuracy 0.6990
+Run time for epoch# 62: 0.31s
+Epoch 00063 | Loss 0.9998 | Val Accuracy 0.7069 | Test Accuracy 0.6968
+Run time for epoch# 63: 0.31s
+Epoch 00064 | Loss 0.9947 | Val Accuracy 0.6963 | Test Accuracy 0.6779
+Run time for epoch# 64: 0.31s
+Epoch 00065 | Loss 0.9996 | Val Accuracy 0.7025 | Test Accuracy 0.6891
+Run time for epoch# 65: 0.31s
+Epoch 00066 | Loss 0.9949 | Val Accuracy 0.6891 | Test Accuracy 0.6609
+Run time for epoch# 66: 0.31s
+Epoch 00067 | Loss 0.9942 | Val Accuracy 0.7087 | Test Accuracy 0.7012
+Run time for epoch# 67: 0.31s
+Epoch 00068 | Loss 0.9909 | Val Accuracy 0.7017 | Test Accuracy 0.6904
+Run time for epoch# 68: 0.31s
+Epoch 00069 | Loss 0.9915 | Val Accuracy 0.7054 | Test Accuracy 0.7008
+Run time for epoch# 69: 0.31s
+Epoch 00070 | Loss 0.9939 | Val Accuracy 0.7067 | Test Accuracy 0.6942
+Run time for epoch# 70: 0.31s
+Epoch 00071 | Loss 0.9973 | Val Accuracy 0.7083 | Test Accuracy 0.6984
+Run time for epoch# 71: 0.30s
+Epoch 00072 | Loss 0.9909 | Val Accuracy 0.7032 | Test Accuracy 0.6826
+Run time for epoch# 72: 0.30s
+Epoch 00073 | Loss 0.9908 | Val Accuracy 0.7088 | Test Accuracy 0.7020
+Run time for epoch# 73: 0.31s
+Epoch 00074 | Loss 1.0000 | Val Accuracy 0.7067 | Test Accuracy 0.6956
+Run time for epoch# 74: 0.30s
+Epoch 00075 | Loss 0.9924 | Val Accuracy 0.7040 | Test Accuracy 0.6930
+Run time for epoch# 75: 0.30s
+Epoch 00076 | Loss 0.9833 | Val Accuracy 0.7010 | Test Accuracy 0.6855
+Run time for epoch# 76: 0.31s
+Epoch 00077 | Loss 0.9862 | Val Accuracy 0.6986 | Test Accuracy 0.6801
+Run time for epoch# 77: 0.31s
+Epoch 00078 | Loss 0.9897 | Val Accuracy 0.7069 | Test Accuracy 0.6950
+Run time for epoch# 78: 0.31s
+Epoch 00079 | Loss 0.9805 | Val Accuracy 0.7082 | Test Accuracy 0.7027
+Run time for epoch# 79: 0.31s
+Epoch 00080 | Loss 0.9820 | Val Accuracy 0.7065 | Test Accuracy 0.6912
+Run time for epoch# 80: 0.30s
+Epoch 00081 | Loss 0.9910 | Val Accuracy 0.7009 | Test Accuracy 0.6868
+Run time for epoch# 81: 0.30s
+Epoch 00082 | Loss 0.9851 | Val Accuracy 0.7042 | Test Accuracy 0.6877
+Run time for epoch# 82: 0.30s
+Epoch 00083 | Loss 0.9854 | Val Accuracy 0.6984 | Test Accuracy 0.6826
+Run time for epoch# 83: 0.30s
+Epoch 00084 | Loss 0.9793 | Val Accuracy 0.7073 | Test Accuracy 0.6998
+Run time for epoch# 84: 0.31s
+Epoch 00085 | Loss 0.9815 | Val Accuracy 0.7021 | Test Accuracy 0.6828
+Run time for epoch# 85: 0.31s
+Epoch 00086 | Loss 0.9840 | Val Accuracy 0.7054 | Test Accuracy 0.6919
+Run time for epoch# 86: 0.30s
+Epoch 00087 | Loss 0.9803 | Val Accuracy 0.7032 | Test Accuracy 0.6944
+Run time for epoch# 87: 0.31s
+Epoch 00088 | Loss 0.9779 | Val Accuracy 0.6959 | Test Accuracy 0.6784
+Run time for epoch# 88: 0.30s
+Epoch 00089 | Loss 0.9770 | Val Accuracy 0.7052 | Test Accuracy 0.6911
+Run time for epoch# 89: 0.30s
+Epoch 00090 | Loss 0.9846 | Val Accuracy 0.7059 | Test Accuracy 0.6888
+Run time for epoch# 90: 0.30s
+Epoch 00091 | Loss 0.9738 | Val Accuracy 0.7009 | Test Accuracy 0.6872
+Run time for epoch# 91: 0.31s
+Epoch 00092 | Loss 0.9796 | Val Accuracy 0.7097 | Test Accuracy 0.7013
+Run time for epoch# 92: 0.30s
+Epoch 00093 | Loss 0.9773 | Val Accuracy 0.7074 | Test Accuracy 0.6951
+Run time for epoch# 93: 0.30s
+Epoch 00094 | Loss 0.9811 | Val Accuracy 0.7079 | Test Accuracy 0.6946
+Run time for epoch# 94: 0.30s
+Epoch 00095 | Loss 0.9775 | Val Accuracy 0.7071 | Test Accuracy 0.6915
+Run time for epoch# 95: 0.30s
+Epoch 00096 | Loss 0.9755 | Val Accuracy 0.7076 | Test Accuracy 0.6976
+Run time for epoch# 96: 0.31s
+Epoch 00097 | Loss 0.9702 | Val Accuracy 0.7102 | Test Accuracy 0.7034
+Run time for epoch# 97: 0.30s
+Epoch 00098 | Loss 0.9732 | Val Accuracy 0.7059 | Test Accuracy 0.6920
+Run time for epoch# 98: 0.30s
+Epoch 00099 | Loss 0.9763 | Val Accuracy 0.7074 | Test Accuracy 0.6966
+Run time for epoch# 99: 0.31s
+Epoch 00100 | Loss 0.9658 | Val Accuracy 0.7085 | Test Accuracy 0.6950
+Run time for epoch# 100: 0.30s
+Epoch 00101 | Loss 0.9731 | Val Accuracy 0.7082 | Test Accuracy 0.6962
+Run time for epoch# 101: 0.30s
+Epoch 00102 | Loss 0.9724 | Val Accuracy 0.7080 | Test Accuracy 0.7007
+Run time for epoch# 102: 0.30s
+Epoch 00103 | Loss 0.9684 | Val Accuracy 0.7089 | Test Accuracy 0.7001
+Run time for epoch# 103: 0.30s
+Epoch 00104 | Loss 0.9673 | Val Accuracy 0.7067 | Test Accuracy 0.6966
+Run time for epoch# 104: 0.30s
+Epoch 00105 | Loss 0.9731 | Val Accuracy 0.7037 | Test Accuracy 0.6885
+Run time for epoch# 105: 0.30s
+Epoch 00106 | Loss 0.9716 | Val Accuracy 0.7078 | Test Accuracy 0.6970
+Run time for epoch# 106: 0.31s
+Epoch 00107 | Loss 0.9635 | Val Accuracy 0.7073 | Test Accuracy 0.6950
+Run time for epoch# 107: 0.31s
+Epoch 00108 | Loss 0.9721 | Val Accuracy 0.7099 | Test Accuracy 0.6998
+Run time for epoch# 108: 0.30s
+Epoch 00109 | Loss 0.9701 | Val Accuracy 0.7080 | Test Accuracy 0.6924
+Run time for epoch# 109: 0.30s
+Epoch 00110 | Loss 0.9722 | Val Accuracy 0.7089 | Test Accuracy 0.6992
+Run time for epoch# 110: 0.30s
+Epoch 00111 | Loss 0.9688 | Val Accuracy 0.7086 | Test Accuracy 0.7004
+Run time for epoch# 111: 0.30s
+Epoch 00112 | Loss 0.9662 | Val Accuracy 0.7095 | Test Accuracy 0.7003
+Run time for epoch# 112: 0.30s
+Epoch 00113 | Loss 0.9706 | Val Accuracy 0.7089 | Test Accuracy 0.6976
+Run time for epoch# 113: 0.31s
+Epoch 00114 | Loss 0.9666 | Val Accuracy 0.7052 | Test Accuracy 0.6878
+Run time for epoch# 114: 0.31s
+Epoch 00115 | Loss 0.9714 | Val Accuracy 0.7043 | Test Accuracy 0.7015
+Run time for epoch# 115: 0.31s
+Epoch 00116 | Loss 0.9713 | Val Accuracy 0.7112 | Test Accuracy 0.6993
+Run time for epoch# 116: 0.31s
+Epoch 00117 | Loss 0.9635 | Val Accuracy 0.7090 | Test Accuracy 0.6960
+Run time for epoch# 117: 0.31s
+Epoch 00118 | Loss 0.9631 | Val Accuracy 0.7095 | Test Accuracy 0.7046
+Run time for epoch# 118: 0.31s
+Epoch 00119 | Loss 0.9617 | Val Accuracy 0.7107 | Test Accuracy 0.7031
+Run time for epoch# 119: 0.31s
+Epoch 00120 | Loss 0.9623 | Val Accuracy 0.7066 | Test Accuracy 0.6918
+Run time for epoch# 120: 0.31s
+Epoch 00121 | Loss 0.9596 | Val Accuracy 0.7051 | Test Accuracy 0.6924
+Run time for epoch# 121: 0.30s
+Epoch 00122 | Loss 0.9632 | Val Accuracy 0.7096 | Test Accuracy 0.7036
+Run time for epoch# 122: 0.30s
+Epoch 00123 | Loss 0.9582 | Val Accuracy 0.7098 | Test Accuracy 0.7003
+Run time for epoch# 123: 0.30s
+Epoch 00124 | Loss 0.9613 | Val Accuracy 0.7102 | Test Accuracy 0.7057
+Run time for epoch# 124: 0.30s
+Epoch 00125 | Loss 0.9618 | Val Accuracy 0.7085 | Test Accuracy 0.6941
+Run time for epoch# 125: 0.30s
+Epoch 00126 | Loss 0.9592 | Val Accuracy 0.7081 | Test Accuracy 0.7005
+Run time for epoch# 126: 0.31s
+Epoch 00127 | Loss 0.9582 | Val Accuracy 0.7088 | Test Accuracy 0.6941
+Run time for epoch# 127: 0.30s
+Epoch 00128 | Loss 0.9620 | Val Accuracy 0.7096 | Test Accuracy 0.6975
+Run time for epoch# 128: 0.30s
+Epoch 00129 | Loss 0.9628 | Val Accuracy 0.6963 | Test Accuracy 0.6753
+Run time for epoch# 129: 0.30s
+Epoch 00130 | Loss 0.9630 | Val Accuracy 0.7116 | Test Accuracy 0.7041
+Run time for epoch# 130: 0.31s
+Epoch 00131 | Loss 0.9560 | Val Accuracy 0.7055 | Test Accuracy 0.6902
+Run time for epoch# 131: 0.30s
+Epoch 00132 | Loss 0.9586 | Val Accuracy 0.7065 | Test Accuracy 0.6934
+Run time for epoch# 132: 0.30s
+Epoch 00133 | Loss 0.9574 | Val Accuracy 0.7086 | Test Accuracy 0.6947
+Run time for epoch# 133: 0.30s
+Epoch 00134 | Loss 0.9552 | Val Accuracy 0.7084 | Test Accuracy 0.6947
+Run time for epoch# 134: 0.30s
+Epoch 00135 | Loss 0.9581 | Val Accuracy 0.7113 | Test Accuracy 0.7023
+Run time for epoch# 135: 0.30s
+Epoch 00136 | Loss 0.9639 | Val Accuracy 0.7057 | Test Accuracy 0.6931
+Run time for epoch# 136: 0.30s
+Epoch 00137 | Loss 0.9626 | Val Accuracy 0.7056 | Test Accuracy 0.6880
+Run time for epoch# 137: 0.31s
+Epoch 00138 | Loss 0.9635 | Val Accuracy 0.7085 | Test Accuracy 0.6959
+Run time for epoch# 138: 0.30s
+Epoch 00139 | Loss 0.9607 | Val Accuracy 0.7103 | Test Accuracy 0.7043
+Run time for epoch# 139: 0.30s
+Epoch 00140 | Loss 0.9631 | Val Accuracy 0.7133 | Test Accuracy 0.7014
+Run time for epoch# 140: 0.30s
+Epoch 00141 | Loss 0.9620 | Val Accuracy 0.7098 | Test Accuracy 0.6992
+Run time for epoch# 141: 0.30s
+Epoch 00142 | Loss 0.9497 | Val Accuracy 0.7078 | Test Accuracy 0.6978
+Run time for epoch# 142: 0.30s
+Epoch 00143 | Loss 0.9568 | Val Accuracy 0.7101 | Test Accuracy 0.7037
+Run time for epoch# 143: 0.30s
+Epoch 00144 | Loss 0.9555 | Val Accuracy 0.7100 | Test Accuracy 0.6982
+Run time for epoch# 144: 0.30s
+Epoch 00145 | Loss 0.9620 | Val Accuracy 0.7113 | Test Accuracy 0.7054
+Run time for epoch# 145: 0.30s
+Epoch 00146 | Loss 0.9584 | Val Accuracy 0.7103 | Test Accuracy 0.6994
+Run time for epoch# 146: 0.30s
+Epoch 00147 | Loss 0.9640 | Val Accuracy 0.7119 | Test Accuracy 0.7046
+Run time for epoch# 147: 0.30s
+Epoch 00148 | Loss 0.9547 | Val Accuracy 0.7104 | Test Accuracy 0.6995
+Run time for epoch# 148: 0.30s
+Epoch 00149 | Loss 0.9572 | Val Accuracy 0.7050 | Test Accuracy 0.6957
+Run time for epoch# 149: 0.30s
+Epoch 00150 | Loss 0.9555 | Val Accuracy 0.7087 | Test Accuracy 0.6917
+Run time for epoch# 150: 0.31s
+Epoch 00151 | Loss 0.9527 | Val Accuracy 0.7113 | Test Accuracy 0.6993
+Run time for epoch# 151: 0.30s
+Epoch 00152 | Loss 0.9607 | Val Accuracy 0.7136 | Test Accuracy 0.7047
+Run time for epoch# 152: 0.30s
+Epoch 00153 | Loss 0.9557 | Val Accuracy 0.7074 | Test Accuracy 0.6993
+Run time for epoch# 153: 0.30s
+Epoch 00154 | Loss 0.9554 | Val Accuracy 0.7100 | Test Accuracy 0.7054
+Run time for epoch# 154: 0.30s
+Epoch 00155 | Loss 0.9533 | Val Accuracy 0.7092 | Test Accuracy 0.7014
+Run time for epoch# 155: 0.30s
+Epoch 00156 | Loss 0.9496 | Val Accuracy 0.7108 | Test Accuracy 0.7006
+Run time for epoch# 156: 0.31s
+Epoch 00157 | Loss 0.9544 | Val Accuracy 0.7093 | Test Accuracy 0.6945
+Run time for epoch# 157: 0.30s
+Epoch 00158 | Loss 0.9549 | Val Accuracy 0.7106 | Test Accuracy 0.6962
+Run time for epoch# 158: 0.30s
+Epoch 00159 | Loss 0.9590 | Val Accuracy 0.7120 | Test Accuracy 0.6972
+Run time for epoch# 159: 0.30s
+Epoch 00160 | Loss 0.9518 | Val Accuracy 0.7097 | Test Accuracy 0.7000
+Run time for epoch# 160: 0.30s
+Epoch 00161 | Loss 0.9478 | Val Accuracy 0.7100 | Test Accuracy 0.6975
+Run time for epoch# 161: 0.31s
+Epoch 00162 | Loss 0.9523 | Val Accuracy 0.7072 | Test Accuracy 0.6921
+Run time for epoch# 162: 0.30s
+Epoch 00163 | Loss 0.9500 | Val Accuracy 0.7064 | Test Accuracy 0.6868
+Run time for epoch# 163: 0.31s
+Epoch 00164 | Loss 0.9587 | Val Accuracy 0.7048 | Test Accuracy 0.6933
+Run time for epoch# 164: 0.30s
+Epoch 00165 | Loss 0.9517 | Val Accuracy 0.7090 | Test Accuracy 0.7006
+Run time for epoch# 165: 0.30s
+Epoch 00166 | Loss 0.9583 | Val Accuracy 0.7111 | Test Accuracy 0.7017
+Run time for epoch# 166: 0.30s
+Epoch 00167 | Loss 0.9547 | Val Accuracy 0.7030 | Test Accuracy 0.6868
+Run time for epoch# 167: 0.30s
+Epoch 00168 | Loss 0.9588 | Val Accuracy 0.7113 | Test Accuracy 0.7019
+Run time for epoch# 168: 0.30s
+Epoch 00169 | Loss 0.9549 | Val Accuracy 0.7075 | Test Accuracy 0.6970
+Run time for epoch# 169: 0.30s
+Epoch 00170 | Loss 0.9495 | Val Accuracy 0.7127 | Test Accuracy 0.7052
+Run time for epoch# 170: 0.30s
+Epoch 00171 | Loss 0.9513 | Val Accuracy 0.7071 | Test Accuracy 0.6937
+Run time for epoch# 171: 0.30s
+Epoch 00172 | Loss 0.9537 | Val Accuracy 0.7028 | Test Accuracy 0.6878
+Run time for epoch# 172: 0.31s
+Epoch 00173 | Loss 0.9559 | Val Accuracy 0.7124 | Test Accuracy 0.6950
+Run time for epoch# 173: 0.30s
+Epoch 00174 | Loss 0.9482 | Val Accuracy 0.7096 | Test Accuracy 0.7058
+Run time for epoch# 174: 0.30s
+Epoch 00175 | Loss 0.9494 | Val Accuracy 0.7098 | Test Accuracy 0.6972
+Run time for epoch# 175: 0.30s
+Epoch 00176 | Loss 0.9546 | Val Accuracy 0.7041 | Test Accuracy 0.6833
+Run time for epoch# 176: 0.30s
+Epoch 00177 | Loss 0.9534 | Val Accuracy 0.7119 | Test Accuracy 0.7043
+Run time for epoch# 177: 0.31s
+Epoch 00178 | Loss 0.9584 | Val Accuracy 0.7071 | Test Accuracy 0.6913
+Run time for epoch# 178: 0.30s
+Epoch 00179 | Loss 0.9471 | Val Accuracy 0.7099 | Test Accuracy 0.7050
+Run time for epoch# 179: 0.30s
+Epoch 00180 | Loss 0.9507 | Val Accuracy 0.7077 | Test Accuracy 0.6933
+Run time for epoch# 180: 0.30s
+Epoch 00181 | Loss 0.9614 | Val Accuracy 0.7071 | Test Accuracy 0.6945
+Run time for epoch# 181: 0.30s
+Epoch 00182 | Loss 0.9552 | Val Accuracy 0.7116 | Test Accuracy 0.7002
+Run time for epoch# 182: 0.30s
+Epoch 00183 | Loss 0.9520 | Val Accuracy 0.7086 | Test Accuracy 0.6952
+Run time for epoch# 183: 0.30s
+Epoch 00184 | Loss 0.9487 | Val Accuracy 0.7075 | Test Accuracy 0.6933
+Run time for epoch# 184: 0.30s
+Epoch 00185 | Loss 0.9473 | Val Accuracy 0.7106 | Test Accuracy 0.6975
+Run time for epoch# 185: 0.30s
+Epoch 00186 | Loss 0.9508 | Val Accuracy 0.7076 | Test Accuracy 0.6949
+Run time for epoch# 186: 0.30s
+Epoch 00187 | Loss 0.9501 | Val Accuracy 0.7103 | Test Accuracy 0.7011
+Run time for epoch# 187: 0.31s
+Epoch 00188 | Loss 0.9521 | Val Accuracy 0.7024 | Test Accuracy 0.6818
+Run time for epoch# 188: 0.31s
+Epoch 00189 | Loss 0.9491 | Val Accuracy 0.7067 | Test Accuracy 0.6937
+Run time for epoch# 189: 0.30s
+Epoch 00190 | Loss 0.9473 | Val Accuracy 0.7114 | Test Accuracy 0.7026
+Run time for epoch# 190: 0.30s
+Epoch 00191 | Loss 0.9496 | Val Accuracy 0.7077 | Test Accuracy 0.6948
+Run time for epoch# 191: 0.30s
+Epoch 00192 | Loss 0.9494 | Val Accuracy 0.7143 | Test Accuracy 0.7047
+Run time for epoch# 192: 0.31s
+Epoch 00193 | Loss 0.9525 | Val Accuracy 0.7112 | Test Accuracy 0.6998
+Run time for epoch# 193: 0.30s
+Epoch 00194 | Loss 0.9444 | Val Accuracy 0.7107 | Test Accuracy 0.6958
+Run time for epoch# 194: 0.31s
+Epoch 00195 | Loss 0.9493 | Val Accuracy 0.7113 | Test Accuracy 0.7029
+Run time for epoch# 195: 0.30s
+Epoch 00196 | Loss 0.9414 | Val Accuracy 0.7116 | Test Accuracy 0.7023
+Run time for epoch# 196: 0.31s
+Epoch 00197 | Loss 0.9503 | Val Accuracy 0.7079 | Test Accuracy 0.6943
+Run time for epoch# 197: 0.30s
+Epoch 00198 | Loss 0.9503 | Val Accuracy 0.7112 | Test Accuracy 0.7009
+Run time for epoch# 198: 0.30s
+Epoch 00199 | Loss 0.9480 | Val Accuracy 0.7066 | Test Accuracy 0.6887
+Run time for epoch# 199: 0.30s
+Epoch 00200 | Loss 0.9516 | Val Accuracy 0.7070 | Test Accuracy 0.6959
+Run time for epoch# 200: 0.30s
+Epoch 00201 | Loss 0.9450 | Val Accuracy 0.7034 | Test Accuracy 0.6873
+Run time for epoch# 201: 0.30s
+Epoch 00202 | Loss 0.9485 | Val Accuracy 0.7124 | Test Accuracy 0.7000
+Run time for epoch# 202: 0.31s
+Epoch 00203 | Loss 0.9436 | Val Accuracy 0.7095 | Test Accuracy 0.7064
+Run time for epoch# 203: 0.30s
+Epoch 00204 | Loss 0.9459 | Val Accuracy 0.7075 | Test Accuracy 0.6951
+Run time for epoch# 204: 0.30s
+Epoch 00205 | Loss 0.9422 | Val Accuracy 0.7099 | Test Accuracy 0.7018
+Run time for epoch# 205: 0.30s
+Epoch 00206 | Loss 0.9478 | Val Accuracy 0.7082 | Test Accuracy 0.6914
+Run time for epoch# 206: 0.30s
+Epoch 00207 | Loss 0.9438 | Val Accuracy 0.7123 | Test Accuracy 0.7003
+Run time for epoch# 207: 0.30s
+Epoch 00208 | Loss 0.9432 | Val Accuracy 0.7082 | Test Accuracy 0.7067
+Run time for epoch# 208: 0.30s
+Epoch 00209 | Loss 0.9549 | Val Accuracy 0.7132 | Test Accuracy 0.7069
+Run time for epoch# 209: 0.30s
+Epoch 00210 | Loss 0.9437 | Val Accuracy 0.7135 | Test Accuracy 0.7065
+Run time for epoch# 210: 0.30s
+Epoch 00211 | Loss 0.9456 | Val Accuracy 0.7071 | Test Accuracy 0.6905
+Run time for epoch# 211: 0.30s
+Epoch 00212 | Loss 0.9456 | Val Accuracy 0.7091 | Test Accuracy 0.6997
+Run time for epoch# 212: 0.30s
+Epoch 00213 | Loss 0.9443 | Val Accuracy 0.7040 | Test Accuracy 0.6876
+Run time for epoch# 213: 0.30s
+Epoch 00214 | Loss 0.9466 | Val Accuracy 0.7085 | Test Accuracy 0.7010
+Run time for epoch# 214: 0.30s
+Epoch 00215 | Loss 0.9429 | Val Accuracy 0.7068 | Test Accuracy 0.6877
+Run time for epoch# 215: 0.30s
+Epoch 00216 | Loss 0.9456 | Val Accuracy 0.7076 | Test Accuracy 0.7025
+Run time for epoch# 216: 0.30s
+Epoch 00217 | Loss 0.9456 | Val Accuracy 0.7012 | Test Accuracy 0.6872
+Run time for epoch# 217: 0.30s
+Epoch 00218 | Loss 0.9482 | Val Accuracy 0.7092 | Test Accuracy 0.6990
+Run time for epoch# 218: 0.30s
+Epoch 00219 | Loss 0.9496 | Val Accuracy 0.7117 | Test Accuracy 0.7059
+Run time for epoch# 219: 0.30s
+Epoch 00220 | Loss 0.9510 | Val Accuracy 0.7127 | Test Accuracy 0.7033
+Run time for epoch# 220: 0.30s
+Epoch 00221 | Loss 0.9444 | Val Accuracy 0.7090 | Test Accuracy 0.7024
+Run time for epoch# 221: 0.30s
+Epoch 00222 | Loss 0.9457 | Val Accuracy 0.7102 | Test Accuracy 0.6984
+Run time for epoch# 222: 0.30s
+Epoch 00223 | Loss 0.9465 | Val Accuracy 0.7031 | Test Accuracy 0.6876
+Run time for epoch# 223: 0.30s
+Epoch 00224 | Loss 0.9458 | Val Accuracy 0.7090 | Test Accuracy 0.6969
+Run time for epoch# 224: 0.31s
+Epoch 00225 | Loss 0.9466 | Val Accuracy 0.7105 | Test Accuracy 0.6995
+Run time for epoch# 225: 0.31s
+Epoch 00226 | Loss 0.9448 | Val Accuracy 0.7112 | Test Accuracy 0.6990
+Run time for epoch# 226: 0.31s
+Epoch 00227 | Loss 0.9537 | Val Accuracy 0.7085 | Test Accuracy 0.6963
+Run time for epoch# 227: 0.31s
+Epoch 00228 | Loss 0.9445 | Val Accuracy 0.7088 | Test Accuracy 0.6904
+Run time for epoch# 228: 0.30s
+Epoch 00229 | Loss 0.9363 | Val Accuracy 0.7117 | Test Accuracy 0.7036
+Run time for epoch# 229: 0.30s
+Epoch 00230 | Loss 0.9434 | Val Accuracy 0.7095 | Test Accuracy 0.6969
+Run time for epoch# 230: 0.30s
+Epoch 00231 | Loss 0.9417 | Val Accuracy 0.7102 | Test Accuracy 0.7076
+Run time for epoch# 231: 0.30s
+Epoch 00232 | Loss 0.9391 | Val Accuracy 0.7094 | Test Accuracy 0.6985
+Run time for epoch# 232: 0.30s
+Epoch 00233 | Loss 0.9451 | Val Accuracy 0.7045 | Test Accuracy 0.6916
+Run time for epoch# 233: 0.31s
+Epoch 00234 | Loss 0.9411 | Val Accuracy 0.7024 | Test Accuracy 0.6858
+Run time for epoch# 234: 0.30s
+Epoch 00235 | Loss 0.9424 | Val Accuracy 0.7089 | Test Accuracy 0.6989
+Run time for epoch# 235: 0.30s
+Epoch 00236 | Loss 0.9443 | Val Accuracy 0.7130 | Test Accuracy 0.7040
+Run time for epoch# 236: 0.30s
+Epoch 00237 | Loss 0.9466 | Val Accuracy 0.7060 | Test Accuracy 0.6906
+Run time for epoch# 237: 0.30s
+Epoch 00238 | Loss 0.9523 | Val Accuracy 0.7052 | Test Accuracy 0.6921
+Run time for epoch# 238: 0.30s
+Epoch 00239 | Loss 0.9441 | Val Accuracy 0.7110 | Test Accuracy 0.6990
+Run time for epoch# 239: 0.30s
+Epoch 00240 | Loss 0.9461 | Val Accuracy 0.7131 | Test Accuracy 0.7029
+Run time for epoch# 240: 0.30s
+Epoch 00241 | Loss 0.9507 | Val Accuracy 0.7083 | Test Accuracy 0.6948
+Run time for epoch# 241: 0.30s
+Epoch 00242 | Loss 0.9461 | Val Accuracy 0.7131 | Test Accuracy 0.6965
+Run time for epoch# 242: 0.30s
+Epoch 00243 | Loss 0.9393 | Val Accuracy 0.7123 | Test Accuracy 0.7029
+Run time for epoch# 243: 0.30s
+Epoch 00244 | Loss 0.9471 | Val Accuracy 0.7071 | Test Accuracy 0.6927
+Run time for epoch# 244: 0.30s
+Epoch 00245 | Loss 0.9452 | Val Accuracy 0.7135 | Test Accuracy 0.7063
+Run time for epoch# 245: 0.30s
+Epoch 00246 | Loss 0.9436 | Val Accuracy 0.7057 | Test Accuracy 0.6886
+Run time for epoch# 246: 0.30s
+Epoch 00247 | Loss 0.9550 | Val Accuracy 0.7143 | Test Accuracy 0.7060
+Run time for epoch# 247: 0.30s
+Epoch 00248 | Loss 0.9428 | Val Accuracy 0.7126 | Test Accuracy 0.7067
+Run time for epoch# 248: 0.30s
+Epoch 00249 | Loss 0.9406 | Val Accuracy 0.7109 | Test Accuracy 0.7037
+Run time for epoch# 249: 0.31s
+Epoch 00250 | Loss 0.9419 | Val Accuracy 0.7065 | Test Accuracy 0.6925
+Run time for epoch# 250: 0.30s
+Epoch 00251 | Loss 0.9428 | Val Accuracy 0.7074 | Test Accuracy 0.7025
+Run time for epoch# 251: 0.30s
+Epoch 00252 | Loss 0.9462 | Val Accuracy 0.7065 | Test Accuracy 0.6926
+Run time for epoch# 252: 0.30s
+Epoch 00253 | Loss 0.9441 | Val Accuracy 0.7037 | Test Accuracy 0.6856
+Run time for epoch# 253: 0.30s
+Epoch 00254 | Loss 0.9402 | Val Accuracy 0.7109 | Test Accuracy 0.7025
+Run time for epoch# 254: 0.30s
+Epoch 00255 | Loss 0.9461 | Val Accuracy 0.7093 | Test Accuracy 0.6973
+Run time for epoch# 255: 0.31s
+Epoch 00256 | Loss 0.9383 | Val Accuracy 0.7098 | Test Accuracy 0.6965
+Run time for epoch# 256: 0.30s
+Epoch 00257 | Loss 0.9398 | Val Accuracy 0.7101 | Test Accuracy 0.7004
+Run time for epoch# 257: 0.30s
+Epoch 00258 | Loss 0.9416 | Val Accuracy 0.7083 | Test Accuracy 0.6961
+Run time for epoch# 258: 0.31s
+Epoch 00259 | Loss 0.9456 | Val Accuracy 0.7056 | Test Accuracy 0.6893
+Run time for epoch# 259: 0.30s
+Epoch 00260 | Loss 0.9406 | Val Accuracy 0.7124 | Test Accuracy 0.7028
+Run time for epoch# 260: 0.30s
+Epoch 00261 | Loss 0.9457 | Val Accuracy 0.7142 | Test Accuracy 0.7012
+Run time for epoch# 261: 0.31s
+Epoch 00262 | Loss 0.9412 | Val Accuracy 0.7099 | Test Accuracy 0.7009
+Run time for epoch# 262: 0.30s
+Epoch 00263 | Loss 0.9400 | Val Accuracy 0.7114 | Test Accuracy 0.6965
+Run time for epoch# 263: 0.30s
+Epoch 00264 | Loss 0.9401 | Val Accuracy 0.7136 | Test Accuracy 0.7029
+Run time for epoch# 264: 0.30s
+Epoch 00265 | Loss 0.9400 | Val Accuracy 0.7087 | Test Accuracy 0.6998
+Run time for epoch# 265: 0.30s
+Epoch 00266 | Loss 0.9425 | Val Accuracy 0.7138 | Test Accuracy 0.7035
+Run time for epoch# 266: 0.30s
+Epoch 00267 | Loss 0.9440 | Val Accuracy 0.7128 | Test Accuracy 0.7062
+Run time for epoch# 267: 0.30s
+Epoch 00268 | Loss 0.9370 | Val Accuracy 0.7128 | Test Accuracy 0.7028
+Run time for epoch# 268: 0.30s
+Epoch 00269 | Loss 0.9396 | Val Accuracy 0.7127 | Test Accuracy 0.7017
+Run time for epoch# 269: 0.30s
+Epoch 00270 | Loss 0.9421 | Val Accuracy 0.7024 | Test Accuracy 0.6867
+Run time for epoch# 270: 0.30s
+Epoch 00271 | Loss 0.9374 | Val Accuracy 0.7068 | Test Accuracy 0.6885
+Run time for epoch# 271: 0.30s
+Epoch 00272 | Loss 0.9432 | Val Accuracy 0.7106 | Test Accuracy 0.6957
+Run time for epoch# 272: 0.30s
+Epoch 00273 | Loss 0.9410 | Val Accuracy 0.7096 | Test Accuracy 0.6934
+Run time for epoch# 273: 0.30s
+Epoch 00274 | Loss 0.9420 | Val Accuracy 0.7040 | Test Accuracy 0.6851
+Run time for epoch# 274: 0.30s
+Epoch 00275 | Loss 0.9389 | Val Accuracy 0.7074 | Test Accuracy 0.6910
+Run time for epoch# 275: 0.30s
+Epoch 00276 | Loss 0.9407 | Val Accuracy 0.7041 | Test Accuracy 0.6863
+Run time for epoch# 276: 0.30s
+Epoch 00277 | Loss 0.9319 | Val Accuracy 0.7082 | Test Accuracy 0.6983
+Run time for epoch# 277: 0.30s
+Epoch 00278 | Loss 0.9465 | Val Accuracy 0.7086 | Test Accuracy 0.6947
+Run time for epoch# 278: 0.30s
+Epoch 00279 | Loss 0.9428 | Val Accuracy 0.7110 | Test Accuracy 0.7019
+Run time for epoch# 279: 0.30s
+Epoch 00280 | Loss 0.9415 | Val Accuracy 0.7084 | Test Accuracy 0.6887
+Run time for epoch# 280: 0.30s
+Epoch 00281 | Loss 0.9388 | Val Accuracy 0.7101 | Test Accuracy 0.6984
+Run time for epoch# 281: 0.30s
+n_50_epoch, n_50_accuracy 282 0.7075548768043518
+Epoch 00282 | Loss 0.9436 | Val Accuracy 0.7090 | Test Accuracy 0.6895
+Run time for epoch# 282: 0.30s
+Epoch 00283 | Loss 0.9425 | Val Accuracy 0.7124 | Test Accuracy 0.7021
+Run time for epoch# 283: 0.30s
+Epoch 00284 | Loss 0.9417 | Val Accuracy 0.7101 | Test Accuracy 0.6961
+Run time for epoch# 284: 0.30s
+Epoch 00285 | Loss 0.9394 | Val Accuracy 0.7090 | Test Accuracy 0.6977
+Run time for epoch# 285: 0.31s
+Epoch 00286 | Loss 0.9412 | Val Accuracy 0.7093 | Test Accuracy 0.7032
+Run time for epoch# 286: 0.30s
+Epoch 00287 | Loss 0.9457 | Val Accuracy 0.7069 | Test Accuracy 0.6914
+Run time for epoch# 287: 0.30s
+Epoch 00288 | Loss 0.9367 | Val Accuracy 0.7120 | Test Accuracy 0.7000
+Run time for epoch# 288: 0.30s
+Epoch 00289 | Loss 0.9360 | Val Accuracy 0.7057 | Test Accuracy 0.6901
+Run time for epoch# 289: 0.31s
+Epoch 00290 | Loss 0.9364 | Val Accuracy 0.7093 | Test Accuracy 0.6980
+Run time for epoch# 290: 0.30s
+Epoch 00291 | Loss 0.9451 | Val Accuracy 0.7089 | Test Accuracy 0.6989
+Run time for epoch# 291: 0.30s
+Epoch 00292 | Loss 0.9492 | Val Accuracy 0.7144 | Test Accuracy 0.7075
+Run time for epoch# 292: 0.30s
+Epoch 00293 | Loss 0.9330 | Val Accuracy 0.7082 | Test Accuracy 0.6973
+Run time for epoch# 293: 0.30s
+Epoch 00294 | Loss 0.9385 | Val Accuracy 0.7060 | Test Accuracy 0.6947
+Run time for epoch# 294: 0.31s
+Epoch 00295 | Loss 0.9387 | Val Accuracy 0.7152 | Test Accuracy 0.7039
+Run time for epoch# 295: 0.30s
+Epoch 00296 | Loss 0.9375 | Val Accuracy 0.7109 | Test Accuracy 0.7031
+Run time for epoch# 296: 0.30s
+Epoch 00297 | Loss 0.9319 | Val Accuracy 0.7130 | Test Accuracy 0.7103
+Run time for epoch# 297: 0.31s
+Epoch 00298 | Loss 0.9391 | Val Accuracy 0.7124 | Test Accuracy 0.7004
+Run time for epoch# 298: 0.30s
+Epoch 00299 | Loss 0.9355 | Val Accuracy 0.7074 | Test Accuracy 0.6929
+Run time for epoch# 299: 0.30s
+Epoch 00300 | Loss 0.9389 | Val Accuracy 0.7069 | Test Accuracy 0.6926
+Run time for epoch# 300: 0.30s
+Epoch 00301 | Loss 0.9385 | Val Accuracy 0.7129 | Test Accuracy 0.7025
+Run time for epoch# 301: 0.30s
+Epoch 00302 | Loss 0.9403 | Val Accuracy 0.7060 | Test Accuracy 0.6873
+Run time for epoch# 302: 0.30s
+Epoch 00303 | Loss 0.9432 | Val Accuracy 0.7110 | Test Accuracy 0.6993
+Run time for epoch# 303: 0.30s
+Epoch 00304 | Loss 0.9384 | Val Accuracy 0.7090 | Test Accuracy 0.6936
+Run time for epoch# 304: 0.30s
+Epoch 00305 | Loss 0.9404 | Val Accuracy 0.7085 | Test Accuracy 0.6943
+Run time for epoch# 305: 0.30s
+Epoch 00306 | Loss 0.9367 | Val Accuracy 0.7097 | Test Accuracy 0.6924
+Run time for epoch# 306: 0.30s
+Epoch 00307 | Loss 0.9313 | Val Accuracy 0.7112 | Test Accuracy 0.7064
+Run time for epoch# 307: 0.30s
+Epoch 00308 | Loss 0.9385 | Val Accuracy 0.7166 | Test Accuracy 0.7061
+Run time for epoch# 308: 0.30s
+Epoch 00309 | Loss 0.9359 | Val Accuracy 0.7124 | Test Accuracy 0.7065
+Run time for epoch# 309: 0.30s
+Epoch 00310 | Loss 0.9340 | Val Accuracy 0.7133 | Test Accuracy 0.7019
+Run time for epoch# 310: 0.30s
+Epoch 00311 | Loss 0.9420 | Val Accuracy 0.7133 | Test Accuracy 0.7042
+Run time for epoch# 311: 0.30s
+Epoch 00312 | Loss 0.9355 | Val Accuracy 0.7106 | Test Accuracy 0.6950
+Run time for epoch# 312: 0.30s
+Epoch 00313 | Loss 0.9404 | Val Accuracy 0.7113 | Test Accuracy 0.6978
+Run time for epoch# 313: 0.30s
+Epoch 00314 | Loss 0.9391 | Val Accuracy 0.7106 | Test Accuracy 0.6993
+Run time for epoch# 314: 0.30s
+Epoch 00315 | Loss 0.9364 | Val Accuracy 0.7073 | Test Accuracy 0.6878
+Run time for epoch# 315: 0.30s
+Epoch 00316 | Loss 0.9427 | Val Accuracy 0.7077 | Test Accuracy 0.6963
+Run time for epoch# 316: 0.30s
+Epoch 00317 | Loss 0.9405 | Val Accuracy 0.7052 | Test Accuracy 0.6903
+Run time for epoch# 317: 0.30s
+Epoch 00318 | Loss 0.9386 | Val Accuracy 0.7060 | Test Accuracy 0.6930
+Run time for epoch# 318: 0.30s
+Epoch 00319 | Loss 0.9356 | Val Accuracy 0.7014 | Test Accuracy 0.6809
+Run time for epoch# 319: 0.30s
+Epoch 00320 | Loss 0.9310 | Val Accuracy 0.7099 | Test Accuracy 0.7009
+Run time for epoch# 320: 0.30s
+Epoch 00321 | Loss 0.9337 | Val Accuracy 0.7092 | Test Accuracy 0.6930
+Run time for epoch# 321: 0.30s
+Epoch 00322 | Loss 0.9379 | Val Accuracy 0.7137 | Test Accuracy 0.7005
+Run time for epoch# 322: 0.30s
+Epoch 00323 | Loss 0.9387 | Val Accuracy 0.7086 | Test Accuracy 0.7022
+Run time for epoch# 323: 0.30s
+Epoch 00324 | Loss 0.9466 | Val Accuracy 0.7097 | Test Accuracy 0.6977
+Run time for epoch# 324: 0.30s
+Epoch 00325 | Loss 0.9359 | Val Accuracy 0.7104 | Test Accuracy 0.6946
+Run time for epoch# 325: 0.30s
+Epoch 00326 | Loss 0.9373 | Val Accuracy 0.7099 | Test Accuracy 0.6985
+Run time for epoch# 326: 0.30s
+Epoch 00327 | Loss 0.9368 | Val Accuracy 0.7103 | Test Accuracy 0.6954
+Run time for epoch# 327: 0.31s
+Epoch 00328 | Loss 0.9277 | Val Accuracy 0.7123 | Test Accuracy 0.7030
+Run time for epoch# 328: 0.30s
+Epoch 00329 | Loss 0.9315 | Val Accuracy 0.7075 | Test Accuracy 0.6873
+Run time for epoch# 329: 0.30s
+Epoch 00330 | Loss 0.9317 | Val Accuracy 0.7119 | Test Accuracy 0.7059
+Run time for epoch# 330: 0.30s
+Epoch 00331 | Loss 0.9456 | Val Accuracy 0.7157 | Test Accuracy 0.7074
+Run time for epoch# 331: 0.30s
+Epoch 00332 | Loss 0.9346 | Val Accuracy 0.7087 | Test Accuracy 0.6970
+Run time for epoch# 332: 0.30s
+Epoch 00333 | Loss 0.9327 | Val Accuracy 0.7100 | Test Accuracy 0.6965
+Run time for epoch# 333: 0.30s
+Epoch 00334 | Loss 0.9383 | Val Accuracy 0.7112 | Test Accuracy 0.6976
+Run time for epoch# 334: 0.30s
+Epoch 00335 | Loss 0.9312 | Val Accuracy 0.7151 | Test Accuracy 0.7119
+Run time for epoch# 335: 0.30s
+Epoch 00336 | Loss 0.9390 | Val Accuracy 0.7007 | Test Accuracy 0.6779
+Run time for epoch# 336: 0.30s
+Epoch 00337 | Loss 0.9363 | Val Accuracy 0.7141 | Test Accuracy 0.7071
+Run time for epoch# 337: 0.30s
+Epoch 00338 | Loss 0.9386 | Val Accuracy 0.7115 | Test Accuracy 0.6955
+Run time for epoch# 338: 0.30s
+Epoch 00339 | Loss 0.9439 | Val Accuracy 0.7148 | Test Accuracy 0.7046
+Run time for epoch# 339: 0.30s
+Epoch 00340 | Loss 0.9349 | Val Accuracy 0.7148 | Test Accuracy 0.7081
+Run time for epoch# 340: 0.30s
+Epoch 00341 | Loss 0.9337 | Val Accuracy 0.7131 | Test Accuracy 0.7053
+Run time for epoch# 341: 0.30s
+Epoch 00342 | Loss 0.9362 | Val Accuracy 0.7087 | Test Accuracy 0.7004
+Run time for epoch# 342: 0.30s
+Epoch 00343 | Loss 0.9426 | Val Accuracy 0.7095 | Test Accuracy 0.7015
+Run time for epoch# 343: 0.30s
+Epoch 00344 | Loss 0.9353 | Val Accuracy 0.7099 | Test Accuracy 0.6971
+Run time for epoch# 344: 0.30s
+Epoch 00345 | Loss 0.9340 | Val Accuracy 0.7081 | Test Accuracy 0.6950
+Run time for epoch# 345: 0.30s
+Epoch 00346 | Loss 0.9398 | Val Accuracy 0.7070 | Test Accuracy 0.6972
+Run time for epoch# 346: 0.30s
+Epoch 00347 | Loss 0.9336 | Val Accuracy 0.7110 | Test Accuracy 0.6971
+Run time for epoch# 347: 0.30s
+Epoch 00348 | Loss 0.9359 | Val Accuracy 0.7052 | Test Accuracy 0.6891
+Run time for epoch# 348: 0.30s
+Epoch 00349 | Loss 0.9415 | Val Accuracy 0.7065 | Test Accuracy 0.6897
+Run time for epoch# 349: 0.30s
+Epoch 00350 | Loss 0.9340 | Val Accuracy 0.7138 | Test Accuracy 0.7001
+Run time for epoch# 350: 0.30s
+Epoch 00351 | Loss 0.9373 | Val Accuracy 0.7117 | Test Accuracy 0.7046
+Run time for epoch# 351: 0.30s
+Epoch 00352 | Loss 0.9374 | Val Accuracy 0.7011 | Test Accuracy 0.6797
+Run time for epoch# 352: 0.31s
+Epoch 00353 | Loss 0.9380 | Val Accuracy 0.7029 | Test Accuracy 0.6827
+Run time for epoch# 353: 0.31s
+Epoch 00354 | Loss 0.9344 | Val Accuracy 0.7000 | Test Accuracy 0.6813
+Run time for epoch# 354: 0.30s
+Epoch 00355 | Loss 0.9343 | Val Accuracy 0.7116 | Test Accuracy 0.6998
+Run time for epoch# 355: 0.30s
+Epoch 00356 | Loss 0.9356 | Val Accuracy 0.7103 | Test Accuracy 0.7044
+Run time for epoch# 356: 0.31s
+Epoch 00357 | Loss 0.9365 | Val Accuracy 0.7117 | Test Accuracy 0.7036
+Run time for epoch# 357: 0.30s
+Epoch 00358 | Loss 0.9401 | Val Accuracy 0.7112 | Test Accuracy 0.6998
+Run time for epoch# 358: 0.30s
+Epoch 00359 | Loss 0.9371 | Val Accuracy 0.7086 | Test Accuracy 0.7011
+Run time for epoch# 359: 0.31s
+Epoch 00360 | Loss 0.9375 | Val Accuracy 0.7079 | Test Accuracy 0.6922
+Run time for epoch# 360: 0.31s
+Epoch 00361 | Loss 0.9317 | Val Accuracy 0.7090 | Test Accuracy 0.6940
+Run time for epoch# 361: 0.30s
+Epoch 00362 | Loss 0.9289 | Val Accuracy 0.7107 | Test Accuracy 0.6968
+Run time for epoch# 362: 0.30s
+Epoch 00363 | Loss 0.9301 | Val Accuracy 0.7136 | Test Accuracy 0.7035
+Run time for epoch# 363: 0.31s
+Epoch 00364 | Loss 0.9350 | Val Accuracy 0.7103 | Test Accuracy 0.6949
+Run time for epoch# 364: 0.30s
+Epoch 00365 | Loss 0.9258 | Val Accuracy 0.7141 | Test Accuracy 0.7086
+Run time for epoch# 365: 0.30s
+Epoch 00366 | Loss 0.9383 | Val Accuracy 0.7141 | Test Accuracy 0.7047
+Run time for epoch# 366: 0.30s
+Epoch 00367 | Loss 0.9284 | Val Accuracy 0.7089 | Test Accuracy 0.6946
+Run time for epoch# 367: 0.30s
+Epoch 00368 | Loss 0.9387 | Val Accuracy 0.7125 | Test Accuracy 0.7007
+Run time for epoch# 368: 0.30s
+Epoch 00369 | Loss 0.9312 | Val Accuracy 0.7134 | Test Accuracy 0.7074
+Run time for epoch# 369: 0.30s
+Epoch 00370 | Loss 0.9325 | Val Accuracy 0.7101 | Test Accuracy 0.6964
+Run time for epoch# 370: 0.30s
+Epoch 00371 | Loss 0.9403 | Val Accuracy 0.7064 | Test Accuracy 0.6919
+Run time for epoch# 371: 0.30s
+Epoch 00372 | Loss 0.9312 | Val Accuracy 0.7082 | Test Accuracy 0.6941
+Run time for epoch# 372: 0.30s
+Epoch 00373 | Loss 0.9372 | Val Accuracy 0.7113 | Test Accuracy 0.6998
+Run time for epoch# 373: 0.30s
+Epoch 00374 | Loss 0.9379 | Val Accuracy 0.7137 | Test Accuracy 0.7096
+Run time for epoch# 374: 0.30s
+Epoch 00375 | Loss 0.9341 | Val Accuracy 0.7138 | Test Accuracy 0.7043
+Run time for epoch# 375: 0.31s
+Epoch 00376 | Loss 0.9372 | Val Accuracy 0.7095 | Test Accuracy 0.6959
+Run time for epoch# 376: 0.30s
+Epoch 00377 | Loss 0.9325 | Val Accuracy 0.7109 | Test Accuracy 0.7020
+Run time for epoch# 377: 0.30s
+Epoch 00378 | Loss 0.9335 | Val Accuracy 0.7076 | Test Accuracy 0.6932
+Run time for epoch# 378: 0.30s
+Epoch 00379 | Loss 0.9331 | Val Accuracy 0.7116 | Test Accuracy 0.6976
+Run time for epoch# 379: 0.31s
+Epoch 00380 | Loss 0.9379 | Val Accuracy 0.7107 | Test Accuracy 0.7037
+Run time for epoch# 380: 0.30s
+Epoch 00381 | Loss 0.9352 | Val Accuracy 0.7094 | Test Accuracy 0.6961
+Run time for epoch# 381: 0.30s
+Epoch 00382 | Loss 0.9329 | Val Accuracy 0.7119 | Test Accuracy 0.7019
+Run time for epoch# 382: 0.30s
+Epoch 00383 | Loss 0.9367 | Val Accuracy 0.7097 | Test Accuracy 0.6948
+Run time for epoch# 383: 0.31s
+Epoch 00384 | Loss 0.9410 | Val Accuracy 0.7083 | Test Accuracy 0.6916
+Run time for epoch# 384: 0.31s
+Epoch 00385 | Loss 0.9322 | Val Accuracy 0.7112 | Test Accuracy 0.6948
+Run time for epoch# 385: 0.30s
+Epoch 00386 | Loss 0.9382 | Val Accuracy 0.7085 | Test Accuracy 0.6953
+Run time for epoch# 386: 0.30s
+Epoch 00387 | Loss 0.9362 | Val Accuracy 0.7119 | Test Accuracy 0.7050
+Run time for epoch# 387: 0.30s
+Epoch 00388 | Loss 0.9370 | Val Accuracy 0.7131 | Test Accuracy 0.7055
+Run time for epoch# 388: 0.30s
+Epoch 00389 | Loss 0.9370 | Val Accuracy 0.7087 | Test Accuracy 0.6943
+Run time for epoch# 389: 0.30s
+Epoch 00390 | Loss 0.9317 | Val Accuracy 0.7128 | Test Accuracy 0.7013
+Run time for epoch# 390: 0.31s
+Epoch 00391 | Loss 0.9347 | Val Accuracy 0.7119 | Test Accuracy 0.7029
+Run time for epoch# 391: 0.30s
+Epoch 00392 | Loss 0.9330 | Val Accuracy 0.7133 | Test Accuracy 0.7052
+Run time for epoch# 392: 0.30s
+Epoch 00393 | Loss 0.9384 | Val Accuracy 0.7097 | Test Accuracy 0.6960
+Run time for epoch# 393: 0.30s
+Epoch 00394 | Loss 0.9345 | Val Accuracy 0.7105 | Test Accuracy 0.6956
+Run time for epoch# 394: 0.30s
+Epoch 00395 | Loss 0.9281 | Val Accuracy 0.7152 | Test Accuracy 0.7031
+Run time for epoch# 395: 0.30s
+Epoch 00396 | Loss 0.9375 | Val Accuracy 0.7141 | Test Accuracy 0.7044
+Run time for epoch# 396: 0.30s
+Epoch 00397 | Loss 0.9320 | Val Accuracy 0.7119 | Test Accuracy 0.6988
+Run time for epoch# 397: 0.30s
+Epoch 00398 | Loss 0.9357 | Val Accuracy 0.7124 | Test Accuracy 0.7000
+Run time for epoch# 398: 0.30s
+Epoch 00399 | Loss 0.9369 | Val Accuracy 0.7115 | Test Accuracy 0.6978
+Run time for epoch# 399: 0.30s
+Epoch 00400 | Loss 0.9348 | Val Accuracy 0.7122 | Test Accuracy 0.6994
+Run time for epoch# 400: 0.30s
+Epoch 00401 | Loss 0.9347 | Val Accuracy 0.7124 | Test Accuracy 0.7017
+Run time for epoch# 401: 0.30s
+Epoch 00402 | Loss 0.9398 | Val Accuracy 0.7095 | Test Accuracy 0.6921
+Run time for epoch# 402: 0.30s
+Epoch 00403 | Loss 0.9371 | Val Accuracy 0.7112 | Test Accuracy 0.7000
+Run time for epoch# 403: 0.30s
+Epoch 00404 | Loss 0.9292 | Val Accuracy 0.7106 | Test Accuracy 0.7035
+Run time for epoch# 404: 0.30s
+Epoch 00405 | Loss 0.9310 | Val Accuracy 0.7082 | Test Accuracy 0.6944
+Run time for epoch# 405: 0.30s
+Epoch 00406 | Loss 0.9349 | Val Accuracy 0.7090 | Test Accuracy 0.6937
+Run time for epoch# 406: 0.30s
+Epoch 00407 | Loss 0.9389 | Val Accuracy 0.7137 | Test Accuracy 0.7020
+Run time for epoch# 407: 0.30s
+Epoch 00408 | Loss 0.9339 | Val Accuracy 0.7072 | Test Accuracy 0.6900
+Run time for epoch# 408: 0.30s
+Epoch 00409 | Loss 0.9255 | Val Accuracy 0.7150 | Test Accuracy 0.7090
+Run time for epoch# 409: 0.30s
+Epoch 00410 | Loss 0.9367 | Val Accuracy 0.7087 | Test Accuracy 0.6977
+Run time for epoch# 410: 0.30s
+Epoch 00411 | Loss 0.9313 | Val Accuracy 0.7057 | Test Accuracy 0.6890
+Run time for epoch# 411: 0.30s
+Epoch 00412 | Loss 0.9355 | Val Accuracy 0.7142 | Test Accuracy 0.7100
+Run time for epoch# 412: 0.30s
+Epoch 00413 | Loss 0.9292 | Val Accuracy 0.7122 | Test Accuracy 0.7018
+Run time for epoch# 413: 0.30s
+Epoch 00414 | Loss 0.9278 | Val Accuracy 0.7114 | Test Accuracy 0.6982
+Run time for epoch# 414: 0.31s
+Epoch 00415 | Loss 0.9259 | Val Accuracy 0.7112 | Test Accuracy 0.7036
+Run time for epoch# 415: 0.31s
+Epoch 00416 | Loss 0.9367 | Val Accuracy 0.7102 | Test Accuracy 0.6960
+Run time for epoch# 416: 0.30s
+Epoch 00417 | Loss 0.9326 | Val Accuracy 0.7105 | Test Accuracy 0.7006
+Run time for epoch# 417: 0.30s
+Epoch 00418 | Loss 0.9281 | Val Accuracy 0.7133 | Test Accuracy 0.6994
+Run time for epoch# 418: 0.30s
+Epoch 00419 | Loss 0.9321 | Val Accuracy 0.7119 | Test Accuracy 0.7035
+Run time for epoch# 419: 0.30s
+Epoch 00420 | Loss 0.9305 | Val Accuracy 0.7115 | Test Accuracy 0.7074
+Run time for epoch# 420: 0.30s
+Epoch 00421 | Loss 0.9360 | Val Accuracy 0.7083 | Test Accuracy 0.6947
+Run time for epoch# 421: 0.31s
+Epoch 00422 | Loss 0.9336 | Val Accuracy 0.7144 | Test Accuracy 0.7035
+Run time for epoch# 422: 0.31s
+Epoch 00423 | Loss 0.9349 | Val Accuracy 0.7099 | Test Accuracy 0.6980
+Run time for epoch# 423: 0.30s
+Epoch 00424 | Loss 0.9338 | Val Accuracy 0.7126 | Test Accuracy 0.6982
+Run time for epoch# 424: 0.30s
+Epoch 00425 | Loss 0.9299 | Val Accuracy 0.7119 | Test Accuracy 0.6979
+Run time for epoch# 425: 0.30s
+Epoch 00426 | Loss 0.9316 | Val Accuracy 0.7162 | Test Accuracy 0.7068
+Run time for epoch# 426: 0.30s
+Epoch 00427 | Loss 0.9288 | Val Accuracy 0.7126 | Test Accuracy 0.7048
+Run time for epoch# 427: 0.30s
+Epoch 00428 | Loss 0.9298 | Val Accuracy 0.7124 | Test Accuracy 0.6961
+Run time for epoch# 428: 0.30s
+Epoch 00429 | Loss 0.9370 | Val Accuracy 0.7084 | Test Accuracy 0.6897
+Run time for epoch# 429: 0.30s
+Epoch 00430 | Loss 0.9347 | Val Accuracy 0.7044 | Test Accuracy 0.6839
+Run time for epoch# 430: 0.30s
+Epoch 00431 | Loss 0.9265 | Val Accuracy 0.7144 | Test Accuracy 0.7025
+Run time for epoch# 431: 0.30s
+Epoch 00432 | Loss 0.9303 | Val Accuracy 0.7116 | Test Accuracy 0.6997
+Run time for epoch# 432: 0.30s
+Epoch 00433 | Loss 0.9357 | Val Accuracy 0.7132 | Test Accuracy 0.6982
+Run time for epoch# 433: 0.30s
+Epoch 00434 | Loss 0.9260 | Val Accuracy 0.7086 | Test Accuracy 0.6953
+Run time for epoch# 434: 0.30s
+Epoch 00435 | Loss 0.9414 | Val Accuracy 0.7121 | Test Accuracy 0.7007
+Run time for epoch# 435: 0.30s
+n_200_epoch, n_200_accuracy 436 0.7118549346923828
+total time took : 81.91724920272827
+('ogbn-arxiv', 'NSGCN', 1024, 10000, 15, True, True, 'NVIDIA A100-SXM4-80GB', '0,1,2,3', 2, 1024, 0.7118549346923828, 0.18788359908882632, 0.7075548768043518, 53.22459959983826, 282, 0.7118549346923828, 81.91724920272827, 436)
+Process 0 before barrier
+Process 0 after barrier
+Process 0 cleanup
+Process 0 finished and cleaned up
+all run finished
+graph cuda:1 node cuda:1 1
+Process 1 before barrier
+Process 1 after barrier
+Process 1 cleanup
+Process 1 finished and cleaned up
+all run finished
+graph cuda:2 node cuda:2 2
+Process 2 before barrier
+Process 2 after barrier
+Process 2 cleanup
+Process 2 finished and cleaned up
+all run finished
+2 th training in puregpu mode using 4 GPU(s)
+Running parameters :  reddit 1024 1000 15 True True 0,1,2,3 2 512
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+graph cuda:0 node cuda:0 0
+Epoch 00000 | Loss 0.8682 | Val Accuracy 0.9150 | Test Accuracy 0.9156
+Run time for epoch# 0: 1.73s
+Epoch 00001 | Loss 0.4900 | Val Accuracy 0.9224 | Test Accuracy 0.9217
+Run time for epoch# 1: 0.81s
+Epoch 00002 | Loss 0.4388 | Val Accuracy 0.9257 | Test Accuracy 0.9247
+Run time for epoch# 2: 0.81s
+Epoch 00003 | Loss 0.4209 | Val Accuracy 0.9260 | Test Accuracy 0.9258
+Run time for epoch# 3: 0.82s
+Epoch 00004 | Loss 0.4030 | Val Accuracy 0.9274 | Test Accuracy 0.9277
+Run time for epoch# 4: 0.81s
+Epoch 00005 | Loss 0.3984 | Val Accuracy 0.9282 | Test Accuracy 0.9280
+Run time for epoch# 5: 0.81s
+Epoch 00006 | Loss 0.3890 | Val Accuracy 0.9283 | Test Accuracy 0.9289
+Run time for epoch# 6: 0.81s
+Epoch 00007 | Loss 0.3829 | Val Accuracy 0.9287 | Test Accuracy 0.9297
+Run time for epoch# 7: 0.81s
+Epoch 00008 | Loss 0.3778 | Val Accuracy 0.9300 | Test Accuracy 0.9282
+Run time for epoch# 8: 0.81s
+Epoch 00009 | Loss 0.3708 | Val Accuracy 0.9288 | Test Accuracy 0.9297
+Run time for epoch# 9: 0.81s
+Epoch 00010 | Loss 0.3686 | Val Accuracy 0.9288 | Test Accuracy 0.9289
+Run time for epoch# 10: 0.81s
+Epoch 00011 | Loss 0.3597 | Val Accuracy 0.9295 | Test Accuracy 0.9295
+Run time for epoch# 11: 0.81s
+Epoch 00012 | Loss 0.3665 | Val Accuracy 0.9303 | Test Accuracy 0.9295
+Run time for epoch# 12: 0.81s
+Epoch 00013 | Loss 0.3566 | Val Accuracy 0.9291 | Test Accuracy 0.9306
+Run time for epoch# 13: 0.81s
+Epoch 00014 | Loss 0.3500 | Val Accuracy 0.9284 | Test Accuracy 0.9308
+Run time for epoch# 14: 0.81s
+Epoch 00015 | Loss 0.3526 | Val Accuracy 0.9320 | Test Accuracy 0.9313
+Run time for epoch# 15: 0.81s
+Epoch 00016 | Loss 0.3452 | Val Accuracy 0.9308 | Test Accuracy 0.9308
+Run time for epoch# 16: 0.81s
+Epoch 00017 | Loss 0.3491 | Val Accuracy 0.9296 | Test Accuracy 0.9304
+Run time for epoch# 17: 0.81s
+Epoch 00018 | Loss 0.3442 | Val Accuracy 0.9318 | Test Accuracy 0.9312
+Run time for epoch# 18: 0.81s
+Epoch 00019 | Loss 0.3385 | Val Accuracy 0.9300 | Test Accuracy 0.9304
+Run time for epoch# 19: 0.81s
+Epoch 00020 | Loss 0.3409 | Val Accuracy 0.9286 | Test Accuracy 0.9295
+Run time for epoch# 20: 0.81s
+Epoch 00021 | Loss 0.3370 | Val Accuracy 0.9311 | Test Accuracy 0.9315
+Run time for epoch# 21: 0.81s
+Epoch 00022 | Loss 0.3381 | Val Accuracy 0.9312 | Test Accuracy 0.9322
+Run time for epoch# 22: 0.81s
+Epoch 00023 | Loss 0.3369 | Val Accuracy 0.9297 | Test Accuracy 0.9316
+Run time for epoch# 23: 0.81s
+Epoch 00024 | Loss 0.3386 | Val Accuracy 0.9312 | Test Accuracy 0.9314
+Run time for epoch# 24: 0.81s
+Epoch 00025 | Loss 0.3363 | Val Accuracy 0.9295 | Test Accuracy 0.9304
+Run time for epoch# 25: 0.81s
+Epoch 00026 | Loss 0.3334 | Val Accuracy 0.9303 | Test Accuracy 0.9311
+Run time for epoch# 26: 0.81s
+Epoch 00027 | Loss 0.3330 | Val Accuracy 0.9301 | Test Accuracy 0.9307
+Run time for epoch# 27: 0.81s
+Epoch 00028 | Loss 0.3324 | Val Accuracy 0.9301 | Test Accuracy 0.9326
+Run time for epoch# 28: 0.81s
+Epoch 00029 | Loss 0.3308 | Val Accuracy 0.9319 | Test Accuracy 0.9304
+Run time for epoch# 29: 0.81s
+Epoch 00030 | Loss 0.3311 | Val Accuracy 0.9325 | Test Accuracy 0.9328
+Run time for epoch# 30: 0.81s
+Epoch 00031 | Loss 0.3315 | Val Accuracy 0.9299 | Test Accuracy 0.9296
+Run time for epoch# 31: 0.81s
+Epoch 00032 | Loss 0.3298 | Val Accuracy 0.9324 | Test Accuracy 0.9300
+Run time for epoch# 32: 0.81s
+Epoch 00033 | Loss 0.3307 | Val Accuracy 0.9314 | Test Accuracy 0.9312
+Run time for epoch# 33: 0.81s
+Epoch 00034 | Loss 0.3290 | Val Accuracy 0.9293 | Test Accuracy 0.9290
+Run time for epoch# 34: 0.81s
+Epoch 00035 | Loss 0.3258 | Val Accuracy 0.9305 | Test Accuracy 0.9330
+Run time for epoch# 35: 0.81s
+Epoch 00036 | Loss 0.3227 | Val Accuracy 0.9312 | Test Accuracy 0.9326
+Run time for epoch# 36: 0.81s
+Epoch 00037 | Loss 0.3246 | Val Accuracy 0.9303 | Test Accuracy 0.9303
+Run time for epoch# 37: 0.81s
+Epoch 00038 | Loss 0.3267 | Val Accuracy 0.9311 | Test Accuracy 0.9311
+Run time for epoch# 38: 0.81s
+Epoch 00039 | Loss 0.3261 | Val Accuracy 0.9288 | Test Accuracy 0.9314
+Run time for epoch# 39: 0.81s
+Epoch 00040 | Loss 0.3254 | Val Accuracy 0.9315 | Test Accuracy 0.9323
+Run time for epoch# 40: 0.81s
+Epoch 00041 | Loss 0.3268 | Val Accuracy 0.9306 | Test Accuracy 0.9318
+Run time for epoch# 41: 0.81s
+Epoch 00042 | Loss 0.3254 | Val Accuracy 0.9303 | Test Accuracy 0.9300
+Run time for epoch# 42: 0.81s
+Epoch 00043 | Loss 0.3272 | Val Accuracy 0.9304 | Test Accuracy 0.9293
+Run time for epoch# 43: 0.82s
+Epoch 00044 | Loss 0.3224 | Val Accuracy 0.9301 | Test Accuracy 0.9320
+Run time for epoch# 44: 0.81s
+Epoch 00045 | Loss 0.3273 | Val Accuracy 0.9309 | Test Accuracy 0.9311
+Run time for epoch# 45: 0.81s
+Epoch 00046 | Loss 0.3253 | Val Accuracy 0.9311 | Test Accuracy 0.9309
+Run time for epoch# 46: 0.81s
+Epoch 00047 | Loss 0.3194 | Val Accuracy 0.9302 | Test Accuracy 0.9309
+Run time for epoch# 47: 0.81s
+Epoch 00048 | Loss 0.3218 | Val Accuracy 0.9292 | Test Accuracy 0.9316
+Run time for epoch# 48: 0.81s
+Epoch 00049 | Loss 0.3225 | Val Accuracy 0.9293 | Test Accuracy 0.9313
+Run time for epoch# 49: 0.81s
+Epoch 00050 | Loss 0.3239 | Val Accuracy 0.9301 | Test Accuracy 0.9312
+Run time for epoch# 50: 0.81s
+Epoch 00051 | Loss 0.3214 | Val Accuracy 0.9339 | Test Accuracy 0.9322
+Run time for epoch# 51: 0.81s
+Epoch 00052 | Loss 0.3193 | Val Accuracy 0.9308 | Test Accuracy 0.9329
+Run time for epoch# 52: 0.81s
+Epoch 00053 | Loss 0.3200 | Val Accuracy 0.9288 | Test Accuracy 0.9302
+Run time for epoch# 53: 0.81s
+Epoch 00054 | Loss 0.3224 | Val Accuracy 0.9291 | Test Accuracy 0.9317
+Run time for epoch# 54: 0.81s
+Epoch 00055 | Loss 0.3193 | Val Accuracy 0.9303 | Test Accuracy 0.9314
+Run time for epoch# 55: 0.81s
+Epoch 00056 | Loss 0.3210 | Val Accuracy 0.9317 | Test Accuracy 0.9314
+Run time for epoch# 56: 0.81s
+Epoch 00057 | Loss 0.3239 | Val Accuracy 0.9317 | Test Accuracy 0.9322
+Run time for epoch# 57: 0.82s
+Epoch 00058 | Loss 0.3251 | Val Accuracy 0.9318 | Test Accuracy 0.9334
+Run time for epoch# 58: 0.81s
+Epoch 00059 | Loss 0.3175 | Val Accuracy 0.9301 | Test Accuracy 0.9323
+Run time for epoch# 59: 0.81s
+Epoch 00060 | Loss 0.3196 | Val Accuracy 0.9323 | Test Accuracy 0.9305
+Run time for epoch# 60: 0.81s
+Epoch 00061 | Loss 0.3192 | Val Accuracy 0.9323 | Test Accuracy 0.9336
+Run time for epoch# 61: 0.81s
+Epoch 00062 | Loss 0.3185 | Val Accuracy 0.9320 | Test Accuracy 0.9335
+Run time for epoch# 62: 0.81s
+Epoch 00063 | Loss 0.3171 | Val Accuracy 0.9293 | Test Accuracy 0.9337
+Run time for epoch# 63: 0.81s
+Epoch 00064 | Loss 0.3194 | Val Accuracy 0.9309 | Test Accuracy 0.9328
+Run time for epoch# 64: 0.81s
+Epoch 00065 | Loss 0.3159 | Val Accuracy 0.9316 | Test Accuracy 0.9316
+Run time for epoch# 65: 0.81s
+Epoch 00066 | Loss 0.3175 | Val Accuracy 0.9315 | Test Accuracy 0.9319
+Run time for epoch# 66: 0.81s
+Epoch 00067 | Loss 0.3191 | Val Accuracy 0.9298 | Test Accuracy 0.9299
+Run time for epoch# 67: 0.81s
+Epoch 00068 | Loss 0.3237 | Val Accuracy 0.9319 | Test Accuracy 0.9322
+Run time for epoch# 68: 0.81s
+Epoch 00069 | Loss 0.3187 | Val Accuracy 0.9309 | Test Accuracy 0.9318
+Run time for epoch# 69: 0.81s
+Epoch 00070 | Loss 0.3175 | Val Accuracy 0.9313 | Test Accuracy 0.9323
+Run time for epoch# 70: 0.81s
+Epoch 00071 | Loss 0.3155 | Val Accuracy 0.9319 | Test Accuracy 0.9317
+Run time for epoch# 71: 0.81s
+Epoch 00072 | Loss 0.3171 | Val Accuracy 0.9318 | Test Accuracy 0.9319
+Run time for epoch# 72: 0.81s
+Epoch 00073 | Loss 0.3172 | Val Accuracy 0.9303 | Test Accuracy 0.9312
+Run time for epoch# 73: 0.81s
+Epoch 00074 | Loss 0.3169 | Val Accuracy 0.9287 | Test Accuracy 0.9316
+Run time for epoch# 74: 0.81s
+Epoch 00075 | Loss 0.3139 | Val Accuracy 0.9300 | Test Accuracy 0.9311
+Run time for epoch# 75: 0.81s
+Epoch 00076 | Loss 0.3203 | Val Accuracy 0.9323 | Test Accuracy 0.9330
+Run time for epoch# 76: 0.81s
+Epoch 00077 | Loss 0.3174 | Val Accuracy 0.9317 | Test Accuracy 0.9322
+Run time for epoch# 77: 0.81s
+Epoch 00078 | Loss 0.3213 | Val Accuracy 0.9327 | Test Accuracy 0.9333
+Run time for epoch# 78: 0.81s
+Epoch 00079 | Loss 0.3177 | Val Accuracy 0.9315 | Test Accuracy 0.9311
+Run time for epoch# 79: 0.81s
+Epoch 00080 | Loss 0.3142 | Val Accuracy 0.9316 | Test Accuracy 0.9301
+Run time for epoch# 80: 0.81s
+Epoch 00081 | Loss 0.3201 | Val Accuracy 0.9319 | Test Accuracy 0.9329
+Run time for epoch# 81: 0.81s
+Epoch 00082 | Loss 0.3184 | Val Accuracy 0.9308 | Test Accuracy 0.9311
+Run time for epoch# 82: 0.81s
+Epoch 00083 | Loss 0.3170 | Val Accuracy 0.9314 | Test Accuracy 0.9322
+Run time for epoch# 83: 0.81s
+Epoch 00084 | Loss 0.3154 | Val Accuracy 0.9311 | Test Accuracy 0.9323
+Run time for epoch# 84: 0.81s
+Epoch 00085 | Loss 0.3132 | Val Accuracy 0.9298 | Test Accuracy 0.9313
+Run time for epoch# 85: 0.81s
+Epoch 00086 | Loss 0.3159 | Val Accuracy 0.9332 | Test Accuracy 0.9332
+Run time for epoch# 86: 0.81s
+Epoch 00087 | Loss 0.3168 | Val Accuracy 0.9313 | Test Accuracy 0.9321
+Run time for epoch# 87: 0.81s
+Epoch 00088 | Loss 0.3140 | Val Accuracy 0.9306 | Test Accuracy 0.9320
+Run time for epoch# 88: 0.81s
+Epoch 00089 | Loss 0.3148 | Val Accuracy 0.9317 | Test Accuracy 0.9319
+Run time for epoch# 89: 0.81s
+Epoch 00090 | Loss 0.3145 | Val Accuracy 0.9315 | Test Accuracy 0.9332
+Run time for epoch# 90: 0.81s
+Epoch 00091 | Loss 0.3143 | Val Accuracy 0.9333 | Test Accuracy 0.9332
+Run time for epoch# 91: 0.81s
+Epoch 00092 | Loss 0.3184 | Val Accuracy 0.9304 | Test Accuracy 0.9309
+Run time for epoch# 92: 0.81s
+Epoch 00093 | Loss 0.3132 | Val Accuracy 0.9277 | Test Accuracy 0.9305
+Run time for epoch# 93: 0.81s
+Epoch 00094 | Loss 0.3153 | Val Accuracy 0.9321 | Test Accuracy 0.9324
+Run time for epoch# 94: 0.81s
+Epoch 00095 | Loss 0.3142 | Val Accuracy 0.9308 | Test Accuracy 0.9316
+Run time for epoch# 95: 0.81s
+Epoch 00096 | Loss 0.3101 | Val Accuracy 0.9321 | Test Accuracy 0.9325
+Run time for epoch# 96: 0.81s
+Epoch 00097 | Loss 0.3168 | Val Accuracy 0.9325 | Test Accuracy 0.9337
+Run time for epoch# 97: 0.81s
+Epoch 00098 | Loss 0.3129 | Val Accuracy 0.9303 | Test Accuracy 0.9310
+Run time for epoch# 98: 0.81s
+Epoch 00099 | Loss 0.3169 | Val Accuracy 0.9300 | Test Accuracy 0.9311
+Run time for epoch# 99: 0.81s
+Epoch 00100 | Loss 0.3136 | Val Accuracy 0.9335 | Test Accuracy 0.9317
+Run time for epoch# 100: 0.81s
+Epoch 00101 | Loss 0.3134 | Val Accuracy 0.9316 | Test Accuracy 0.9313
+Run time for epoch# 101: 0.81s
+Epoch 00102 | Loss 0.3124 | Val Accuracy 0.9312 | Test Accuracy 0.9319
+Run time for epoch# 102: 0.81s
+Epoch 00103 | Loss 0.3125 | Val Accuracy 0.9302 | Test Accuracy 0.9311
+Run time for epoch# 103: 0.81s
+Epoch 00104 | Loss 0.3133 | Val Accuracy 0.9302 | Test Accuracy 0.9333
+Run time for epoch# 104: 0.81s
+Epoch 00105 | Loss 0.3188 | Val Accuracy 0.9306 | Test Accuracy 0.9320
+Run time for epoch# 105: 0.81s
+Epoch 00106 | Loss 0.3159 | Val Accuracy 0.9328 | Test Accuracy 0.9329
+Run time for epoch# 106: 0.81s
+Epoch 00107 | Loss 0.3131 | Val Accuracy 0.9289 | Test Accuracy 0.9308
+Run time for epoch# 107: 0.81s
+Epoch 00108 | Loss 0.3147 | Val Accuracy 0.9299 | Test Accuracy 0.9325
+Run time for epoch# 108: 0.81s
+Epoch 00109 | Loss 0.3175 | Val Accuracy 0.9300 | Test Accuracy 0.9310
+Run time for epoch# 109: 0.81s
+Epoch 00110 | Loss 0.3166 | Val Accuracy 0.9323 | Test Accuracy 0.9322
+Run time for epoch# 110: 0.81s
+Epoch 00111 | Loss 0.3138 | Val Accuracy 0.9305 | Test Accuracy 0.9319
+Run time for epoch# 111: 0.81s
+Epoch 00112 | Loss 0.3140 | Val Accuracy 0.9329 | Test Accuracy 0.9335
+Run time for epoch# 112: 0.81s
+Epoch 00113 | Loss 0.3134 | Val Accuracy 0.9310 | Test Accuracy 0.9324
+Run time for epoch# 113: 0.81s
+n_50_epoch, n_50_accuracy 114 0.933721125125885
+Epoch 00114 | Loss 0.3160 | Val Accuracy 0.9301 | Test Accuracy 0.9311
+Run time for epoch# 114: 0.81s
+Epoch 00115 | Loss 0.3158 | Val Accuracy 0.9313 | Test Accuracy 0.9322
+Run time for epoch# 115: 0.81s
+Epoch 00116 | Loss 0.3153 | Val Accuracy 0.9322 | Test Accuracy 0.9332
+Run time for epoch# 116: 0.81s
+Epoch 00117 | Loss 0.3136 | Val Accuracy 0.9334 | Test Accuracy 0.9316
+Run time for epoch# 117: 0.81s
+Epoch 00118 | Loss 0.3146 | Val Accuracy 0.9314 | Test Accuracy 0.9305
+Run time for epoch# 118: 0.81s
+Epoch 00119 | Loss 0.3173 | Val Accuracy 0.9311 | Test Accuracy 0.9317
+Run time for epoch# 119: 0.81s
+Epoch 00120 | Loss 0.3115 | Val Accuracy 0.9313 | Test Accuracy 0.9311
+Run time for epoch# 120: 0.81s
+Epoch 00121 | Loss 0.3167 | Val Accuracy 0.9315 | Test Accuracy 0.9331
+Run time for epoch# 121: 0.81s
+Epoch 00122 | Loss 0.3154 | Val Accuracy 0.9299 | Test Accuracy 0.9323
+Run time for epoch# 122: 0.81s
+Epoch 00123 | Loss 0.3104 | Val Accuracy 0.9323 | Test Accuracy 0.9329
+Run time for epoch# 123: 0.81s
+Epoch 00124 | Loss 0.3126 | Val Accuracy 0.9313 | Test Accuracy 0.9326
+Run time for epoch# 124: 0.81s
+Epoch 00125 | Loss 0.3108 | Val Accuracy 0.9282 | Test Accuracy 0.9310
+Run time for epoch# 125: 0.81s
+Epoch 00126 | Loss 0.3164 | Val Accuracy 0.9313 | Test Accuracy 0.9330
+Run time for epoch# 126: 0.81s
+Epoch 00127 | Loss 0.3155 | Val Accuracy 0.9314 | Test Accuracy 0.9329
+Run time for epoch# 127: 0.82s
+Epoch 00128 | Loss 0.3153 | Val Accuracy 0.9311 | Test Accuracy 0.9329
+Run time for epoch# 128: 0.82s
+Epoch 00129 | Loss 0.3141 | Val Accuracy 0.9308 | Test Accuracy 0.9321
+Run time for epoch# 129: 0.81s
+Epoch 00130 | Loss 0.3149 | Val Accuracy 0.9322 | Test Accuracy 0.9320
+Run time for epoch# 130: 0.82s
+Epoch 00131 | Loss 0.3159 | Val Accuracy 0.9304 | Test Accuracy 0.9311
+Run time for epoch# 131: 0.81s
+Epoch 00132 | Loss 0.3123 | Val Accuracy 0.9328 | Test Accuracy 0.9339
+Run time for epoch# 132: 0.82s
+Epoch 00133 | Loss 0.3160 | Val Accuracy 0.9308 | Test Accuracy 0.9312
+Run time for epoch# 133: 0.81s
+Epoch 00134 | Loss 0.3117 | Val Accuracy 0.9298 | Test Accuracy 0.9323
+Run time for epoch# 134: 0.81s
+Epoch 00135 | Loss 0.3137 | Val Accuracy 0.9327 | Test Accuracy 0.9321
+Run time for epoch# 135: 0.81s
+Epoch 00136 | Loss 0.3124 | Val Accuracy 0.9330 | Test Accuracy 0.9335
+Run time for epoch# 136: 0.81s
+Epoch 00137 | Loss 0.3141 | Val Accuracy 0.9319 | Test Accuracy 0.9343
+Run time for epoch# 137: 0.82s
+Epoch 00138 | Loss 0.3104 | Val Accuracy 0.9307 | Test Accuracy 0.9323
+Run time for epoch# 138: 0.81s
+Epoch 00139 | Loss 0.3141 | Val Accuracy 0.9311 | Test Accuracy 0.9318
+Run time for epoch# 139: 0.82s
+Epoch 00140 | Loss 0.3114 | Val Accuracy 0.9308 | Test Accuracy 0.9319
+Run time for epoch# 140: 0.82s
+Epoch 00141 | Loss 0.3144 | Val Accuracy 0.9307 | Test Accuracy 0.9329
+Run time for epoch# 141: 0.82s
+Epoch 00142 | Loss 0.3133 | Val Accuracy 0.9329 | Test Accuracy 0.9315
+Run time for epoch# 142: 0.82s
+Epoch 00143 | Loss 0.3119 | Val Accuracy 0.9314 | Test Accuracy 0.9314
+Run time for epoch# 143: 0.82s
+Epoch 00144 | Loss 0.3140 | Val Accuracy 0.9308 | Test Accuracy 0.9317
+Run time for epoch# 144: 0.82s
+Epoch 00145 | Loss 0.3104 | Val Accuracy 0.9307 | Test Accuracy 0.9324
+Run time for epoch# 145: 0.82s
+Epoch 00146 | Loss 0.3096 | Val Accuracy 0.9330 | Test Accuracy 0.9325
+Run time for epoch# 146: 0.82s
+Epoch 00147 | Loss 0.3159 | Val Accuracy 0.9311 | Test Accuracy 0.9320
+Run time for epoch# 147: 0.82s
+Epoch 00148 | Loss 0.3137 | Val Accuracy 0.9315 | Test Accuracy 0.9323
+Run time for epoch# 148: 0.82s
+Epoch 00149 | Loss 0.3101 | Val Accuracy 0.9311 | Test Accuracy 0.9316
+Run time for epoch# 149: 0.82s
+Epoch 00150 | Loss 0.3105 | Val Accuracy 0.9301 | Test Accuracy 0.9309
+Run time for epoch# 150: 0.82s
+Epoch 00151 | Loss 0.3147 | Val Accuracy 0.9301 | Test Accuracy 0.9324
+Run time for epoch# 151: 0.82s
+Epoch 00152 | Loss 0.3084 | Val Accuracy 0.9303 | Test Accuracy 0.9321
+Run time for epoch# 152: 0.82s
+Epoch 00153 | Loss 0.3099 | Val Accuracy 0.9311 | Test Accuracy 0.9320
+Run time for epoch# 153: 0.82s
+Epoch 00154 | Loss 0.3112 | Val Accuracy 0.9325 | Test Accuracy 0.9330
+Run time for epoch# 154: 0.82s
+Epoch 00155 | Loss 0.3104 | Val Accuracy 0.9320 | Test Accuracy 0.9322
+Run time for epoch# 155: 0.82s
+Epoch 00156 | Loss 0.3114 | Val Accuracy 0.9319 | Test Accuracy 0.9325
+Run time for epoch# 156: 0.82s
+Epoch 00157 | Loss 0.3086 | Val Accuracy 0.9314 | Test Accuracy 0.9312
+Run time for epoch# 157: 0.82s
+Epoch 00158 | Loss 0.3169 | Val Accuracy 0.9293 | Test Accuracy 0.9312
+Run time for epoch# 158: 0.82s
+Epoch 00159 | Loss 0.3135 | Val Accuracy 0.9320 | Test Accuracy 0.9318
+Run time for epoch# 159: 0.82s
+Epoch 00160 | Loss 0.3130 | Val Accuracy 0.9307 | Test Accuracy 0.9331
+Run time for epoch# 160: 0.82s
+Epoch 00161 | Loss 0.3091 | Val Accuracy 0.9303 | Test Accuracy 0.9331
+Run time for epoch# 161: 0.82s
+Epoch 00162 | Loss 0.3140 | Val Accuracy 0.9320 | Test Accuracy 0.9315
+Run time for epoch# 162: 0.82s
+Epoch 00163 | Loss 0.3096 | Val Accuracy 0.9308 | Test Accuracy 0.9327
+Run time for epoch# 163: 0.82s
+Epoch 00164 | Loss 0.3122 | Val Accuracy 0.9308 | Test Accuracy 0.9314
+Run time for epoch# 164: 0.82s
+Epoch 00165 | Loss 0.3143 | Val Accuracy 0.9319 | Test Accuracy 0.9319
+Run time for epoch# 165: 0.82s
+Epoch 00166 | Loss 0.3115 | Val Accuracy 0.9332 | Test Accuracy 0.9335
+Run time for epoch# 166: 0.81s
+Epoch 00167 | Loss 0.3091 | Val Accuracy 0.9313 | Test Accuracy 0.9329
+Run time for epoch# 167: 0.82s
+Epoch 00168 | Loss 0.3109 | Val Accuracy 0.9311 | Test Accuracy 0.9325
+Run time for epoch# 168: 0.81s
+Epoch 00169 | Loss 0.3124 | Val Accuracy 0.9322 | Test Accuracy 0.9319
+Run time for epoch# 169: 0.82s
+Epoch 00170 | Loss 0.3106 | Val Accuracy 0.9316 | Test Accuracy 0.9326
+Run time for epoch# 170: 0.82s
+Epoch 00171 | Loss 0.3149 | Val Accuracy 0.9305 | Test Accuracy 0.9329
+Run time for epoch# 171: 0.82s
+Epoch 00172 | Loss 0.3126 | Val Accuracy 0.9314 | Test Accuracy 0.9324
+Run time for epoch# 172: 0.82s
+Epoch 00173 | Loss 0.3108 | Val Accuracy 0.9324 | Test Accuracy 0.9328
+Run time for epoch# 173: 0.82s
+Epoch 00174 | Loss 0.3117 | Val Accuracy 0.9299 | Test Accuracy 0.9310
+Run time for epoch# 174: 0.82s
+Epoch 00175 | Loss 0.3128 | Val Accuracy 0.9320 | Test Accuracy 0.9330
+Run time for epoch# 175: 0.82s
+Epoch 00176 | Loss 0.3106 | Val Accuracy 0.9306 | Test Accuracy 0.9318
+Run time for epoch# 176: 0.82s
+Epoch 00177 | Loss 0.3138 | Val Accuracy 0.9314 | Test Accuracy 0.9342
+Run time for epoch# 177: 0.82s
+Epoch 00178 | Loss 0.3117 | Val Accuracy 0.9297 | Test Accuracy 0.9319
+Run time for epoch# 178: 0.82s
+Epoch 00179 | Loss 0.3113 | Val Accuracy 0.9308 | Test Accuracy 0.9329
+Run time for epoch# 179: 0.82s
+Epoch 00180 | Loss 0.3133 | Val Accuracy 0.9319 | Test Accuracy 0.9324
+Run time for epoch# 180: 0.82s
+Epoch 00181 | Loss 0.3112 | Val Accuracy 0.9315 | Test Accuracy 0.9323
+Run time for epoch# 181: 0.82s
+Epoch 00182 | Loss 0.3097 | Val Accuracy 0.9301 | Test Accuracy 0.9322
+Run time for epoch# 182: 0.82s
+Epoch 00183 | Loss 0.3120 | Val Accuracy 0.9306 | Test Accuracy 0.9321
+Run time for epoch# 183: 0.82s
+Epoch 00184 | Loss 0.3087 | Val Accuracy 0.9316 | Test Accuracy 0.9326
+Run time for epoch# 184: 0.82s
+Epoch 00185 | Loss 0.3129 | Val Accuracy 0.9326 | Test Accuracy 0.9328
+Run time for epoch# 185: 0.82s
+Epoch 00186 | Loss 0.3086 | Val Accuracy 0.9320 | Test Accuracy 0.9325
+Run time for epoch# 186: 0.82s
+Epoch 00187 | Loss 0.3099 | Val Accuracy 0.9325 | Test Accuracy 0.9311
+Run time for epoch# 187: 0.82s
+Epoch 00188 | Loss 0.3085 | Val Accuracy 0.9298 | Test Accuracy 0.9319
+Run time for epoch# 188: 0.82s
+Epoch 00189 | Loss 0.3087 | Val Accuracy 0.9327 | Test Accuracy 0.9326
+Run time for epoch# 189: 0.82s
+Epoch 00190 | Loss 0.3112 | Val Accuracy 0.9309 | Test Accuracy 0.9313
+Run time for epoch# 190: 0.82s
+Epoch 00191 | Loss 0.3115 | Val Accuracy 0.9311 | Test Accuracy 0.9319
+Run time for epoch# 191: 0.82s
+Epoch 00192 | Loss 0.3110 | Val Accuracy 0.9313 | Test Accuracy 0.9319
+Run time for epoch# 192: 0.82s
+Epoch 00193 | Loss 0.3096 | Val Accuracy 0.9321 | Test Accuracy 0.9315
+Run time for epoch# 193: 0.83s
+Epoch 00194 | Loss 0.3209 | Val Accuracy 0.9276 | Test Accuracy 0.9296
+Run time for epoch# 194: 0.82s
+Epoch 00195 | Loss 0.3139 | Val Accuracy 0.9310 | Test Accuracy 0.9320
+Run time for epoch# 195: 0.82s
+Epoch 00196 | Loss 0.3126 | Val Accuracy 0.9329 | Test Accuracy 0.9328
+Run time for epoch# 196: 0.82s
+Epoch 00197 | Loss 0.3105 | Val Accuracy 0.9322 | Test Accuracy 0.9317
+Run time for epoch# 197: 0.82s
+Epoch 00198 | Loss 0.3120 | Val Accuracy 0.9298 | Test Accuracy 0.9309
+Run time for epoch# 198: 0.82s
+Epoch 00199 | Loss 0.3116 | Val Accuracy 0.9308 | Test Accuracy 0.9312
+Run time for epoch# 199: 0.82s
+Epoch 00200 | Loss 0.3109 | Val Accuracy 0.9322 | Test Accuracy 0.9324
+Run time for epoch# 200: 0.82s
+Epoch 00201 | Loss 0.3045 | Val Accuracy 0.9321 | Test Accuracy 0.9322
+Run time for epoch# 201: 0.82s
+Epoch 00202 | Loss 0.3118 | Val Accuracy 0.9302 | Test Accuracy 0.9323
+Run time for epoch# 202: 0.82s
+Epoch 00203 | Loss 0.3099 | Val Accuracy 0.9311 | Test Accuracy 0.9308
+Run time for epoch# 203: 0.82s
+Epoch 00204 | Loss 0.5031 | Val Accuracy 0.9276 | Test Accuracy 0.9285
+Run time for epoch# 204: 0.82s
+Epoch 00205 | Loss 0.3584 | Val Accuracy 0.9317 | Test Accuracy 0.9316
+Run time for epoch# 205: 0.82s
+Epoch 00206 | Loss 0.3286 | Val Accuracy 0.9322 | Test Accuracy 0.9307
+Run time for epoch# 206: 0.82s
+Epoch 00207 | Loss 0.3176 | Val Accuracy 0.9306 | Test Accuracy 0.9327
+Run time for epoch# 207: 0.82s
+Epoch 00208 | Loss 0.3163 | Val Accuracy 0.9314 | Test Accuracy 0.9311
+Run time for epoch# 208: 0.82s
+Epoch 00209 | Loss 0.3162 | Val Accuracy 0.9306 | Test Accuracy 0.9307
+Run time for epoch# 209: 0.82s
+Epoch 00210 | Loss 0.3134 | Val Accuracy 0.9308 | Test Accuracy 0.9326
+Run time for epoch# 210: 0.82s
+Epoch 00211 | Loss 0.3165 | Val Accuracy 0.9303 | Test Accuracy 0.9314
+Run time for epoch# 211: 0.82s
+Epoch 00212 | Loss 0.3124 | Val Accuracy 0.9324 | Test Accuracy 0.9334
+Run time for epoch# 212: 0.82s
+Epoch 00213 | Loss 0.3118 | Val Accuracy 0.9328 | Test Accuracy 0.9318
+Run time for epoch# 213: 0.82s
+Epoch 00214 | Loss 0.3112 | Val Accuracy 0.9332 | Test Accuracy 0.9315
+Run time for epoch# 214: 0.81s
+Epoch 00215 | Loss 0.3092 | Val Accuracy 0.9322 | Test Accuracy 0.9324
+Run time for epoch# 215: 0.82s
+Epoch 00216 | Loss 0.3120 | Val Accuracy 0.9295 | Test Accuracy 0.9316
+Run time for epoch# 216: 0.83s
+Epoch 00217 | Loss 0.3125 | Val Accuracy 0.9323 | Test Accuracy 0.9321
+Run time for epoch# 217: 0.82s
+Epoch 00218 | Loss 0.3057 | Val Accuracy 0.9312 | Test Accuracy 0.9323
+Run time for epoch# 218: 0.82s
+Epoch 00219 | Loss 0.3104 | Val Accuracy 0.9306 | Test Accuracy 0.9323
+Run time for epoch# 219: 0.82s
+Epoch 00220 | Loss 0.3151 | Val Accuracy 0.9322 | Test Accuracy 0.9332
+Run time for epoch# 220: 0.82s
+Epoch 00221 | Loss 0.3138 | Val Accuracy 0.9337 | Test Accuracy 0.9338
+Run time for epoch# 221: 0.82s
+Epoch 00222 | Loss 0.3121 | Val Accuracy 0.9312 | Test Accuracy 0.9336
+Run time for epoch# 222: 0.82s
+Epoch 00223 | Loss 0.3104 | Val Accuracy 0.9332 | Test Accuracy 0.9335
+Run time for epoch# 223: 0.82s
+Epoch 00224 | Loss 0.3096 | Val Accuracy 0.9327 | Test Accuracy 0.9332
+Run time for epoch# 224: 0.83s
+Epoch 00225 | Loss 0.3104 | Val Accuracy 0.9310 | Test Accuracy 0.9330
+Run time for epoch# 225: 0.82s
+Epoch 00226 | Loss 0.3074 | Val Accuracy 0.9313 | Test Accuracy 0.9328
+Run time for epoch# 226: 0.82s
+Epoch 00227 | Loss 0.3125 | Val Accuracy 0.9306 | Test Accuracy 0.9319
+Run time for epoch# 227: 0.82s
+Epoch 00228 | Loss 0.3103 | Val Accuracy 0.9334 | Test Accuracy 0.9326
+Run time for epoch# 228: 0.82s
+Epoch 00229 | Loss 0.3116 | Val Accuracy 0.9346 | Test Accuracy 0.9343
+Run time for epoch# 229: 0.82s
+Epoch 00230 | Loss 0.3077 | Val Accuracy 0.9332 | Test Accuracy 0.9331
+Run time for epoch# 230: 0.82s
+Epoch 00231 | Loss 0.3097 | Val Accuracy 0.9331 | Test Accuracy 0.9329
+Run time for epoch# 231: 0.82s
+Epoch 00232 | Loss 0.3119 | Val Accuracy 0.9307 | Test Accuracy 0.9328
+Run time for epoch# 232: 0.82s
+Epoch 00233 | Loss 0.3093 | Val Accuracy 0.9323 | Test Accuracy 0.9323
+Run time for epoch# 233: 0.83s
+Epoch 00234 | Loss 0.3105 | Val Accuracy 0.9323 | Test Accuracy 0.9326
+Run time for epoch# 234: 0.82s
+Epoch 00235 | Loss 0.3078 | Val Accuracy 0.9299 | Test Accuracy 0.9328
+Run time for epoch# 235: 0.82s
+Epoch 00236 | Loss 0.3067 | Val Accuracy 0.9303 | Test Accuracy 0.9326
+Run time for epoch# 236: 0.84s
+Epoch 00237 | Loss 0.3072 | Val Accuracy 0.9335 | Test Accuracy 0.9333
+Run time for epoch# 237: 0.82s
+n_200_epoch, n_200_accuracy 238 0.9342955946922302
+total time took : 146.28352165222168
+('reddit', 'NSGCN', 1024, 1000, 15, True, True, 'NVIDIA A100-SXM4-80GB', '0,1,2,3', 2, 512, 0.9342955946922302, 0.61463664559757, 0.933721125125885, 70.15484285354614, 114, 0.9342955946922302, 146.28352165222168, 238)
+Process 0 before barrier
+Process 0 after barrier
+Process 0 cleanup
+Process 0 finished and cleaned up
+all run finished
+graph cuda:3 node cuda:3 3
+Process 3 before barrier
+Process 3 after barrier
+Process 3 cleanup
+Process 3 finished and cleaned up
+all run finished
+graph cuda:2 node cuda:2 2
+Process 2 before barrier
+Process 2 after barrier
+Process 2 cleanup
+Process 2 finished and cleaned up
+all run finished
+graph cuda:1 node cuda:1 1
+Process 1 before barrier
+Process 1 after barrier
+Process 1 cleanup
+Process 1 finished and cleaned up
+all run finished
+3 th training in puregpu mode using 4 GPU(s)
+Running parameters :  ogbn-products 1024 2000 5 True True 0,1,2,3 2 512
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+graph cuda:3 node cuda:3 3
+Process 3 before barrier
+Process 3 after barrier
+Process 3 cleanup
+Process 3 finished and cleaned up
+all run finished
+graph cuda:0 node cuda:0 0
+Epoch 00000 | Loss 1.3400 | Val Accuracy 0.8230 | Test Accuracy 0.6726
+Run time for epoch# 0: 4.22s
+Epoch 00001 | Loss 0.6646 | Val Accuracy 0.8440 | Test Accuracy 0.6957
+Run time for epoch# 1: 3.34s
+Epoch 00002 | Loss 0.6032 | Val Accuracy 0.8503 | Test Accuracy 0.7064
+Run time for epoch# 2: 3.33s
+Epoch 00003 | Loss 0.6056 | Val Accuracy 0.8562 | Test Accuracy 0.7128
+Run time for epoch# 3: 3.33s
+Epoch 00004 | Loss 0.5723 | Val Accuracy 0.8596 | Test Accuracy 0.7223
+Run time for epoch# 4: 3.34s
+Epoch 00005 | Loss 0.5707 | Val Accuracy 0.8621 | Test Accuracy 0.7311
+Run time for epoch# 5: 3.34s
+Epoch 00006 | Loss 0.5576 | Val Accuracy 0.8649 | Test Accuracy 0.7258
+Run time for epoch# 6: 3.33s
+Epoch 00007 | Loss 0.5533 | Val Accuracy 0.8625 | Test Accuracy 0.7305
+Run time for epoch# 7: 3.33s
+Epoch 00008 | Loss 0.5302 | Val Accuracy 0.8642 | Test Accuracy 0.7325
+Run time for epoch# 8: 3.32s
+Epoch 00009 | Loss 0.5140 | Val Accuracy 0.8667 | Test Accuracy 0.7377
+Run time for epoch# 9: 3.33s
+Epoch 00010 | Loss 0.5335 | Val Accuracy 0.8664 | Test Accuracy 0.7350
+Run time for epoch# 10: 3.33s
+Epoch 00011 | Loss 0.5453 | Val Accuracy 0.8674 | Test Accuracy 0.7324
+Run time for epoch# 11: 3.33s
+Epoch 00012 | Loss 0.5254 | Val Accuracy 0.8689 | Test Accuracy 0.7393
+Run time for epoch# 12: 3.33s
+Epoch 00013 | Loss 0.5013 | Val Accuracy 0.8692 | Test Accuracy 0.7395
+Run time for epoch# 13: 3.33s
+Epoch 00014 | Loss 0.5293 | Val Accuracy 0.8727 | Test Accuracy 0.7375
+Run time for epoch# 14: 3.33s
+Epoch 00015 | Loss 0.5120 | Val Accuracy 0.8711 | Test Accuracy 0.7380
+Run time for epoch# 15: 3.34s
+Epoch 00016 | Loss 0.4978 | Val Accuracy 0.8691 | Test Accuracy 0.7366
+Run time for epoch# 16: 3.33s
+Epoch 00017 | Loss 0.5156 | Val Accuracy 0.8731 | Test Accuracy 0.7353
+Run time for epoch# 17: 3.33s
+Epoch 00018 | Loss 0.5055 | Val Accuracy 0.8718 | Test Accuracy 0.7436
+Run time for epoch# 18: 3.33s
+Epoch 00019 | Loss 0.5022 | Val Accuracy 0.8722 | Test Accuracy 0.7417
+Run time for epoch# 19: 3.34s
+Epoch 00020 | Loss 0.4809 | Val Accuracy 0.8737 | Test Accuracy 0.7426
+Run time for epoch# 20: 3.33s
+Epoch 00021 | Loss 0.5127 | Val Accuracy 0.8718 | Test Accuracy 0.7389
+Run time for epoch# 21: 3.33s
+Epoch 00022 | Loss 0.5000 | Val Accuracy 0.8746 | Test Accuracy 0.7494
+Run time for epoch# 22: 3.32s
+Epoch 00023 | Loss 0.4840 | Val Accuracy 0.8727 | Test Accuracy 0.7431
+Run time for epoch# 23: 3.33s
+Epoch 00024 | Loss 0.4853 | Val Accuracy 0.8746 | Test Accuracy 0.7471
+Run time for epoch# 24: 3.33s
+Epoch 00025 | Loss 0.4832 | Val Accuracy 0.8739 | Test Accuracy 0.7514
+Run time for epoch# 25: 3.33s
+Epoch 00026 | Loss 0.4727 | Val Accuracy 0.8753 | Test Accuracy 0.7499
+Run time for epoch# 26: 3.33s
+Epoch 00027 | Loss 0.4686 | Val Accuracy 0.8781 | Test Accuracy 0.7497
+Run time for epoch# 27: 3.33s
+Epoch 00028 | Loss 0.4648 | Val Accuracy 0.8764 | Test Accuracy 0.7450
+Run time for epoch# 28: 3.33s
+Epoch 00029 | Loss 0.5155 | Val Accuracy 0.8742 | Test Accuracy 0.7507
+Run time for epoch# 29: 3.33s
+Epoch 00030 | Loss 0.4919 | Val Accuracy 0.8761 | Test Accuracy 0.7479
+Run time for epoch# 30: 3.33s
+Epoch 00031 | Loss 0.4844 | Val Accuracy 0.8751 | Test Accuracy 0.7461
+Run time for epoch# 31: 3.33s
+Epoch 00032 | Loss 0.4833 | Val Accuracy 0.8743 | Test Accuracy 0.7442
+Run time for epoch# 32: 3.33s
+Epoch 00033 | Loss 0.4975 | Val Accuracy 0.8741 | Test Accuracy 0.7455
+Run time for epoch# 33: 3.33s
+Epoch 00034 | Loss 0.4958 | Val Accuracy 0.8740 | Test Accuracy 0.7444
+Run time for epoch# 34: 3.47s
+Epoch 00035 | Loss 0.5079 | Val Accuracy 0.8746 | Test Accuracy 0.7418
+Run time for epoch# 35: 3.33s
+Epoch 00036 | Loss 0.4778 | Val Accuracy 0.8757 | Test Accuracy 0.7500
+Run time for epoch# 36: 3.34s
+Epoch 00037 | Loss 0.4640 | Val Accuracy 0.8778 | Test Accuracy 0.7498
+Run time for epoch# 37: 3.34s
+Epoch 00038 | Loss 0.4582 | Val Accuracy 0.8777 | Test Accuracy 0.7485
+Run time for epoch# 38: 3.33s
+Epoch 00039 | Loss 0.4662 | Val Accuracy 0.8777 | Test Accuracy 0.7493
+Run time for epoch# 39: 3.33s
+Epoch 00040 | Loss 0.4632 | Val Accuracy 0.8762 | Test Accuracy 0.7487
+Run time for epoch# 40: 3.34s
+Epoch 00041 | Loss 0.4629 | Val Accuracy 0.8785 | Test Accuracy 0.7507
+Run time for epoch# 41: 3.34s
+Epoch 00042 | Loss 0.4787 | Val Accuracy 0.8779 | Test Accuracy 0.7498
+Run time for epoch# 42: 3.33s
+Epoch 00043 | Loss 0.4812 | Val Accuracy 0.8767 | Test Accuracy 0.7580
+Run time for epoch# 43: 3.34s
+Epoch 00044 | Loss 0.4700 | Val Accuracy 0.8781 | Test Accuracy 0.7514
+Run time for epoch# 44: 3.33s
+Epoch 00045 | Loss 0.4597 | Val Accuracy 0.8798 | Test Accuracy 0.7564
+Run time for epoch# 45: 3.33s
+Epoch 00046 | Loss 0.4585 | Val Accuracy 0.8798 | Test Accuracy 0.7515
+Run time for epoch# 46: 3.34s
+Epoch 00047 | Loss 0.4492 | Val Accuracy 0.8783 | Test Accuracy 0.7536
+Run time for epoch# 47: 3.34s
+Epoch 00048 | Loss 0.4499 | Val Accuracy 0.8789 | Test Accuracy 0.7544
+Run time for epoch# 48: 3.33s
+Epoch 00049 | Loss 0.4791 | Val Accuracy 0.8800 | Test Accuracy 0.7538
+Run time for epoch# 49: 3.34s
+Epoch 00050 | Loss 0.4627 | Val Accuracy 0.8792 | Test Accuracy 0.7536
+Run time for epoch# 50: 3.34s
+Epoch 00051 | Loss 0.4490 | Val Accuracy 0.8804 | Test Accuracy 0.7539
+Run time for epoch# 51: 3.34s
+Epoch 00052 | Loss 0.4628 | Val Accuracy 0.8782 | Test Accuracy 0.7557
+Run time for epoch# 52: 3.33s
+Epoch 00053 | Loss 0.4593 | Val Accuracy 0.8790 | Test Accuracy 0.7550
+Run time for epoch# 53: 3.33s
+Epoch 00054 | Loss 0.4447 | Val Accuracy 0.8804 | Test Accuracy 0.7546
+Run time for epoch# 54: 3.34s
+Epoch 00055 | Loss 0.4467 | Val Accuracy 0.8792 | Test Accuracy 0.7539
+Run time for epoch# 55: 3.34s
+Epoch 00056 | Loss 0.4581 | Val Accuracy 0.8782 | Test Accuracy 0.7495
+Run time for epoch# 56: 3.34s
+Epoch 00057 | Loss 0.4488 | Val Accuracy 0.8798 | Test Accuracy 0.7567
+Run time for epoch# 57: 3.32s
+Epoch 00058 | Loss 0.4450 | Val Accuracy 0.8769 | Test Accuracy 0.7558
+Run time for epoch# 58: 3.34s
+Epoch 00059 | Loss 0.4731 | Val Accuracy 0.8768 | Test Accuracy 0.7458
+Run time for epoch# 59: 3.34s
+Epoch 00060 | Loss 0.4756 | Val Accuracy 0.8741 | Test Accuracy 0.7543
+Run time for epoch# 60: 3.34s
+Epoch 00061 | Loss 0.4787 | Val Accuracy 0.8773 | Test Accuracy 0.7514
+Run time for epoch# 61: 3.32s
+Epoch 00062 | Loss 0.4470 | Val Accuracy 0.8796 | Test Accuracy 0.7502
+Run time for epoch# 62: 3.34s
+Epoch 00063 | Loss 0.4726 | Val Accuracy 0.8801 | Test Accuracy 0.7507
+Run time for epoch# 63: 3.34s
+Epoch 00064 | Loss 0.5023 | Val Accuracy 0.8782 | Test Accuracy 0.7547
+Run time for epoch# 64: 3.34s
+Epoch 00065 | Loss 0.4560 | Val Accuracy 0.8812 | Test Accuracy 0.7490
+Run time for epoch# 65: 3.33s
+Epoch 00066 | Loss 0.4505 | Val Accuracy 0.8815 | Test Accuracy 0.7537
+Run time for epoch# 66: 3.34s
+Epoch 00067 | Loss 0.4405 | Val Accuracy 0.8778 | Test Accuracy 0.7561
+Run time for epoch# 67: 3.33s
+Epoch 00068 | Loss 0.4527 | Val Accuracy 0.8794 | Test Accuracy 0.7511
+Run time for epoch# 68: 3.34s
+Epoch 00069 | Loss 0.4455 | Val Accuracy 0.8811 | Test Accuracy 0.7582
+Run time for epoch# 69: 3.34s
+Epoch 00070 | Loss 0.4675 | Val Accuracy 0.8816 | Test Accuracy 0.7543
+Run time for epoch# 70: 3.33s
+Epoch 00071 | Loss 0.4502 | Val Accuracy 0.8785 | Test Accuracy 0.7573
+Run time for epoch# 71: 3.34s
+Epoch 00072 | Loss 0.4547 | Val Accuracy 0.8797 | Test Accuracy 0.7594
+Run time for epoch# 72: 3.34s
+Epoch 00073 | Loss 0.4490 | Val Accuracy 0.8786 | Test Accuracy 0.7551
+Run time for epoch# 73: 3.34s
+Epoch 00074 | Loss 0.4697 | Val Accuracy 0.8772 | Test Accuracy 0.7542
+Run time for epoch# 74: 3.34s
+Epoch 00075 | Loss 0.4927 | Val Accuracy 0.8797 | Test Accuracy 0.7593
+Run time for epoch# 75: 3.33s
+Epoch 00076 | Loss 0.4418 | Val Accuracy 0.8800 | Test Accuracy 0.7564
+Run time for epoch# 76: 3.34s
+Epoch 00077 | Loss 0.4431 | Val Accuracy 0.8793 | Test Accuracy 0.7570
+Run time for epoch# 77: 3.34s
+Epoch 00078 | Loss 0.4422 | Val Accuracy 0.8811 | Test Accuracy 0.7588
+Run time for epoch# 78: 3.33s
+Epoch 00079 | Loss 0.4600 | Val Accuracy 0.8812 | Test Accuracy 0.7522
+Run time for epoch# 79: 3.34s
+Epoch 00080 | Loss 0.4460 | Val Accuracy 0.8796 | Test Accuracy 0.7587
+Run time for epoch# 80: 3.34s
+Epoch 00081 | Loss 0.4589 | Val Accuracy 0.8784 | Test Accuracy 0.7501
+Run time for epoch# 81: 3.34s
+Epoch 00082 | Loss 0.4669 | Val Accuracy 0.8807 | Test Accuracy 0.7477
+Run time for epoch# 82: 3.34s
+Epoch 00083 | Loss 0.4441 | Val Accuracy 0.8809 | Test Accuracy 0.7459
+Run time for epoch# 83: 3.34s
+Epoch 00084 | Loss 0.4577 | Val Accuracy 0.8816 | Test Accuracy 0.7515
+Run time for epoch# 84: 3.33s
+Epoch 00085 | Loss 0.4502 | Val Accuracy 0.8805 | Test Accuracy 0.7471
+Run time for epoch# 85: 3.33s
+Epoch 00086 | Loss 0.4697 | Val Accuracy 0.8804 | Test Accuracy 0.7551
+Run time for epoch# 86: 3.34s
+Epoch 00087 | Loss 0.4538 | Val Accuracy 0.8804 | Test Accuracy 0.7510
+Run time for epoch# 87: 3.34s
+Epoch 00088 | Loss 0.4540 | Val Accuracy 0.8794 | Test Accuracy 0.7538
+Run time for epoch# 88: 3.33s
+Epoch 00089 | Loss 0.5015 | Val Accuracy 0.8796 | Test Accuracy 0.7517
+Run time for epoch# 89: 3.34s
+Epoch 00090 | Loss 0.4599 | Val Accuracy 0.8785 | Test Accuracy 0.7545
+Run time for epoch# 90: 3.34s
+Epoch 00091 | Loss 0.4508 | Val Accuracy 0.8801 | Test Accuracy 0.7509
+Run time for epoch# 91: 3.35s
+Epoch 00092 | Loss 0.4537 | Val Accuracy 0.8814 | Test Accuracy 0.7445
+Run time for epoch# 92: 3.34s
+Epoch 00093 | Loss 0.4731 | Val Accuracy 0.8801 | Test Accuracy 0.7485
+Run time for epoch# 93: 3.33s
+Epoch 00094 | Loss 0.4681 | Val Accuracy 0.8778 | Test Accuracy 0.7527
+Run time for epoch# 94: 3.34s
+Epoch 00095 | Loss 0.4713 | Val Accuracy 0.8799 | Test Accuracy 0.7567
+Run time for epoch# 95: 3.34s
+Epoch 00096 | Loss 0.4502 | Val Accuracy 0.8795 | Test Accuracy 0.7550
+Run time for epoch# 96: 3.34s
+Epoch 00097 | Loss 0.4503 | Val Accuracy 0.8796 | Test Accuracy 0.7548
+Run time for epoch# 97: 3.34s
+Epoch 00098 | Loss 0.4528 | Val Accuracy 0.8807 | Test Accuracy 0.7576
+Run time for epoch# 98: 3.34s
+Epoch 00099 | Loss 0.4417 | Val Accuracy 0.8814 | Test Accuracy 0.7563
+Run time for epoch# 99: 3.35s
+Epoch 00100 | Loss 0.4407 | Val Accuracy 0.8823 | Test Accuracy 0.7539
+Run time for epoch# 100: 3.35s
+Epoch 00101 | Loss 0.4407 | Val Accuracy 0.8812 | Test Accuracy 0.7543
+Run time for epoch# 101: 3.35s
+Epoch 00102 | Loss 0.4426 | Val Accuracy 0.8812 | Test Accuracy 0.7539
+Run time for epoch# 102: 3.34s
+Epoch 00103 | Loss 0.4446 | Val Accuracy 0.8817 | Test Accuracy 0.7555
+Run time for epoch# 103: 3.35s
+Epoch 00104 | Loss 0.4413 | Val Accuracy 0.8819 | Test Accuracy 0.7512
+Run time for epoch# 104: 3.36s
+Epoch 00105 | Loss 0.4443 | Val Accuracy 0.8812 | Test Accuracy 0.7555
+Run time for epoch# 105: 3.35s
+Epoch 00106 | Loss 0.4528 | Val Accuracy 0.8808 | Test Accuracy 0.7558
+Run time for epoch# 106: 3.35s
+Epoch 00107 | Loss 0.4482 | Val Accuracy 0.8806 | Test Accuracy 0.7526
+Run time for epoch# 107: 3.35s
+Epoch 00108 | Loss 0.4471 | Val Accuracy 0.8809 | Test Accuracy 0.7487
+Run time for epoch# 108: 3.35s
+Epoch 00109 | Loss 0.4484 | Val Accuracy 0.8794 | Test Accuracy 0.7518
+Run time for epoch# 109: 3.35s
+Epoch 00110 | Loss 0.4380 | Val Accuracy 0.8831 | Test Accuracy 0.7565
+Run time for epoch# 110: 3.35s
+Epoch 00111 | Loss 0.4333 | Val Accuracy 0.8792 | Test Accuracy 0.7552
+Run time for epoch# 111: 3.35s
+Epoch 00112 | Loss 0.4520 | Val Accuracy 0.8802 | Test Accuracy 0.7526
+Run time for epoch# 112: 3.36s
+Epoch 00113 | Loss 0.4712 | Val Accuracy 0.8797 | Test Accuracy 0.7549
+Run time for epoch# 113: 3.35s
+Epoch 00114 | Loss 0.4496 | Val Accuracy 0.8815 | Test Accuracy 0.7550
+Run time for epoch# 114: 3.35s
+Epoch 00115 | Loss 0.4860 | Val Accuracy 0.8819 | Test Accuracy 0.7573
+Run time for epoch# 115: 3.48s
+Epoch 00116 | Loss 0.4416 | Val Accuracy 0.8803 | Test Accuracy 0.7554
+Run time for epoch# 116: 3.35s
+Epoch 00117 | Loss 0.4445 | Val Accuracy 0.8826 | Test Accuracy 0.7583
+Run time for epoch# 117: 3.36s
+Epoch 00118 | Loss 0.4545 | Val Accuracy 0.8807 | Test Accuracy 0.7570
+Run time for epoch# 118: 3.35s
+Epoch 00119 | Loss 0.4899 | Val Accuracy 0.8794 | Test Accuracy 0.7542
+Run time for epoch# 119: 3.35s
+Epoch 00120 | Loss 0.4559 | Val Accuracy 0.8785 | Test Accuracy 0.7554
+Run time for epoch# 120: 3.35s
+Epoch 00121 | Loss 0.4733 | Val Accuracy 0.8809 | Test Accuracy 0.7555
+Run time for epoch# 121: 3.35s
+Epoch 00122 | Loss 0.4535 | Val Accuracy 0.8818 | Test Accuracy 0.7471
+Run time for epoch# 122: 3.35s
+n_50_epoch, n_50_accuracy 123 0.759381890296936
+Epoch 00123 | Loss 0.4910 | Val Accuracy 0.8807 | Test Accuracy 0.7523
+Run time for epoch# 123: 3.35s
+Epoch 00124 | Loss 0.4461 | Val Accuracy 0.8800 | Test Accuracy 0.7568
+Run time for epoch# 124: 3.35s
+Epoch 00125 | Loss 0.4357 | Val Accuracy 0.8809 | Test Accuracy 0.7581
+Run time for epoch# 125: 3.35s
+Epoch 00126 | Loss 0.4340 | Val Accuracy 0.8823 | Test Accuracy 0.7590
+Run time for epoch# 126: 3.35s
+Epoch 00127 | Loss 0.4326 | Val Accuracy 0.8828 | Test Accuracy 0.7565
+Run time for epoch# 127: 3.36s
+Epoch 00128 | Loss 0.4456 | Val Accuracy 0.8806 | Test Accuracy 0.7568
+Run time for epoch# 128: 3.36s
+Epoch 00129 | Loss 0.4578 | Val Accuracy 0.8816 | Test Accuracy 0.7555
+Run time for epoch# 129: 3.34s
+Epoch 00130 | Loss 0.5121 | Val Accuracy 0.8808 | Test Accuracy 0.7579
+Run time for epoch# 130: 3.35s
+Epoch 00131 | Loss 0.4482 | Val Accuracy 0.8783 | Test Accuracy 0.7539
+Run time for epoch# 131: 3.36s
+Epoch 00132 | Loss 0.4505 | Val Accuracy 0.8820 | Test Accuracy 0.7550
+Run time for epoch# 132: 3.35s
+Epoch 00133 | Loss 0.4385 | Val Accuracy 0.8803 | Test Accuracy 0.7569
+Run time for epoch# 133: 3.34s
+Epoch 00134 | Loss 0.4446 | Val Accuracy 0.8802 | Test Accuracy 0.7599
+Run time for epoch# 134: 3.35s
+Epoch 00135 | Loss 0.4369 | Val Accuracy 0.8824 | Test Accuracy 0.7542
+Run time for epoch# 135: 3.35s
+Epoch 00136 | Loss 0.4313 | Val Accuracy 0.8823 | Test Accuracy 0.7563
+Run time for epoch# 136: 3.35s
+Epoch 00137 | Loss 0.4673 | Val Accuracy 0.8815 | Test Accuracy 0.7569
+Run time for epoch# 137: 3.35s
+Epoch 00138 | Loss 0.4432 | Val Accuracy 0.8828 | Test Accuracy 0.7572
+Run time for epoch# 138: 3.35s
+Epoch 00139 | Loss 0.4462 | Val Accuracy 0.8813 | Test Accuracy 0.7521
+Run time for epoch# 139: 3.35s
+Epoch 00140 | Loss 0.4471 | Val Accuracy 0.8812 | Test Accuracy 0.7589
+Run time for epoch# 140: 3.34s
+Epoch 00141 | Loss 0.4782 | Val Accuracy 0.8808 | Test Accuracy 0.7558
+Run time for epoch# 141: 3.35s
+Epoch 00142 | Loss 0.4517 | Val Accuracy 0.8809 | Test Accuracy 0.7573
+Run time for epoch# 142: 3.36s
+Epoch 00143 | Loss 0.4681 | Val Accuracy 0.8830 | Test Accuracy 0.7570
+Run time for epoch# 143: 3.35s
+Epoch 00144 | Loss 0.4461 | Val Accuracy 0.8805 | Test Accuracy 0.7507
+Run time for epoch# 144: 3.35s
+Epoch 00145 | Loss 0.4421 | Val Accuracy 0.8809 | Test Accuracy 0.7545
+Run time for epoch# 145: 3.36s
+Epoch 00146 | Loss 0.4284 | Val Accuracy 0.8827 | Test Accuracy 0.7657
+Run time for epoch# 146: 3.36s
+Epoch 00147 | Loss 0.4582 | Val Accuracy 0.8796 | Test Accuracy 0.7532
+Run time for epoch# 147: 3.35s
+Epoch 00148 | Loss 0.4723 | Val Accuracy 0.8818 | Test Accuracy 0.7573
+Run time for epoch# 148: 3.35s
+Epoch 00149 | Loss 0.4437 | Val Accuracy 0.8808 | Test Accuracy 0.7583
+Run time for epoch# 149: 3.36s
+Epoch 00150 | Loss 0.4375 | Val Accuracy 0.8834 | Test Accuracy 0.7573
+Run time for epoch# 150: 3.35s
+Epoch 00151 | Loss 0.4273 | Val Accuracy 0.8812 | Test Accuracy 0.7649
+Run time for epoch# 151: 3.35s
+Epoch 00152 | Loss 0.4309 | Val Accuracy 0.8828 | Test Accuracy 0.7619
+Run time for epoch# 152: 3.35s
+Epoch 00153 | Loss 0.4302 | Val Accuracy 0.8839 | Test Accuracy 0.7642
+Run time for epoch# 153: 3.35s
+Epoch 00154 | Loss 0.4313 | Val Accuracy 0.8825 | Test Accuracy 0.7534
+Run time for epoch# 154: 3.36s
+Epoch 00155 | Loss 0.4598 | Val Accuracy 0.8786 | Test Accuracy 0.7608
+Run time for epoch# 155: 3.35s
+Epoch 00156 | Loss 0.4552 | Val Accuracy 0.8816 | Test Accuracy 0.7537
+Run time for epoch# 156: 3.36s
+Epoch 00157 | Loss 0.4304 | Val Accuracy 0.8810 | Test Accuracy 0.7535
+Run time for epoch# 157: 3.35s
+Epoch 00158 | Loss 0.4391 | Val Accuracy 0.8822 | Test Accuracy 0.7587
+Run time for epoch# 158: 3.35s
+Epoch 00159 | Loss 0.4681 | Val Accuracy 0.8795 | Test Accuracy 0.7564
+Run time for epoch# 159: 3.35s
+Epoch 00160 | Loss 0.4568 | Val Accuracy 0.8816 | Test Accuracy 0.7546
+Run time for epoch# 160: 3.35s
+Epoch 00161 | Loss 0.4433 | Val Accuracy 0.8824 | Test Accuracy 0.7589
+Run time for epoch# 161: 3.35s
+Epoch 00162 | Loss 0.4334 | Val Accuracy 0.8828 | Test Accuracy 0.7600
+Run time for epoch# 162: 3.35s
+Epoch 00163 | Loss 0.4279 | Val Accuracy 0.8821 | Test Accuracy 0.7613
+Run time for epoch# 163: 3.35s
+Epoch 00164 | Loss 0.4364 | Val Accuracy 0.8836 | Test Accuracy 0.7556
+Run time for epoch# 164: 3.35s
+Epoch 00165 | Loss 0.4434 | Val Accuracy 0.8815 | Test Accuracy 0.7584
+Run time for epoch# 165: 3.35s
+Epoch 00166 | Loss 0.4421 | Val Accuracy 0.8820 | Test Accuracy 0.7594
+Run time for epoch# 166: 3.35s
+Epoch 00167 | Loss 0.4371 | Val Accuracy 0.8824 | Test Accuracy 0.7592
+Run time for epoch# 167: 3.35s
+Epoch 00168 | Loss 0.4448 | Val Accuracy 0.8802 | Test Accuracy 0.7526
+Run time for epoch# 168: 3.35s
+Epoch 00169 | Loss 0.4447 | Val Accuracy 0.8831 | Test Accuracy 0.7534
+Run time for epoch# 169: 3.35s
+Epoch 00170 | Loss 0.4506 | Val Accuracy 0.8811 | Test Accuracy 0.7553
+Run time for epoch# 170: 3.34s
+Epoch 00171 | Loss 0.4543 | Val Accuracy 0.8802 | Test Accuracy 0.7544
+Run time for epoch# 171: 3.35s
+Epoch 00172 | Loss 0.5001 | Val Accuracy 0.8802 | Test Accuracy 0.7619
+Run time for epoch# 172: 3.35s
+Epoch 00173 | Loss 0.4516 | Val Accuracy 0.8812 | Test Accuracy 0.7574
+Run time for epoch# 173: 3.35s
+Epoch 00174 | Loss 0.4332 | Val Accuracy 0.8831 | Test Accuracy 0.7543
+Run time for epoch# 174: 3.35s
+Epoch 00175 | Loss 0.4499 | Val Accuracy 0.8826 | Test Accuracy 0.7534
+Run time for epoch# 175: 3.35s
+Epoch 00176 | Loss 0.4869 | Val Accuracy 0.8813 | Test Accuracy 0.7514
+Run time for epoch# 176: 3.35s
+Epoch 00177 | Loss 0.4414 | Val Accuracy 0.8831 | Test Accuracy 0.7609
+Run time for epoch# 177: 3.35s
+Epoch 00178 | Loss 0.4329 | Val Accuracy 0.8845 | Test Accuracy 0.7558
+Run time for epoch# 178: 3.35s
+Epoch 00179 | Loss 0.4479 | Val Accuracy 0.8819 | Test Accuracy 0.7564
+Run time for epoch# 179: 3.35s
+Epoch 00180 | Loss 0.4971 | Val Accuracy 0.8810 | Test Accuracy 0.7586
+Run time for epoch# 180: 3.35s
+Epoch 00181 | Loss 0.4487 | Val Accuracy 0.8814 | Test Accuracy 0.7604
+Run time for epoch# 181: 3.35s
+Epoch 00182 | Loss 0.4377 | Val Accuracy 0.8854 | Test Accuracy 0.7577
+Run time for epoch# 182: 3.35s
+Epoch 00183 | Loss 0.4337 | Val Accuracy 0.8837 | Test Accuracy 0.7603
+Run time for epoch# 183: 3.35s
+Epoch 00184 | Loss 0.4268 | Val Accuracy 0.8825 | Test Accuracy 0.7589
+Run time for epoch# 184: 3.34s
+Epoch 00185 | Loss 0.4461 | Val Accuracy 0.8816 | Test Accuracy 0.7592
+Run time for epoch# 185: 3.35s
+Epoch 00186 | Loss 0.4309 | Val Accuracy 0.8816 | Test Accuracy 0.7568
+Run time for epoch# 186: 3.35s
+Epoch 00187 | Loss 0.4324 | Val Accuracy 0.8824 | Test Accuracy 0.7556
+Run time for epoch# 187: 3.35s
+Epoch 00188 | Loss 0.4374 | Val Accuracy 0.8823 | Test Accuracy 0.7593
+Run time for epoch# 188: 3.34s
+Epoch 00189 | Loss 0.4292 | Val Accuracy 0.8808 | Test Accuracy 0.7562
+Run time for epoch# 189: 3.35s
+Epoch 00190 | Loss 0.4546 | Val Accuracy 0.8819 | Test Accuracy 0.7528
+Run time for epoch# 190: 3.35s
+Epoch 00191 | Loss 0.4333 | Val Accuracy 0.8842 | Test Accuracy 0.7546
+Run time for epoch# 191: 3.35s
+Epoch 00192 | Loss 0.4317 | Val Accuracy 0.8825 | Test Accuracy 0.7579
+Run time for epoch# 192: 3.35s
+Epoch 00193 | Loss 0.4445 | Val Accuracy 0.8821 | Test Accuracy 0.7578
+Run time for epoch# 193: 3.35s
+Epoch 00194 | Loss 0.4337 | Val Accuracy 0.8838 | Test Accuracy 0.7609
+Run time for epoch# 194: 3.35s
+Epoch 00195 | Loss 0.4431 | Val Accuracy 0.8826 | Test Accuracy 0.7625
+Run time for epoch# 195: 3.35s
+Epoch 00196 | Loss 0.4437 | Val Accuracy 0.8819 | Test Accuracy 0.7541
+Run time for epoch# 196: 3.48s
+Epoch 00197 | Loss 0.4331 | Val Accuracy 0.8826 | Test Accuracy 0.7566
+Run time for epoch# 197: 3.35s
+Epoch 00198 | Loss 0.4384 | Val Accuracy 0.8821 | Test Accuracy 0.7574
+Run time for epoch# 198: 3.35s
+Epoch 00199 | Loss 0.4456 | Val Accuracy 0.8814 | Test Accuracy 0.7548
+Run time for epoch# 199: 3.36s
+Epoch 00200 | Loss 0.4637 | Val Accuracy 0.8814 | Test Accuracy 0.7587
+Run time for epoch# 200: 3.35s
+Epoch 00201 | Loss 0.4371 | Val Accuracy 0.8840 | Test Accuracy 0.7552
+Run time for epoch# 201: 3.34s
+Epoch 00202 | Loss 0.4498 | Val Accuracy 0.8832 | Test Accuracy 0.7596
+Run time for epoch# 202: 3.36s
+Epoch 00203 | Loss 0.4508 | Val Accuracy 0.8825 | Test Accuracy 0.7551
+Run time for epoch# 203: 3.36s
+Epoch 00204 | Loss 0.4366 | Val Accuracy 0.8835 | Test Accuracy 0.7528
+Run time for epoch# 204: 3.35s
+Epoch 00205 | Loss 0.4618 | Val Accuracy 0.8838 | Test Accuracy 0.7595
+Run time for epoch# 205: 3.35s
+Epoch 00206 | Loss 0.5089 | Val Accuracy 0.8816 | Test Accuracy 0.7554
+Run time for epoch# 206: 3.35s
+Epoch 00207 | Loss 0.4477 | Val Accuracy 0.8820 | Test Accuracy 0.7525
+Run time for epoch# 207: 3.35s
+Epoch 00208 | Loss 0.4529 | Val Accuracy 0.8806 | Test Accuracy 0.7573
+Run time for epoch# 208: 3.35s
+Epoch 00209 | Loss 0.4937 | Val Accuracy 0.8836 | Test Accuracy 0.7565
+Run time for epoch# 209: 3.35s
+Epoch 00210 | Loss 0.4517 | Val Accuracy 0.8815 | Test Accuracy 0.7552
+Run time for epoch# 210: 3.35s
+Epoch 00211 | Loss 0.4507 | Val Accuracy 0.8811 | Test Accuracy 0.7563
+Run time for epoch# 211: 3.36s
+Epoch 00212 | Loss 0.4347 | Val Accuracy 0.8838 | Test Accuracy 0.7611
+Run time for epoch# 212: 3.36s
+Epoch 00213 | Loss 0.4740 | Val Accuracy 0.8814 | Test Accuracy 0.7598
+Run time for epoch# 213: 3.35s
+Epoch 00214 | Loss 0.4625 | Val Accuracy 0.8786 | Test Accuracy 0.7469
+Run time for epoch# 214: 3.35s
+Epoch 00215 | Loss 0.4379 | Val Accuracy 0.8797 | Test Accuracy 0.7524
+Run time for epoch# 215: 3.36s
+Epoch 00216 | Loss 0.4987 | Val Accuracy 0.8814 | Test Accuracy 0.7481
+Run time for epoch# 216: 3.36s
+Epoch 00217 | Loss 0.4503 | Val Accuracy 0.8822 | Test Accuracy 0.7511
+Run time for epoch# 217: 3.36s
+Epoch 00218 | Loss 0.4431 | Val Accuracy 0.8823 | Test Accuracy 0.7533
+Run time for epoch# 218: 3.35s
+Epoch 00219 | Loss 0.4349 | Val Accuracy 0.8821 | Test Accuracy 0.7591
+Run time for epoch# 219: 3.35s
+Epoch 00220 | Loss 0.4306 | Val Accuracy 0.8841 | Test Accuracy 0.7538
+Run time for epoch# 220: 3.36s
+Epoch 00221 | Loss 0.4805 | Val Accuracy 0.8817 | Test Accuracy 0.7581
+Run time for epoch# 221: 3.35s
+Epoch 00222 | Loss 0.4475 | Val Accuracy 0.8801 | Test Accuracy 0.7561
+Run time for epoch# 222: 3.36s
+Epoch 00223 | Loss 0.4546 | Val Accuracy 0.8826 | Test Accuracy 0.7607
+Run time for epoch# 223: 3.35s
+Epoch 00224 | Loss 0.4308 | Val Accuracy 0.8810 | Test Accuracy 0.7590
+Run time for epoch# 224: 3.35s
+Epoch 00225 | Loss 0.5072 | Val Accuracy 0.8791 | Test Accuracy 0.7569
+Run time for epoch# 225: 3.35s
+Epoch 00226 | Loss 0.4706 | Val Accuracy 0.8812 | Test Accuracy 0.7553
+Run time for epoch# 226: 3.36s
+Epoch 00227 | Loss 0.4302 | Val Accuracy 0.8834 | Test Accuracy 0.7592
+Run time for epoch# 227: 3.36s
+Epoch 00228 | Loss 0.4314 | Val Accuracy 0.8824 | Test Accuracy 0.7562
+Run time for epoch# 228: 3.35s
+Epoch 00229 | Loss 0.4662 | Val Accuracy 0.8815 | Test Accuracy 0.7618
+Run time for epoch# 229: 3.35s
+Epoch 00230 | Loss 0.4507 | Val Accuracy 0.8826 | Test Accuracy 0.7558
+Run time for epoch# 230: 3.36s
+Epoch 00231 | Loss 0.4283 | Val Accuracy 0.8835 | Test Accuracy 0.7588
+Run time for epoch# 231: 3.36s
+Epoch 00232 | Loss 0.4520 | Val Accuracy 0.8831 | Test Accuracy 0.7603
+Run time for epoch# 232: 3.36s
+Epoch 00233 | Loss 0.4466 | Val Accuracy 0.8827 | Test Accuracy 0.7559
+Run time for epoch# 233: 3.34s
+Epoch 00234 | Loss 0.4382 | Val Accuracy 0.8837 | Test Accuracy 0.7574
+Run time for epoch# 234: 3.35s
+Epoch 00235 | Loss 0.4477 | Val Accuracy 0.8822 | Test Accuracy 0.7635
+Run time for epoch# 235: 3.36s
+Epoch 00236 | Loss 0.4686 | Val Accuracy 0.8829 | Test Accuracy 0.7627
+Run time for epoch# 236: 3.36s
+Epoch 00237 | Loss 0.4564 | Val Accuracy 0.8824 | Test Accuracy 0.7538
+Run time for epoch# 237: 3.35s
+Epoch 00238 | Loss 0.4437 | Val Accuracy 0.8819 | Test Accuracy 0.7581
+Run time for epoch# 238: 3.36s
+Epoch 00239 | Loss 0.4308 | Val Accuracy 0.8842 | Test Accuracy 0.7594
+Run time for epoch# 239: 3.35s
+Epoch 00240 | Loss 0.4554 | Val Accuracy 0.8841 | Test Accuracy 0.7617
+Run time for epoch# 240: 3.35s
+Epoch 00241 | Loss 0.4438 | Val Accuracy 0.8848 | Test Accuracy 0.7649
+Run time for epoch# 241: 3.35s
+Epoch 00242 | Loss 0.4298 | Val Accuracy 0.8822 | Test Accuracy 0.7700
+Run time for epoch# 242: 3.35s
+Epoch 00243 | Loss 0.4265 | Val Accuracy 0.8858 | Test Accuracy 0.7631
+Run time for epoch# 243: 3.36s
+Epoch 00244 | Loss 0.4323 | Val Accuracy 0.8835 | Test Accuracy 0.7651
+Run time for epoch# 244: 3.35s
+Epoch 00245 | Loss 0.4265 | Val Accuracy 0.8838 | Test Accuracy 0.7589
+Run time for epoch# 245: 3.36s
+Epoch 00246 | Loss 0.4416 | Val Accuracy 0.8834 | Test Accuracy 0.7558
+Run time for epoch# 246: 3.35s
+Epoch 00247 | Loss 0.4310 | Val Accuracy 0.8848 | Test Accuracy 0.7522
+Run time for epoch# 247: 3.36s
+Epoch 00248 | Loss 0.4402 | Val Accuracy 0.8829 | Test Accuracy 0.7600
+Run time for epoch# 248: 3.36s
+Epoch 00249 | Loss 0.4455 | Val Accuracy 0.8830 | Test Accuracy 0.7570
+Run time for epoch# 249: 3.36s
+Epoch 00250 | Loss 0.4235 | Val Accuracy 0.8829 | Test Accuracy 0.7594
+Run time for epoch# 250: 3.36s
+Epoch 00251 | Loss 0.4385 | Val Accuracy 0.8828 | Test Accuracy 0.7559
+Run time for epoch# 251: 3.35s
+Epoch 00252 | Loss 0.4419 | Val Accuracy 0.8821 | Test Accuracy 0.7554
+Run time for epoch# 252: 3.36s
+Epoch 00253 | Loss 0.4698 | Val Accuracy 0.8824 | Test Accuracy 0.7494
+Run time for epoch# 253: 3.36s
+Epoch 00254 | Loss 0.4598 | Val Accuracy 0.8825 | Test Accuracy 0.7569
+Run time for epoch# 254: 3.36s
+Epoch 00255 | Loss 0.4576 | Val Accuracy 0.8802 | Test Accuracy 0.7573
+Run time for epoch# 255: 3.35s
+Epoch 00256 | Loss 0.4688 | Val Accuracy 0.8814 | Test Accuracy 0.7572
+Run time for epoch# 256: 3.35s
+Epoch 00257 | Loss 0.4407 | Val Accuracy 0.8826 | Test Accuracy 0.7571
+Run time for epoch# 257: 3.36s
+Epoch 00258 | Loss 0.4944 | Val Accuracy 0.8796 | Test Accuracy 0.7554
+Run time for epoch# 258: 3.35s
+Epoch 00259 | Loss 0.4362 | Val Accuracy 0.8828 | Test Accuracy 0.7570
+Run time for epoch# 259: 3.36s
+Epoch 00260 | Loss 0.4273 | Val Accuracy 0.8839 | Test Accuracy 0.7548
+Run time for epoch# 260: 3.35s
+Epoch 00261 | Loss 0.4459 | Val Accuracy 0.8830 | Test Accuracy 0.7543
+Run time for epoch# 261: 3.35s
+Epoch 00262 | Loss 0.4298 | Val Accuracy 0.8830 | Test Accuracy 0.7583
+Run time for epoch# 262: 3.35s
+Epoch 00263 | Loss 0.4232 | Val Accuracy 0.8825 | Test Accuracy 0.7623
+Run time for epoch# 263: 3.35s
+Epoch 00264 | Loss 0.4254 | Val Accuracy 0.8841 | Test Accuracy 0.7660
+Run time for epoch# 264: 3.35s
+Epoch 00265 | Loss 0.4469 | Val Accuracy 0.8824 | Test Accuracy 0.7621
+Run time for epoch# 265: 3.35s
+Epoch 00266 | Loss 0.4427 | Val Accuracy 0.8829 | Test Accuracy 0.7587
+Run time for epoch# 266: 3.35s
+Epoch 00267 | Loss 0.4346 | Val Accuracy 0.8837 | Test Accuracy 0.7508
+Run time for epoch# 267: 3.36s
+Epoch 00268 | Loss 0.4327 | Val Accuracy 0.8822 | Test Accuracy 0.7577
+Run time for epoch# 268: 3.35s
+Epoch 00269 | Loss 0.4436 | Val Accuracy 0.8831 | Test Accuracy 0.7546
+Run time for epoch# 269: 3.35s
+Epoch 00270 | Loss 0.4377 | Val Accuracy 0.8837 | Test Accuracy 0.7648
+Run time for epoch# 270: 3.35s
+Epoch 00271 | Loss 0.4600 | Val Accuracy 0.8848 | Test Accuracy 0.7584
+Run time for epoch# 271: 3.36s
+Epoch 00272 | Loss 0.4406 | Val Accuracy 0.8824 | Test Accuracy 0.7569
+Run time for epoch# 272: 3.36s
+Epoch 00273 | Loss 0.4345 | Val Accuracy 0.8853 | Test Accuracy 0.7594
+Run time for epoch# 273: 3.35s
+Epoch 00274 | Loss 0.4325 | Val Accuracy 0.8839 | Test Accuracy 0.7599
+Run time for epoch# 274: 3.34s
+Epoch 00275 | Loss 0.4874 | Val Accuracy 0.8844 | Test Accuracy 0.7594
+Run time for epoch# 275: 3.35s
+Epoch 00276 | Loss 0.4487 | Val Accuracy 0.8813 | Test Accuracy 0.7545
+Run time for epoch# 276: 3.35s
+Epoch 00277 | Loss 0.4678 | Val Accuracy 0.8830 | Test Accuracy 0.7595
+Run time for epoch# 277: 3.48s
+Epoch 00278 | Loss 0.4356 | Val Accuracy 0.8834 | Test Accuracy 0.7600
+Run time for epoch# 278: 3.35s
+Epoch 00279 | Loss 0.4626 | Val Accuracy 0.8812 | Test Accuracy 0.7549
+Run time for epoch# 279: 3.35s
+Epoch 00280 | Loss 0.4447 | Val Accuracy 0.8823 | Test Accuracy 0.7546
+Run time for epoch# 280: 3.36s
+Epoch 00281 | Loss 0.4421 | Val Accuracy 0.8829 | Test Accuracy 0.7595
+Run time for epoch# 281: 3.36s
+Epoch 00282 | Loss 0.4284 | Val Accuracy 0.8836 | Test Accuracy 0.7618
+Run time for epoch# 282: 3.35s
+Epoch 00283 | Loss 0.4250 | Val Accuracy 0.8836 | Test Accuracy 0.7615
+Run time for epoch# 283: 3.34s
+Epoch 00284 | Loss 0.4249 | Val Accuracy 0.8854 | Test Accuracy 0.7608
+Run time for epoch# 284: 3.35s
+Epoch 00285 | Loss 0.4397 | Val Accuracy 0.8831 | Test Accuracy 0.7582
+Run time for epoch# 285: 3.36s
+Epoch 00286 | Loss 0.4328 | Val Accuracy 0.8846 | Test Accuracy 0.7582
+Run time for epoch# 286: 3.35s
+Epoch 00287 | Loss 0.4306 | Val Accuracy 0.8844 | Test Accuracy 0.7610
+Run time for epoch# 287: 3.36s
+Epoch 00288 | Loss 0.4234 | Val Accuracy 0.8836 | Test Accuracy 0.7675
+Run time for epoch# 288: 3.35s
+Epoch 00289 | Loss 0.4308 | Val Accuracy 0.8847 | Test Accuracy 0.7581
+Run time for epoch# 289: 3.36s
+Epoch 00290 | Loss 0.4363 | Val Accuracy 0.8840 | Test Accuracy 0.7573
+Run time for epoch# 290: 3.35s
+Epoch 00291 | Loss 0.4723 | Val Accuracy 0.8862 | Test Accuracy 0.7621
+Run time for epoch# 291: 3.35s
+Epoch 00292 | Loss 0.4289 | Val Accuracy 0.8822 | Test Accuracy 0.7602
+Run time for epoch# 292: 3.35s
+Epoch 00293 | Loss 0.4392 | Val Accuracy 0.8838 | Test Accuracy 0.7621
+Run time for epoch# 293: 3.35s
+Epoch 00294 | Loss 0.4215 | Val Accuracy 0.8845 | Test Accuracy 0.7580
+Run time for epoch# 294: 3.35s
+Epoch 00295 | Loss 0.4215 | Val Accuracy 0.8830 | Test Accuracy 0.7569
+Run time for epoch# 295: 3.35s
+Epoch 00296 | Loss 0.4929 | Val Accuracy 0.8820 | Test Accuracy 0.7589
+Run time for epoch# 296: 3.36s
+Epoch 00297 | Loss 0.4426 | Val Accuracy 0.8834 | Test Accuracy 0.7581
+Run time for epoch# 297: 3.35s
+Epoch 00298 | Loss 0.4566 | Val Accuracy 0.8820 | Test Accuracy 0.7643
+Run time for epoch# 298: 3.35s
+Epoch 00299 | Loss 0.4479 | Val Accuracy 0.8833 | Test Accuracy 0.7568
+Run time for epoch# 299: 3.34s
+Epoch 00300 | Loss 0.4439 | Val Accuracy 0.8831 | Test Accuracy 0.7625
+Run time for epoch# 300: 3.35s
+Epoch 00301 | Loss 0.4323 | Val Accuracy 0.8831 | Test Accuracy 0.7555
+Run time for epoch# 301: 3.35s
+Epoch 00302 | Loss 0.4380 | Val Accuracy 0.8838 | Test Accuracy 0.7602
+Run time for epoch# 302: 3.35s
+Epoch 00303 | Loss 0.4247 | Val Accuracy 0.8787 | Test Accuracy 0.7605
+Run time for epoch# 303: 3.35s
+Epoch 00304 | Loss 0.4490 | Val Accuracy 0.8812 | Test Accuracy 0.7661
+Run time for epoch# 304: 3.34s
+Epoch 00305 | Loss 0.4471 | Val Accuracy 0.8836 | Test Accuracy 0.7618
+Run time for epoch# 305: 3.35s
+Epoch 00306 | Loss 0.4392 | Val Accuracy 0.8803 | Test Accuracy 0.7555
+Run time for epoch# 306: 3.35s
+Epoch 00307 | Loss 0.4303 | Val Accuracy 0.8824 | Test Accuracy 0.7615
+Run time for epoch# 307: 3.35s
+Epoch 00308 | Loss 0.4265 | Val Accuracy 0.8836 | Test Accuracy 0.7601
+Run time for epoch# 308: 3.35s
+Epoch 00309 | Loss 0.4367 | Val Accuracy 0.8806 | Test Accuracy 0.7557
+Run time for epoch# 309: 3.34s
+Epoch 00310 | Loss 0.4450 | Val Accuracy 0.8820 | Test Accuracy 0.7524
+Run time for epoch# 310: 3.35s
+Epoch 00311 | Loss 0.4450 | Val Accuracy 0.8813 | Test Accuracy 0.7521
+Run time for epoch# 311: 3.35s
+Epoch 00312 | Loss 0.4614 | Val Accuracy 0.8834 | Test Accuracy 0.7525
+Run time for epoch# 312: 3.35s
+Epoch 00313 | Loss 0.4456 | Val Accuracy 0.8831 | Test Accuracy 0.7588
+Run time for epoch# 313: 3.34s
+Epoch 00314 | Loss 0.4407 | Val Accuracy 0.8803 | Test Accuracy 0.7576
+Run time for epoch# 314: 3.35s
+Epoch 00315 | Loss 0.4626 | Val Accuracy 0.8844 | Test Accuracy 0.7598
+Run time for epoch# 315: 3.35s
+Epoch 00316 | Loss 0.4518 | Val Accuracy 0.8836 | Test Accuracy 0.7574
+Run time for epoch# 316: 3.35s
+Epoch 00317 | Loss 0.4572 | Val Accuracy 0.8841 | Test Accuracy 0.7612
+Run time for epoch# 317: 3.36s
+Epoch 00318 | Loss 0.4360 | Val Accuracy 0.8843 | Test Accuracy 0.7596
+Run time for epoch# 318: 3.33s
+Epoch 00319 | Loss 0.4344 | Val Accuracy 0.8818 | Test Accuracy 0.7571
+Run time for epoch# 319: 3.35s
+Epoch 00320 | Loss 0.4340 | Val Accuracy 0.8827 | Test Accuracy 0.7597
+Run time for epoch# 320: 3.35s
+Epoch 00321 | Loss 0.4409 | Val Accuracy 0.8835 | Test Accuracy 0.7590
+Run time for epoch# 321: 3.36s
+Epoch 00322 | Loss 0.4425 | Val Accuracy 0.8829 | Test Accuracy 0.7611
+Run time for epoch# 322: 3.35s
+Epoch 00323 | Loss 0.4368 | Val Accuracy 0.8839 | Test Accuracy 0.7586
+Run time for epoch# 323: 3.35s
+Epoch 00324 | Loss 0.4451 | Val Accuracy 0.8832 | Test Accuracy 0.7596
+Run time for epoch# 324: 3.35s
+Epoch 00325 | Loss 0.4213 | Val Accuracy 0.8835 | Test Accuracy 0.7626
+Run time for epoch# 325: 3.35s
+Epoch 00326 | Loss 0.5069 | Val Accuracy 0.8836 | Test Accuracy 0.7547
+Run time for epoch# 326: 3.35s
+Epoch 00327 | Loss 0.4393 | Val Accuracy 0.8855 | Test Accuracy 0.7572
+Run time for epoch# 327: 3.35s
+Epoch 00328 | Loss 0.4340 | Val Accuracy 0.8831 | Test Accuracy 0.7555
+Run time for epoch# 328: 3.35s
+Epoch 00329 | Loss 0.4502 | Val Accuracy 0.8829 | Test Accuracy 0.7587
+Run time for epoch# 329: 3.35s
+Epoch 00330 | Loss 0.4278 | Val Accuracy 0.8831 | Test Accuracy 0.7611
+Run time for epoch# 330: 3.35s
+Epoch 00331 | Loss 0.4356 | Val Accuracy 0.8821 | Test Accuracy 0.7622
+Run time for epoch# 331: 3.35s
+Epoch 00332 | Loss 0.4631 | Val Accuracy 0.8807 | Test Accuracy 0.7526
+Run time for epoch# 332: 3.35s
+Epoch 00333 | Loss 0.4492 | Val Accuracy 0.8830 | Test Accuracy 0.7589
+Run time for epoch# 333: 3.35s
+Epoch 00334 | Loss 0.4491 | Val Accuracy 0.8832 | Test Accuracy 0.7590
+Run time for epoch# 334: 3.35s
+Epoch 00335 | Loss 0.4278 | Val Accuracy 0.8836 | Test Accuracy 0.7601
+Run time for epoch# 335: 3.36s
+Epoch 00336 | Loss 0.4241 | Val Accuracy 0.8842 | Test Accuracy 0.7601
+Run time for epoch# 336: 3.35s
+Epoch 00337 | Loss 0.4752 | Val Accuracy 0.8841 | Test Accuracy 0.7596
+Run time for epoch# 337: 3.35s
+Epoch 00338 | Loss 0.4365 | Val Accuracy 0.8847 | Test Accuracy 0.7580
+Run time for epoch# 338: 3.35s
+Epoch 00339 | Loss 0.4250 | Val Accuracy 0.8843 | Test Accuracy 0.7610
+Run time for epoch# 339: 3.35s
+Epoch 00340 | Loss 0.4249 | Val Accuracy 0.8843 | Test Accuracy 0.7626
+Run time for epoch# 340: 3.35s
+Epoch 00341 | Loss 0.4434 | Val Accuracy 0.8832 | Test Accuracy 0.7606
+Run time for epoch# 341: 3.34s
+Epoch 00342 | Loss 0.4338 | Val Accuracy 0.8839 | Test Accuracy 0.7619
+Run time for epoch# 342: 3.35s
+n_200_epoch, n_200_accuracy 343 0.7699891924858093
+total time took : 125.3037257194519
+('ogbn-products', 'NSGCN', 1024, 2000, 5, True, True, 'NVIDIA A100-SXM4-80GB', '0,1,2,3', 2, 512, 0.7699891924858093, 0.36531698460481604, 0.759381890296936, 45.4329297542572, 123, 0.7699891924858093, 125.3037257194519, 343)
+Process 0 before barrier
+Process 0 after barrier
+Process 0 cleanup
+Process 0 finished and cleaned up
+all run finished
+graph cuda:1 node cuda:1 1
+Process 1 before barrier
+Process 1 after barrier
+Process 1 cleanup
+Process 1 finished and cleaned up
+all run finished
+graph cuda:2 node cuda:2 2
+Process 2 before barrier
+Process 2 after barrier
+Process 2 cleanup
+Process 2 finished and cleaned up
+all run finished
+converting bidirectional
+4 th training in puregpu mode using 4 GPU(s)
+Running parameters :  ogbn-papers100M 1024 5000 2 True True 0,1,2,3 2 128
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+/home/hojaeson_umass_edu/hojae_workspace/miniconda3/envs/py310/lib/python3.10/site-packages/torchdata/datapipes/__init__.py:18: UserWarning: 
+################################################################################
+WARNING!
+The 'datapipes', 'dataloader2' modules are deprecated and will be removed in a
+future torchdata release! Please see https://github.com/pytorch/data/issues/1196
+to learn more and leave feedback.
+################################################################################
+
+  deprecation_warning()
+graph cuda:0 node cuda:0 0
+Epoch 00000 | Loss 2.9051 | Val Accuracy 0.3781 | Test Accuracy 0.3612
+Run time for epoch# 0: 4.39s
+Epoch 00001 | Loss 2.1285 | Val Accuracy 0.4267 | Test Accuracy 0.4121
+Run time for epoch# 1: 2.45s
+Epoch 00002 | Loss 2.0241 | Val Accuracy 0.4357 | Test Accuracy 0.4168
+Run time for epoch# 2: 2.44s
+Epoch 00003 | Loss 1.9798 | Val Accuracy 0.4524 | Test Accuracy 0.4352
+Run time for epoch# 3: 2.43s
+Epoch 00004 | Loss 1.9562 | Val Accuracy 0.4494 | Test Accuracy 0.4350
+Run time for epoch# 4: 2.45s
+Epoch 00005 | Loss 1.9399 | Val Accuracy 0.4535 | Test Accuracy 0.4351
+Run time for epoch# 5: 2.45s
+Epoch 00006 | Loss 1.9349 | Val Accuracy 0.4555 | Test Accuracy 0.4370
+Run time for epoch# 6: 2.45s
+Epoch 00007 | Loss 1.9238 | Val Accuracy 0.4589 | Test Accuracy 0.4383
+Run time for epoch# 7: 2.45s
+Epoch 00008 | Loss 1.9183 | Val Accuracy 0.4591 | Test Accuracy 0.4408
+Run time for epoch# 8: 2.46s
+Epoch 00009 | Loss 1.9127 | Val Accuracy 0.4564 | Test Accuracy 0.4395
+Run time for epoch# 9: 2.45s
+Epoch 00010 | Loss 1.9069 | Val Accuracy 0.4606 | Test Accuracy 0.4415
+Run time for epoch# 10: 2.46s
+Epoch 00011 | Loss 1.9101 | Val Accuracy 0.4605 | Test Accuracy 0.4426
+Run time for epoch# 11: 2.46s
+Epoch 00012 | Loss 1.9031 | Val Accuracy 0.4617 | Test Accuracy 0.4426
+Run time for epoch# 12: 2.46s
+Epoch 00013 | Loss 1.9032 | Val Accuracy 0.4626 | Test Accuracy 0.4445
+Run time for epoch# 13: 2.46s
+Epoch 00014 | Loss 1.9022 | Val Accuracy 0.4615 | Test Accuracy 0.4416
+Run time for epoch# 14: 2.46s
+Epoch 00015 | Loss 1.8995 | Val Accuracy 0.4654 | Test Accuracy 0.4453
+Run time for epoch# 15: 2.46s
+Epoch 00016 | Loss 1.8986 | Val Accuracy 0.4639 | Test Accuracy 0.4437
+Run time for epoch# 16: 2.45s
+Epoch 00017 | Loss 1.8981 | Val Accuracy 0.4651 | Test Accuracy 0.4458
+Run time for epoch# 17: 2.45s
+Epoch 00018 | Loss 1.8931 | Val Accuracy 0.4597 | Test Accuracy 0.4394
+Run time for epoch# 18: 2.47s
+Epoch 00019 | Loss 1.8945 | Val Accuracy 0.4653 | Test Accuracy 0.4422
+Run time for epoch# 19: 2.46s
+Epoch 00020 | Loss 1.8944 | Val Accuracy 0.4603 | Test Accuracy 0.4392
+Run time for epoch# 20: 2.46s
+Epoch 00021 | Loss 1.8922 | Val Accuracy 0.4598 | Test Accuracy 0.4414
+Run time for epoch# 21: 2.47s
+Epoch 00022 | Loss 1.8927 | Val Accuracy 0.4663 | Test Accuracy 0.4448
+Run time for epoch# 22: 2.45s
+Epoch 00023 | Loss 1.8932 | Val Accuracy 0.4658 | Test Accuracy 0.4434
+Run time for epoch# 23: 2.45s
+Epoch 00024 | Loss 1.8893 | Val Accuracy 0.4639 | Test Accuracy 0.4435
+Run time for epoch# 24: 2.46s
+Epoch 00025 | Loss 1.8927 | Val Accuracy 0.4621 | Test Accuracy 0.4422
+Run time for epoch# 25: 2.46s
+Epoch 00026 | Loss 1.8907 | Val Accuracy 0.4640 | Test Accuracy 0.4451
+Run time for epoch# 26: 2.46s
+Epoch 00027 | Loss 1.8902 | Val Accuracy 0.4611 | Test Accuracy 0.4440
+Run time for epoch# 27: 2.45s
+Epoch 00028 | Loss 1.8916 | Val Accuracy 0.4629 | Test Accuracy 0.4448
+Run time for epoch# 28: 2.59s
+Epoch 00029 | Loss 1.8877 | Val Accuracy 0.4713 | Test Accuracy 0.4513
+Run time for epoch# 29: 2.46s
+Epoch 00030 | Loss 1.8882 | Val Accuracy 0.4637 | Test Accuracy 0.4460
+Run time for epoch# 30: 2.46s
+Epoch 00031 | Loss 1.8857 | Val Accuracy 0.4682 | Test Accuracy 0.4478
+Run time for epoch# 31: 2.46s
+Epoch 00032 | Loss 1.8871 | Val Accuracy 0.4651 | Test Accuracy 0.4475
+Run time for epoch# 32: 2.46s
+Epoch 00033 | Loss 1.8835 | Val Accuracy 0.4641 | Test Accuracy 0.4445
+Run time for epoch# 33: 2.46s
+Epoch 00034 | Loss 1.8852 | Val Accuracy 0.4654 | Test Accuracy 0.4453
+Run time for epoch# 34: 2.56s
+Epoch 00035 | Loss 1.8847 | Val Accuracy 0.4633 | Test Accuracy 0.4447
+Run time for epoch# 35: 2.46s
+Epoch 00036 | Loss 1.8878 | Val Accuracy 0.4690 | Test Accuracy 0.4516
+Run time for epoch# 36: 2.46s
+Epoch 00037 | Loss 1.8833 | Val Accuracy 0.4655 | Test Accuracy 0.4469
+Run time for epoch# 37: 2.45s
+Epoch 00038 | Loss 1.8844 | Val Accuracy 0.4643 | Test Accuracy 0.4465
+Run time for epoch# 38: 2.46s
+Epoch 00039 | Loss 1.8856 | Val Accuracy 0.4713 | Test Accuracy 0.4520
+Run time for epoch# 39: 2.45s
+Epoch 00040 | Loss 1.8830 | Val Accuracy 0.4643 | Test Accuracy 0.4454
+Run time for epoch# 40: 2.45s
+Epoch 00041 | Loss 1.8830 | Val Accuracy 0.4647 | Test Accuracy 0.4487
+Run time for epoch# 41: 2.47s
+Epoch 00042 | Loss 1.8850 | Val Accuracy 0.4627 | Test Accuracy 0.4436
+Run time for epoch# 42: 2.47s
+Epoch 00043 | Loss 1.8838 | Val Accuracy 0.4636 | Test Accuracy 0.4443
+Run time for epoch# 43: 2.45s
+Epoch 00044 | Loss 1.8855 | Val Accuracy 0.4663 | Test Accuracy 0.4464
+Run time for epoch# 44: 2.45s
+Epoch 00045 | Loss 1.8827 | Val Accuracy 0.4623 | Test Accuracy 0.4446
+Run time for epoch# 45: 2.46s
+Epoch 00046 | Loss 1.8850 | Val Accuracy 0.4703 | Test Accuracy 0.4494
+Run time for epoch# 46: 2.46s
+Epoch 00047 | Loss 1.8837 | Val Accuracy 0.4657 | Test Accuracy 0.4466
+Run time for epoch# 47: 2.45s
+Epoch 00048 | Loss 1.8848 | Val Accuracy 0.4677 | Test Accuracy 0.4492
+Run time for epoch# 48: 2.46s
+Epoch 00049 | Loss 1.8827 | Val Accuracy 0.4702 | Test Accuracy 0.4511
+Run time for epoch# 49: 2.45s
+Epoch 00050 | Loss 1.8839 | Val Accuracy 0.4633 | Test Accuracy 0.4484
+Run time for epoch# 50: 2.46s
+Epoch 00051 | Loss 1.8824 | Val Accuracy 0.4666 | Test Accuracy 0.4481
+Run time for epoch# 51: 2.46s
+Epoch 00052 | Loss 1.8820 | Val Accuracy 0.4613 | Test Accuracy 0.4456
+Run time for epoch# 52: 2.46s
+Epoch 00053 | Loss 1.8822 | Val Accuracy 0.4614 | Test Accuracy 0.4440
+Run time for epoch# 53: 2.45s
+Epoch 00054 | Loss 1.8833 | Val Accuracy 0.4682 | Test Accuracy 0.4473
+Run time for epoch# 54: 2.46s
+Epoch 00055 | Loss 1.8833 | Val Accuracy 0.4609 | Test Accuracy 0.4414
+Run time for epoch# 55: 2.46s
+Epoch 00056 | Loss 1.8820 | Val Accuracy 0.4598 | Test Accuracy 0.4438
+Run time for epoch# 56: 2.45s
+Epoch 00057 | Loss 1.8834 | Val Accuracy 0.4669 | Test Accuracy 0.4480
+Run time for epoch# 57: 2.46s
+Epoch 00058 | Loss 1.8824 | Val Accuracy 0.4599 | Test Accuracy 0.4422
+Run time for epoch# 58: 2.46s
+Epoch 00059 | Loss 1.8809 | Val Accuracy 0.4624 | Test Accuracy 0.4442
+Run time for epoch# 59: 2.45s
+Epoch 00060 | Loss 1.8814 | Val Accuracy 0.4667 | Test Accuracy 0.4501
+Run time for epoch# 60: 2.45s
+Epoch 00061 | Loss 1.8805 | Val Accuracy 0.4611 | Test Accuracy 0.4438
+Run time for epoch# 61: 2.46s
+Epoch 00062 | Loss 1.8827 | Val Accuracy 0.4704 | Test Accuracy 0.4500
+Run time for epoch# 62: 2.45s
+Epoch 00063 | Loss 1.8800 | Val Accuracy 0.4629 | Test Accuracy 0.4479
+Run time for epoch# 63: 2.46s
+Epoch 00064 | Loss 1.8827 | Val Accuracy 0.4628 | Test Accuracy 0.4462
+Run time for epoch# 64: 2.45s
+Epoch 00065 | Loss 1.8824 | Val Accuracy 0.4632 | Test Accuracy 0.4461
+Run time for epoch# 65: 2.45s
+Epoch 00066 | Loss 1.8779 | Val Accuracy 0.4670 | Test Accuracy 0.4469
+Run time for epoch# 66: 2.45s
+Epoch 00067 | Loss 1.8801 | Val Accuracy 0.4710 | Test Accuracy 0.4505
+Run time for epoch# 67: 2.46s
+Epoch 00068 | Loss 1.8806 | Val Accuracy 0.4675 | Test Accuracy 0.4488
+Run time for epoch# 68: 2.45s
+Epoch 00069 | Loss 1.8795 | Val Accuracy 0.4648 | Test Accuracy 0.4446
+Run time for epoch# 69: 2.45s
+Epoch 00070 | Loss 1.8805 | Val Accuracy 0.4627 | Test Accuracy 0.4435
+Run time for epoch# 70: 2.46s
+Epoch 00071 | Loss 1.8795 | Val Accuracy 0.4643 | Test Accuracy 0.4459
+Run time for epoch# 71: 2.45s
+Epoch 00072 | Loss 1.8792 | Val Accuracy 0.4635 | Test Accuracy 0.4446
+Run time for epoch# 72: 2.45s
+Epoch 00073 | Loss 1.8795 | Val Accuracy 0.4701 | Test Accuracy 0.4499
+Run time for epoch# 73: 2.45s
+Epoch 00074 | Loss 1.8769 | Val Accuracy 0.4658 | Test Accuracy 0.4510
+Run time for epoch# 74: 2.45s
+Epoch 00075 | Loss 1.8791 | Val Accuracy 0.4673 | Test Accuracy 0.4501
+Run time for epoch# 75: 2.45s
+Epoch 00076 | Loss 1.8810 | Val Accuracy 0.4628 | Test Accuracy 0.4414
+Run time for epoch# 76: 2.45s
+Epoch 00077 | Loss 1.8821 | Val Accuracy 0.4664 | Test Accuracy 0.4455
+Run time for epoch# 77: 2.45s
+Epoch 00078 | Loss 1.8796 | Val Accuracy 0.4663 | Test Accuracy 0.4464
+Run time for epoch# 78: 2.45s
+Epoch 00079 | Loss 1.8782 | Val Accuracy 0.4646 | Test Accuracy 0.4473
+Run time for epoch# 79: 2.45s
+Epoch 00080 | Loss 1.8787 | Val Accuracy 0.4644 | Test Accuracy 0.4442
+Run time for epoch# 80: 2.45s
+Epoch 00081 | Loss 1.8796 | Val Accuracy 0.4643 | Test Accuracy 0.4450
+Run time for epoch# 81: 2.46s
+Epoch 00082 | Loss 1.8803 | Val Accuracy 0.4681 | Test Accuracy 0.4478
+Run time for epoch# 82: 2.46s
+Epoch 00083 | Loss 1.8785 | Val Accuracy 0.4658 | Test Accuracy 0.4491
+Run time for epoch# 83: 2.45s
+Epoch 00084 | Loss 1.8806 | Val Accuracy 0.4675 | Test Accuracy 0.4467
+Run time for epoch# 84: 2.46s
+Epoch 00085 | Loss 1.8788 | Val Accuracy 0.4641 | Test Accuracy 0.4469
+Run time for epoch# 85: 2.45s
+Epoch 00086 | Loss 1.8797 | Val Accuracy 0.4686 | Test Accuracy 0.4513
+Run time for epoch# 86: 2.46s
+Epoch 00087 | Loss 1.8788 | Val Accuracy 0.4623 | Test Accuracy 0.4457
+Run time for epoch# 87: 2.45s
+Epoch 00088 | Loss 1.8790 | Val Accuracy 0.4635 | Test Accuracy 0.4459
+Run time for epoch# 88: 2.46s
+Epoch 00089 | Loss 1.8781 | Val Accuracy 0.4664 | Test Accuracy 0.4462
+Run time for epoch# 89: 2.45s
+n_50_epoch, n_50_accuracy 90 0.4519968330860138
+Epoch 00090 | Loss 1.8787 | Val Accuracy 0.4664 | Test Accuracy 0.4476
+Run time for epoch# 90: 2.46s
+Epoch 00091 | Loss 1.8775 | Val Accuracy 0.4630 | Test Accuracy 0.4439
+Run time for epoch# 91: 2.46s
+Epoch 00092 | Loss 1.8792 | Val Accuracy 0.4693 | Test Accuracy 0.4488
+Run time for epoch# 92: 2.45s
+Epoch 00093 | Loss 1.8800 | Val Accuracy 0.4660 | Test Accuracy 0.4458
+Run time for epoch# 93: 2.46s
+Epoch 00094 | Loss 1.8802 | Val Accuracy 0.4722 | Test Accuracy 0.4506
+Run time for epoch# 94: 2.45s
+Epoch 00095 | Loss 1.8817 | Val Accuracy 0.4653 | Test Accuracy 0.4470
+Run time for epoch# 95: 2.46s
+Epoch 00096 | Loss 1.8787 | Val Accuracy 0.4672 | Test Accuracy 0.4495
+Run time for epoch# 96: 2.45s
+Epoch 00097 | Loss 1.8783 | Val Accuracy 0.4718 | Test Accuracy 0.4502
+Run time for epoch# 97: 2.46s
+Epoch 00098 | Loss 1.8787 | Val Accuracy 0.4681 | Test Accuracy 0.4490
+Run time for epoch# 98: 2.45s
+Epoch 00099 | Loss 1.8784 | Val Accuracy 0.4642 | Test Accuracy 0.4465
+Run time for epoch# 99: 2.45s
+Epoch 00100 | Loss 1.8763 | Val Accuracy 0.4659 | Test Accuracy 0.4486
+Run time for epoch# 100: 2.46s
+Epoch 00101 | Loss 1.8785 | Val Accuracy 0.4590 | Test Accuracy 0.4398
+Run time for epoch# 101: 2.45s
+Epoch 00102 | Loss 1.8759 | Val Accuracy 0.4663 | Test Accuracy 0.4471
+Run time for epoch# 102: 2.59s
+Epoch 00103 | Loss 1.8787 | Val Accuracy 0.4623 | Test Accuracy 0.4431
+Run time for epoch# 103: 2.45s
+Epoch 00104 | Loss 1.8799 | Val Accuracy 0.4679 | Test Accuracy 0.4485
+Run time for epoch# 104: 2.46s
+Epoch 00105 | Loss 1.8791 | Val Accuracy 0.4627 | Test Accuracy 0.4453
+Run time for epoch# 105: 2.45s
+Epoch 00106 | Loss 1.8774 | Val Accuracy 0.4653 | Test Accuracy 0.4473
+Run time for epoch# 106: 2.46s
+Epoch 00107 | Loss 1.8788 | Val Accuracy 0.4626 | Test Accuracy 0.4452
+Run time for epoch# 107: 2.46s
+Epoch 00108 | Loss 1.8783 | Val Accuracy 0.4676 | Test Accuracy 0.4495
+Run time for epoch# 108: 2.46s
+Epoch 00109 | Loss 1.8784 | Val Accuracy 0.4697 | Test Accuracy 0.4486
+Run time for epoch# 109: 2.46s
+Epoch 00110 | Loss 1.8766 | Val Accuracy 0.4593 | Test Accuracy 0.4399
+Run time for epoch# 110: 2.46s
+Epoch 00111 | Loss 1.8786 | Val Accuracy 0.4628 | Test Accuracy 0.4452
+Run time for epoch# 111: 2.46s
+Epoch 00112 | Loss 1.8801 | Val Accuracy 0.4673 | Test Accuracy 0.4491
+Run time for epoch# 112: 2.46s
+Epoch 00113 | Loss 1.8786 | Val Accuracy 0.4696 | Test Accuracy 0.4508
+Run time for epoch# 113: 2.46s
+Epoch 00114 | Loss 1.8782 | Val Accuracy 0.4688 | Test Accuracy 0.4493
+Run time for epoch# 114: 2.45s
+Epoch 00115 | Loss 1.8784 | Val Accuracy 0.4642 | Test Accuracy 0.4458
+Run time for epoch# 115: 2.46s
+Epoch 00116 | Loss 1.8770 | Val Accuracy 0.4651 | Test Accuracy 0.4451
+Run time for epoch# 116: 2.47s
+Epoch 00117 | Loss 1.8762 | Val Accuracy 0.4625 | Test Accuracy 0.4450
+Run time for epoch# 117: 2.46s
+Epoch 00118 | Loss 1.8779 | Val Accuracy 0.4643 | Test Accuracy 0.4464
+Run time for epoch# 118: 2.46s
+Epoch 00119 | Loss 1.8775 | Val Accuracy 0.4646 | Test Accuracy 0.4466
+Run time for epoch# 119: 2.46s
+Epoch 00120 | Loss 1.8795 | Val Accuracy 0.4698 | Test Accuracy 0.4511
+Run time for epoch# 120: 2.57s
+Epoch 00121 | Loss 1.8752 | Val Accuracy 0.4703 | Test Accuracy 0.4501
+Run time for epoch# 121: 2.44s
+Epoch 00122 | Loss 1.8783 | Val Accuracy 0.4668 | Test Accuracy 0.4481
+Run time for epoch# 122: 2.46s
+Epoch 00123 | Loss 1.8746 | Val Accuracy 0.4656 | Test Accuracy 0.4456
+Run time for epoch# 123: 2.45s
+Epoch 00124 | Loss 1.8770 | Val Accuracy 0.4624 | Test Accuracy 0.4422
+Run time for epoch# 124: 2.45s
+Epoch 00125 | Loss 1.8782 | Val Accuracy 0.4629 | Test Accuracy 0.4454
+Run time for epoch# 125: 2.46s
+Epoch 00126 | Loss 1.8772 | Val Accuracy 0.4698 | Test Accuracy 0.4487
+Run time for epoch# 126: 2.45s
+Epoch 00127 | Loss 1.8779 | Val Accuracy 0.4625 | Test Accuracy 0.4441
+Run time for epoch# 127: 2.46s
+Epoch 00128 | Loss 1.8781 | Val Accuracy 0.4632 | Test Accuracy 0.4424
+Run time for epoch# 128: 2.45s
+Epoch 00129 | Loss 1.8788 | Val Accuracy 0.4635 | Test Accuracy 0.4469
+Run time for epoch# 129: 2.46s
+Epoch 00130 | Loss 1.8798 | Val Accuracy 0.4660 | Test Accuracy 0.4478
+Run time for epoch# 130: 2.45s
+Epoch 00131 | Loss 1.8786 | Val Accuracy 0.4681 | Test Accuracy 0.4490
+Run time for epoch# 131: 2.46s
+Epoch 00132 | Loss 1.8785 | Val Accuracy 0.4645 | Test Accuracy 0.4445
+Run time for epoch# 132: 2.45s
+Epoch 00133 | Loss 1.8780 | Val Accuracy 0.4643 | Test Accuracy 0.4450
+Run time for epoch# 133: 2.46s
+Epoch 00134 | Loss 1.8782 | Val Accuracy 0.4667 | Test Accuracy 0.4492
+Run time for epoch# 134: 2.46s
+Epoch 00135 | Loss 1.8759 | Val Accuracy 0.4654 | Test Accuracy 0.4469
+Run time for epoch# 135: 2.46s
+Epoch 00136 | Loss 1.8774 | Val Accuracy 0.4660 | Test Accuracy 0.4461
+Run time for epoch# 136: 2.46s
+Epoch 00137 | Loss 1.8766 | Val Accuracy 0.4647 | Test Accuracy 0.4464
+Run time for epoch# 137: 2.45s
+Epoch 00138 | Loss 1.8765 | Val Accuracy 0.4670 | Test Accuracy 0.4486
+Run time for epoch# 138: 2.46s
+Epoch 00139 | Loss 1.8794 | Val Accuracy 0.4681 | Test Accuracy 0.4485
+Run time for epoch# 139: 2.46s
+n_200_epoch, n_200_accuracy 140 0.4519968330860138
+total time took : 284.38338899612427
+('ogbn-papers100M', 'NSGCN', 1024, 5000, 2, True, True, 'NVIDIA A100-SXM4-80GB', '0,1,2,3', 2, 128, 0.4519968330860138, 2.031309921400888, 0.4519968330860138, 183.44110822677612, 90, 0.4519968330860138, 284.38338899612427, 140)
+Process 0 before barrier
+Process 0 after barrier
+Process 0 cleanup
+Process 0 finished and cleaned up
+all run finished
+graph cuda:3 node cuda:3 3
+Process 3 before barrier
+Process 3 after barrier
+Process 3 cleanup
+Process 3 finished and cleaned up
+all run finished
+graph cuda:2 node cuda:2 2
+Process 2 before barrier
+Process 2 after barrier
+Process 2 cleanup
+Process 2 finished and cleaned up
+all run finished
+graph cuda:1 node cuda:1 1
+Process 1 before barrier
+Process 1 after barrier
+Process 1 cleanup
+Process 1 finished and cleaned up
+all run finished
