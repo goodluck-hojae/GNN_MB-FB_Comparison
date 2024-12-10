@@ -20,9 +20,10 @@ from ogb.nodeproppred import DglNodePropPredDataset
 from torch.nn.parallel import DistributedDataParallel
 import csv
 import utils 
+import json 
 from models import *
 
-header = ['dataset', 'model', 'batch_size', 'num_partition', 'fanout', 'shuffle', 'use_ddp', 'gpu_model', 'n_gpu', 'n_layers', 'n_hidden', 'test_accuracy', 'epoch_time', 'n_50_accuracy', 'n_50_tta', 'n_50_epoch', 'n_200_accuracy', 'n_200_tta', 'n_200_epoch']
+header = ['dataset', 'model', 'batch_size', 'num_partition', 'fanout', 'shuffle', 'use_ddp', 'gpu_model', 'n_gpu', 'n_layers', 'n_hidden', 'test_accuracy', 'epoch_time', 'n_50_accuracy', 'n_50_tta', 'n_50_epoch', 'n_100_accuracy', 'n_100_tta', 'n_100_epoch']
 
 
 def write_to_csv(data, file_name):
@@ -104,12 +105,13 @@ def train(
     best_acc_count_thres = (50, 100)
     epoch_time = 0
     n_50_epoch = -1
-    n_200_epoch = -1
+    n_100_epoch = -1
     n_50_tta = -1
-    n_200_tta = -1
+    n_100_tta = -1
 
     stop_training = torch.tensor(0, dtype=torch.int, device=device)
 
+    epoch_data = []
     for epoch in range(10000):
         t0 = time.time()
         model.train()
@@ -154,7 +156,15 @@ def train(
                 print("Epoch {:05d} | Loss {:.4f} | Train Accuracy {:.4f} | Val Accuracy {:.4f} | Test Accuracy {:.4f}".format(
                     epoch, total_loss / (it + 1), train_acc.item(), val_acc.item(), test_acc.item()))
                 tt = time.time() - t0
+                
                 print("Run time for epoch# %d: %.2fs" % (epoch, tt))
+                epoch_data.append({
+                    "epoch": epoch,
+                    "train_acc": train_acc.item(),
+                    "val_acc": val_acc.item(),
+                    "test_acc": test_acc.item(),
+                    "time": tt
+                })
             
             if best_test_acc < float(test_acc.item()):
                 best_test_acc = float(test_acc.item())
@@ -168,10 +178,10 @@ def train(
                 print('n_50_epoch, n_50_accuracy', n_50_epoch, n_50_accuracy)
             if best_acc_count > best_acc_count_thres[1]:
                 epoch_time = tta / n_epochs
-                n_200_tta = tta
-                n_200_epoch = n_epochs
-                n_200_accuracy = best_test_acc
-                print('n_200_epoch, n_200_accuracy', n_200_epoch, n_200_accuracy)
+                n_100_tta = tta
+                n_100_epoch = n_epochs
+                n_100_accuracy = best_test_acc
+                print('n_100_epoch, n_100_accuracy', n_100_epoch, n_100_accuracy)
                 stop_training.fill_(1)  # Set the stop flag to 1 when it's time to stop
 
             durations.append(tt)
@@ -185,7 +195,7 @@ def train(
             print(f'total time took : {tta}')
             gpu_model = torch.cuda.get_device_name(0)
             model_name = model.module.__class__.__name__
-            data = ds, model_name, batch_size, num_partitions, fanout, shuffle, use_ddp, gpu_model, n_gpu, n_layers, n_hidden, best_test_acc, epoch_time, n_50_accuracy, n_50_tta, n_50_epoch, n_200_accuracy, n_200_tta, n_200_epoch
+            data = ds, model_name, batch_size, num_partitions, fanout, shuffle, use_ddp, gpu_model, n_gpu, n_layers, n_hidden, best_test_acc, epoch_time, n_50_accuracy, n_50_tta, n_50_epoch, n_100_accuracy, n_100_tta, n_100_epoch
             print(data)
             write_to_csv([data], 'node_sampling_v12.csv')
         
@@ -343,7 +353,7 @@ if __name__ == "__main__":
         )
         model_params = (3, 256)
         batch_size = 1024
-        partition = 2000
+        partition = 1000
         fanout = 5
 
     elif args.dataset == 'ogbn-papers100M':
