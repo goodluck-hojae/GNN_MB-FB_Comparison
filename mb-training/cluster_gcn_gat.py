@@ -40,12 +40,12 @@ header = ['dataset', 'model', 'batch_size', 'num_partition', 'shuffle', 'use_ddp
 def write_to_csv(data, file_name):
     file_exists = os.path.isfile(file_name)
     
-    with open(file_name, mode='a', newline='') as file:  # 'a' for append mode
+    with open(file_name, mode='a', newline='') as file:
         writer = csv.writer(file)
         
-        if not file_exists:  # Write the header if file doesn't exist
+        if not file_exists:
             writer.writerow(header)
-        writer.writerows(data)  # Append the rows of data
+        writer.writerows(data)
 
 
 def train(

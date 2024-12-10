@@ -55,28 +55,6 @@ def train(
     proc_id, nprocs, device, g, num_classes, train_idx, val_idx, model, use_uva, params
 ):
 
-    # num_partitions = 1000
-    # sampler = dgl.dataloading.ClusterGCNSampler(
-    #     g,
-    #     num_partitions,
-    #     prefetch_ndata=["feat", "label", "train_mask", "val_mask", "test_mask"],
-    # )
-
-    # sampler = NeighborSampler(
-    #     [10, 10, 10], prefetch_node_feats=["feat"], prefetch_labels=["label"]
-    # )
-    # dataloader = dgl.dataloading.DataLoader(
-    #     g,
-    #     train_idx,
-    #     sampler,
-    #     device=device,
-    #     batch_size=100,
-    #     shuffle=True,
-    #     drop_last=False,
-    #     num_workers=0,
-    #     use_ddp=True,
-    #     use_uva=use_uva,
-    # )
 
     print(device, 'saint sampler') 
     ds, batch_size, num_partitions, mode, budget, shuffle, use_ddp, n_gpu, n_layers, n_hidden, num_heads = params 
@@ -98,19 +76,7 @@ def train(
         use_uva=False,
         use_ddp=use_ddp,
     )
-    
-    # val_dataloader = dgl.dataloading.DataLoader(
-    #     g,
-    #     torch.arange(num_partitions).to("cuda"),
-    #     sampler,
-    #     device=device,
-    #     batch_size=100,
-    #     shuffle=True,
-    #     drop_last=False,
-    #     num_workers=0,
-    #     use_ddp=True,
-    #     use_uva=use_uva,
-    # )
+
     opt = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=5e-4)
     durations = []
     end=0
@@ -200,9 +166,6 @@ def train(
         if stop_training.item() == 1:
             break  # All processes will break
 
-
-
-
     try:
         if proc_id == 0:
             print(f'total time took : {tta}')
@@ -240,7 +203,6 @@ def run(proc_id, nprocs, devices, g, data, mode, params):
     try:
         ds, batch_size, num_partition, mode, budget, shuffle, use_ddp, n_gpu, n_layers, n_hidden, num_heads = params 
 
-
         # find corresponding device for my rank
         device = devices[proc_id]
         torch.cuda.set_device(device)
@@ -255,14 +217,10 @@ def run(proc_id, nprocs, devices, g, data, mode, params):
         train_idx = train_idx.to(device)
         val_idx = val_idx.to(device)
         g = g.to(device if mode == "puregpu" else "cpu")
-        # create GraphSAGE model (distributed)
 
         in_size = g.ndata["feat"].shape[1] 
-        # batch_size, mode (), shuffle, use_ddp, n_gpus
         n_classes = num_classes
         
-        #model = SAGE(in_size, n_hidden, num_classes).to(device)
-        # model = GraphSAGE(in_size, n_hidden, n_classes, n_layers, activation=F.relu, dropout=0.3).to(device)
         model = GAT(in_size, num_heads, n_hidden, n_classes, n_layers).to(device)
         model = DistributedDataParallel(
             model, device_ids=[device], output_device=device
@@ -308,6 +266,12 @@ if __name__ == "__main__":
         help="GPU(s) in use. Can be a list of gpu ids for multi-gpu training,"
         " e.g., 0,1,2,3.",
     )
+    parser.add_argument(
+        "--dataset",
+        type=str,
+        default="pubmed",
+        help="Selection for Dataset "
+    )
     args = parser.parse_args()
     devices = list(map(int, args.gpu.split(",")))
     nprocs = len(devices)
@@ -317,171 +281,139 @@ if __name__ == "__main__":
 
     # load and preprocess dataset
     print("Loading data")
-    ogbn_arxiv_dataset = utils.load_data('ogbn-arxiv')
-    ogbn_arxiv_data = (
-            ogbn_arxiv_dataset.num_classes,
-            ogbn_arxiv_dataset.train_idx,
-            ogbn_arxiv_dataset.val_idx,
-            ogbn_arxiv_dataset.test_idx,
+    if args.dataset == 'pubmed':
+        dataset = utils.load_pubmed()
+        graph = dataset[0]
+        data = (
+            dataset.num_classes,
+            dataset.train_idx,
+            dataset.val_idx,
+            dataset.test_idx,
         )
-    ogbn_arxiv_graph = ogbn_arxiv_dataset[0]
- 
+        model_params = (3, 256, 4) 
+        batch_size = 1024
+        mode = 'node'
+        budget = 1000
+        partition = 1000
 
-    reddit_dataset = utils.load_reddit()
-    reddit_data = (
-            reddit_dataset.num_classes,
-            reddit_dataset.train_idx,
-            reddit_dataset.val_idx,
-            reddit_dataset.test_idx,
+    elif args.dataset == 'ogbn-arxiv':
+        dataset = utils.load_data('ogbn-arxiv')
+        graph = dataset[0]
+        data = (
+            dataset.num_classes,
+            dataset.train_idx,
+            dataset.val_idx,
+            dataset.test_idx,
         )
-    reddit_graph = reddit_dataset[0]
-    
+        model_params = (2, 512, 2) 
+        batch_size = 1024
+        mode = 'walk'
+        budget = (10000, 10)
+        partition = 5000
 
-    ogbn_product_dataset = utils.load_data('ogbn-products')
-    ogbn_product_data = (
-            ogbn_product_dataset.num_classes,
-            ogbn_product_dataset.train_idx,
-            ogbn_product_dataset.val_idx,
-            ogbn_product_dataset.test_idx,
+    elif args.dataset == 'reddit':
+        dataset = utils.load_reddit()
+        graph = dataset[0]
+        data = (
+            dataset.num_classes,
+            dataset.train_idx,
+            dataset.val_idx,
+            dataset.test_idx,
         )
-    ogbn_product_graph = ogbn_product_dataset[0]
+        model_params = (4, 1024, 2)
+        batch_size = 1024
+        mode = 'walk'
+        budget = (3000, 3)
+        partition = 5000
 
-    orkut_dataset = utils.load_data('orkut')
-    orkut_data = (
-            orkut_dataset.num_classes,
-            orkut_dataset.train_idx,
-            orkut_dataset.val_idx,
-            orkut_dataset.test_idx,
+    elif args.dataset == 'ogbn-products':
+        dataset = utils.load_data('ogbn-products')
+        graph = dataset[0]
+        data = (
+            dataset.num_classes,
+            dataset.train_idx,
+            dataset.val_idx,
+            dataset.test_idx,
         )
-    orkut_graph = orkut_dataset[0]
+        model_params = (3, 256, 2)
+        batch_size = 1024
+        mode = 'walk'
+        budget = (5000, 5)
+        partition = 3000
 
-    pubmed_dataset = utils.load_pubmed()
-    pubmed_data = (
-            pubmed_dataset.num_classes,
-            pubmed_dataset.train_idx,
-            pubmed_dataset.val_idx,
-            pubmed_dataset.test_idx,
+    elif args.dataset == 'orkut':
+        dataset = utils.load_data('orkut')
+        graph = dataset[0]
+        data = (
+            dataset.num_classes,
+            dataset.train_idx,
+            dataset.val_idx,
+            dataset.test_idx,
         )
-    pubmed_graph = pubmed_dataset[0]
+        model_params = (2, 128, 2)
+        batch_size = 32
+        budget = 500
+        partition = 100
 
- 
-    # ogbn_papers100M_graph, _, n_class = utils.load_data('ogbn-papers100M')
-    # train_ids = torch.nonzero(ogbn_papers100M_graph.ndata['train_mask']).reshape(-1)
-    # valid_ids = torch.nonzero(ogbn_papers100M_graph.ndata['val_mask']).reshape(-1)
-    # test_ids = torch.nonzero(ogbn_papers100M_graph.ndata['test_mask']).reshape(-1)
-    # ogbn_papers100M_data = (
-    #     n_class, train_ids, valid_ids, test_ids
-    # )
-    
-    datasets = { 
-        # 'pubmed' : 
-        # {
-        #     'graph' : pubmed_graph,
-        #     'data' : pubmed_data,
-        #     'model_params' : (3, 256, 4),#(2, 1024, 4),
-        #     'batch_size': 1024,
-        #     'mode' : 'node',
-        #     'budget' : 1000,
-        #     'partition' : 1000
-        # },
-        # 'ogbn-arxiv' : 
-        # {
-        #     'graph' : ogbn_arxiv_graph,
-        #     'data' : ogbn_arxiv_data,
-        #     'model_params' : (2, 512, 2), #(4, 256, 2),
-        #     'batch_size': 1024,
-        #     'mode' : 'walk',
-        #     'budget' : (10000, 10),
-        #     'partition' : 5000
-        # },
-        'reddit' :
-        {
-            'graph' : reddit_graph,
-            'data' : reddit_data,
-            'model_params' : (4, 1024, 2), #(2, 512, 2),
-            'batch_size': 1024,
-            'mode' : 'walk',
-            'budget' : (3000, 3),
-            'partition' : 5000,
-        },
-        # 'ogbn_products' :
-        # {
-        #     'graph' : ogbn_product_graph,
-        #     'data' : ogbn_product_data,
-        #     'model_params' : (3, 256, 2), #(3, 128, 2),
-        #     'batch_size': 1024,
-        #     'mode' : 'walk',
-        #     'budget' : (5000, 5),
-        #     'partition' : 3000,
-        # },
-        # 'orkut' : 
-        # {
-        #     'graph' : orkut_graph,
-        #     'data' : orkut_data,
-        #     'model_params' : (3, 128, 2),
-        #     'batch_size': 32,
-        #     'budget' : 500,
-        #     'partition' : 100,
-        # },
-        # 'ogbn_papers100M' :
-        # {
-        #     'graph' : ogbn_papers100M_graph,
-        #     'data' : ogbn_papers100M_data,
-        #     'model_params' : (2, 128, 1),
-        #     'batch_size': 128,
-        #     'budget' : 15000,
-        #     'partition' : 5000
-        # },
+    elif args.dataset == 'ogbn-papers100M':
+        dataset = utils.load_data('ogbn-papers100M')
+        graph = dataset[0]
+        train_ids = torch.nonzero(dataset.ndata['train_mask'], as_tuple=False).reshape(-1)
+        valid_ids = torch.nonzero(dataset.ndata['val_mask'], as_tuple=False).reshape(-1)
+        test_ids = torch.nonzero(dataset.ndata['test_mask'], as_tuple=False).reshape(-1)
+        data = (
+            dataset.num_classes, train_ids, valid_ids, test_ids
+        )
+        model_params = (2, 128, 1)  # Correctly copied as specified
+        batch_size = 128
+        budget = 15000
+        partition = 5000
+
+    dataset = {
+        'graph': graph,
+        'data': data,
+        'model_params': model_params,
+        'batch_size': batch_size,
+        'mode': mode,
+        'budget': budget,
+        'partition': partition
     }
-
+ 
     shuffle = [True]
     use_ddp = [True]
     mode = ['walk'] 
-    n_gpu = ['0', '0,1', '0,1,2', '0,1,2,3']
-    n_gpu = ['0,1,2,3']
-    n_gpu.reverse()
-
 
     i = 0
-    for ds in datasets.keys():
-        dataset = datasets[ds]
+    l = dataset['model_params'][0]
+    h = dataset['model_params'][1]
+    head = dataset['model_params'][2]
+    b = dataset['batch_size']
+    p = dataset['partition']
+    bu = dataset['budget']
+    m = dataset['mode']
+    g = dataset['graph']  # already prepares ndata['label'/'train_mask'/'val_mask'/'test_mask']
 
-        l = dataset['model_params'][0]
-        h = dataset['model_params'][1]
-        head = dataset['model_params'][2]
-        b = dataset['batch_size']
-        p = dataset['partition']
-        bu = dataset['budget']
-        m = dataset['mode']
-        g = dataset['graph']  # already prepares ndata['label'/'train_mask'/'val_mask'/'test_mask']
- 
-        if ds in ["ogbn-arxiv", 'ogbn-papers100M', 'orkut'] :
-            g.edata.clear()
-            g = dgl.to_bidirected(g, copy_ndata=True)
-            g = dgl.remove_self_loop(g)
-            g = dgl.add_self_loop(g)
-        else:
-            g.edata.clear()
-            g = dgl.remove_self_loop(g)
-            g = dgl.add_self_loop(g)
-        g.create_formats_()
-        data = dataset['data']
+    if args.dataset in ["ogbn-arxiv", 'ogbn-papers100M', 'orkut'] :
+        g.edata.clear()
+        g = dgl.to_bidirected(g, copy_ndata=True)
+        g = dgl.remove_self_loop(g)
+        g = dgl.add_self_loop(g)
+    else:
+        g.edata.clear()
+        g = dgl.remove_self_loop(g)
+        g = dgl.add_self_loop(g)
+    g.create_formats_()
+    data = dataset['data']
 
 
-        for s in shuffle:
-            for d in use_ddp:
-                for n_g in n_gpu: 
-                # for bu in budget:
-                #     for p in num_partition:
-                #         for l in n_layers:
-                #             for h in n_hidden:
-                #                 for head in n_heads:
-                    devices = list(map(int, n_g.split(",")))
-                    nprocs = len(devices) 
-                    print(f"{i} th training in {args.mode} mode using {nprocs} GPU(s)")
-                    os.environ["OMP_NUM_THREADS"] = str(mp.cpu_count() // 2 // nprocs)
-                    print('Running parameters : ', ds, b, p, m, bu, s, d, n_g, l, h, head)
-                    mp.spawn(run, args=(nprocs, devices, g, data, args.mode, (ds, b, p, m, bu, s, d, n_g, l, h, head)), nprocs=nprocs, join=True)
-                    i += 1
+    for s in shuffle:
+        for d in use_ddp:
+            devices = list(map(int, args.gpu.split(",")))
+            nprocs = len(devices) 
+            print(f"{i} th training in {args.mode} mode using {nprocs} GPU(s)")
+            os.environ["OMP_NUM_THREADS"] = str(mp.cpu_count() // 2 // nprocs)
+            print('Running parameters : ', args.dataset, b, p, m, bu, s, d, args.gpu, l, h, head)
+            mp.spawn(run, args=(nprocs, devices, g, data, args.mode, (args.dataset, b, p, m, bu, s, d, args.gpu, l, h, head)), nprocs=nprocs, join=True)
+            i += 1
 
 
