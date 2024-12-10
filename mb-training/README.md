@@ -35,7 +35,15 @@ We iterate over combinations of:
 - Datasets
 - Various hyperparameters (details available [here](https://arxiv.org/abs/2406.00552))
 
-## Outcomes
+## Outcomes (Plot)
+We directly parse the information from the log but we intend to update these process with proper settings from the codebase
+
+To parse and plot the logs, 
+
+python main.py
+
+![image](https://github.com/user-attachments/assets/2d3ac93a-56c0-4eda-a5fd-211a3b056979)
+
 
 The results are recorded with the following metrics:
 - `dataset`
