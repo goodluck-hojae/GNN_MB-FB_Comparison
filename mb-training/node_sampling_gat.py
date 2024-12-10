@@ -389,5 +389,5 @@ if __name__ == "__main__":
             print(f"{i} th training in {args.mode} mode using {nprocs} GPU(s)")
             os.environ["OMP_NUM_THREADS"] = str(mp.cpu_count() // 2 // nprocs)
             print('Running parameters : ', dataset, b, p, f, s, d, n_gpu, l, h, head)
-            mp.spawn(run, args=(nprocs, devices, g, data, args.mode, (dataset, b, p, f, s, d, n_gpu, l, h, head)), nprocs=nprocs)
+            mp.spawn(run, args=(nprocs, devices, g, data, args.mode, (args.dataset, b, p, f, s, d, n_gpu, l, h, head)), nprocs=nprocs)
             i+=1
