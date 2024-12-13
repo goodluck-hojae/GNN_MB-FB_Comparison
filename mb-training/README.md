@@ -46,8 +46,7 @@ With this file, run **python3 plot.py --filename "pubmed_NSGAT.json"** to plot a
 <img src="https://github.com/user-attachments/assets/f17b46ca-3d8e-41e1-bcfb-1557c8d68451" alt="ndcg_comparison" width="500">
 
 (TODO: Plot multiple experiments)
-
-<img src="https://github.com/user-attachments/assets/2d3ac93a-56c0-4eda-a5fd-211a3b056979" alt="ndcg_comparison" width="500">
+![image](https://github.com/user-attachments/assets/2d3ac93a-56c0-4eda-a5fd-211a3b056979)
 
 
 The results are recorded with the following metrics:
