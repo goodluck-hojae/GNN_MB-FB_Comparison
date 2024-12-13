@@ -163,6 +163,10 @@ def train(
         print(f'total time took : {tta}')
         gpu_model = torch.cuda.get_device_name(0)
         model_name = model.module.__class__.__name__
+        filename = os.path.basename(__file__)
+        filename, _ = os.path.splitext(filename)
+        with open('_'.join([filename, ds]) + '.json', 'w') as f:
+            json.dump(epoch_data, f, indent=4)
         data = ds, model_name, batch_size, budget, num_partitions, shuffle, use_ddp, gpu_model, n_gpu, n_layers, n_hidden, best_test_acc, epoch_time, n_50_accuracy, n_50_tta, n_50_epoch, n_100_accuracy, n_100_tta, n_100_epoch
         print(data)
         write_to_csv([data], 'saint_sampler_v12.csv')
