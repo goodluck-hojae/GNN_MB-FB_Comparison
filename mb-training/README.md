@@ -42,7 +42,7 @@ We iterate over combinations of:
 
 ## Outcomes (Plot)
 After running experiment, the script results in filename_dataset.json \
-With this file, run ** python3 plot.py --filename "pubmed_NSGAT.json" ** to plot a single experiment
+With this file, run **python3 plot.py --filename "pubmed_NSGAT.json"** to plot a single experiment
 
 (TODO: Plot multiple experiments)
 
