@@ -4,7 +4,7 @@ This repository explores mini-batch training using various samplers, models, and
 
 ## Getting Started
 1. **Install dependencies** : pip install -r requirements.txt
-2. **Setting** : --dataset (pubmed, reddit, ogbn-arxiv, ogbn-products, ogbn-papers100), --gpu (e.g. "0,1")
+2. **Setting** : --dataset (e.g. pubmed, reddit, ogbn-arxiv, ogbn-products, ogbn-papers100), --gpu (e.g. "0,1")
 3. **Run python script** : Select a script upon sampler and model. We create separate scripts for tackling the different parameters
 
 ## Samplers
