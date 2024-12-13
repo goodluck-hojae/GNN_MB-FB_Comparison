@@ -43,11 +43,11 @@ We iterate over combinations of:
 ## Outcomes (Plot)
 After running experiment, the script results in filename_dataset.json \
 With this file, run **python3 plot.py --filename "pubmed_NSGAT.json"** to plot a single experiment
-![image](https://github.com/user-attachments/assets/5bbaf37b-f065-4461-9402-a1b0ea71e40d)
+<img src="https://github.com/user-attachments/assets/f17b46ca-3d8e-41e1-bcfb-1557c8d68451" alt="ndcg_comparison" width="500">
 
 (TODO: Plot multiple experiments)
 
-![image](https://github.com/user-attachments/assets/2d3ac93a-56c0-4eda-a5fd-211a3b056979)
+<img src="https://github.com/user-attachments/assets/2d3ac93a-56c0-4eda-a5fd-211a3b056979" alt="ndcg_comparison" width="500">
 
 
 The results are recorded with the following metrics:
