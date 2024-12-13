@@ -2,6 +2,10 @@
 
 This repository explores mini-batch training using various samplers, models, and datasets. We iterate through different combinations of these components and parameters to analyze performance and convergence.
 
+## Getting Started
+1. **Install dependencies** pip install -r requirements.txt
+2. **Setting Configurations** Set dataset name, #GPUs
+
 ## Samplers
 
 The following samplers are implemented for experiments:
