@@ -3,9 +3,9 @@
 This repository explores mini-batch training using various samplers, models, and datasets. We iterate through different combinations of these components and parameters to analyze performance and convergence.
 
 ## Getting Started
-1. **Install dependencies** pip install -r requirements.txt
-2. **Setting** --dataset (pubmed, reddit, ogbn-arxiv, ogbn-products, ogbn-papers100), --gpu (e.g. "0,1")
-3. **Run python script** Select a script upon sampler and model. We create the script separately for tackling the different parameters
+1. **Install dependencies** : pip install -r requirements.txt
+2. **Setting** : --dataset (pubmed, reddit, ogbn-arxiv, ogbn-products, ogbn-papers100), --gpu (e.g. "0,1")
+3. **Run python script** : Select a script upon sampler and model. We create separate scripts for tackling the different parameters
 
 ## Samplers
 
